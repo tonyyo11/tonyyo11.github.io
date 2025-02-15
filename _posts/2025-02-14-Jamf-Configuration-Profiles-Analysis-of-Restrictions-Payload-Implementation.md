@@ -1,5 +1,5 @@
 ---
-title: "Jamf-Configuration-Profiles-Analysis-of-Restrictions-Payload-Implementation"
+title: "Jamf Configuration Profiles Analysis of Restrictions Payload Implementation"
 date: 2025-02-14
 ---
 ## Overview
