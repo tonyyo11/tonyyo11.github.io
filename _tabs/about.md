@@ -1,8 +1,5 @@
 ---
 title: "About"
-layout: page
-categories: ["Career"]
-tags: ["macOS", "Jamf", "IT Leadership", "Enterprise IT"]
 icon: fas fa-info-circle
 order: 4
 ---
