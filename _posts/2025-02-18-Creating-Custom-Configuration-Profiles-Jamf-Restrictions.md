@@ -85,10 +85,10 @@ Your end result will look something similar to this.
 
 ### **Using External Applications with Custom JSON Schema**
 
-Some organizations may prefer to utilize JSON Schemas to build their configuration profiles. For this, I highly recommend exploring [Github  Jamf-Custom-Profile-Schemas/ProfileManifestMirror](https://github.com/Jamf-Custom-Profile-Schemas/ProfileManifestsMirror). 
+Some organizations may prefer to utilize JSON Schemas to build their configuration profiles. For this, I highly recommend exploring [Jamf-Custom-Profile-Schemas/ProfileManifestMirror](https://github.com/Jamf-Custom-Profile-Schemas/ProfileManifestsMirror). 
 This method utilizes Jamf's Application & Custom Settings > External Applications to build profiles. Read more [here](https://www.elliotjordan.com/posts/profilemanifestsmirror/) and [here](https://developer.jamf.com/developer-guide/docs/application-and-custom-settings). Additionally, there are great JNUC sessions about Custom JSON Schemas: 
-- [Simplifying application management: using custom schemas in Jamf Pro | JNUC 2021](https://www.youtube.com/watch?v=3ZdFzWBTkjg).
-- [How to Create Jamf Manifests for Custom Configuration Profiles | JNUC 2023](https://www.youtube.com/watch?v=EYG-w3_Do3s).
+- [Simplifying application management: using custom schemas in Jamf Pro - JNUC 2021](https://www.youtube.com/watch?v=3ZdFzWBTkjg).
+- [How to Create Jamf Manifests for Custom Configuration Profiles - JNUC 2023](https://www.youtube.com/watch?v=EYG-w3_Do3s).
 
 I prefer using a custom JSON schema to create configuration profiles within Jamf Pro. This helps me document my setup further within Jamf Pro. Any auditor or junior engineer learning your setup can easily view the JSON Schema setup and see additional text explaining what a given key is doing and why it may be set to the current setting or what the default typically is. For more advanced users, Jamf Pro still allows you to view the XML/PLIST version of the profile and cut through all of the additional text. 
 You can view my [GitHub Repository](https://github.com/tonyyo11/MacAdministration/blob/main/JSON%20Schemas/macOS-Sequoia-Restricions-Custom-Schema.json) for a JSON Schema for macOS 15 Sequoia Restrictions, where each key is documented with the minimum version of Sequoia that supports the key. This can be used to selectively build your stackable profiles. 
