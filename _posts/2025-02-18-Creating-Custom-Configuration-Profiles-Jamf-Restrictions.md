@@ -46,7 +46,7 @@ To manage version-specific restrictions:
 ## Method Two: Migrate to Utilizing Custom Configuration Profiles.
 
 Instead of using Jamf’s Restrictions Payload, organizations can create **stackable** profiles that contain only necessary keys per minor macOS version.
-[IMAGE]
+![jamf_SequoiaStacked](/assets/img/postimages/jamf_SequoiaStacked.png)
 
 It is not recommended to mix and match the Jamf native Restrictions Profile and Custom Configuration Profiles since Jamf's Restriction Profile deploys all of the keys possible, which may conflict with what you, as the organization, deploy in your custom profiles. As Jamf adds new keys to the Restrictions Payload, the default setting for that key may be set to `FALSE` while your custom configuration profile is set to `TRUE` which will cause macOS to set the key(s) as `undefined.`
 
