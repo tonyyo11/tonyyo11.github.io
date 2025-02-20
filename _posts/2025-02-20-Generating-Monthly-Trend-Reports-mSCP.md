@@ -101,7 +101,7 @@ Once the reports are collected in a folder, the script:
 ---
 
 ## **Example Output: Monthly Compliance Trend Report**  
-*Data below is randomly generated and do not belong to any particular organization or Jamf Pro Server*
+*Data below is randomly generated and do not belong to any particular organization or Jamf Pro Server*.
 
 <style>
     table { width: 100%; border-collapse: collapse; }
@@ -193,7 +193,9 @@ Once the reports are collected in a folder, the script:
 </tr>
 </table>
 
+
 In addition to this, the individualized reports (ie. 2025-01-01T00_00_01 - Report - Compliance Audit Report.csv) are all included as individual sheets within the overall Excel workbook so that teams can drill down to see what mSCP rules a given system is failing.
+
 ---
 
 ## **Benefits of Using This Trend Report**  
