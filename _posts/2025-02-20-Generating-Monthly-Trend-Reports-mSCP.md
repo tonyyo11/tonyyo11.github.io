@@ -18,7 +18,7 @@ This gap makes it challenging to track compliance improvements or regressions ov
 To address this, I created a Python script that consolidates weekly Jamf Pro reports into a Monthly Trend Report. This provides upper management and security teams with a clear view of compliance progress over time.  
 
 📌 **You can find the script on GitHub here:**  [Jamf Compliance Report Monthly Script](https://github.com/tonyyo11/MacAdministration/blob/main/Scripts/jamf-compliance-report-monthly.py)  
-<script src="https://gist.github.com/tonyyo11/7a0e9eae60121daa9d4ac869a19eef57.js"></script>
+
 ---
 
 ## **Why Time-Based Compliance Tracking is Critical**  
