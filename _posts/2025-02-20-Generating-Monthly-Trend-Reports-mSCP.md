@@ -103,17 +103,95 @@ Once the reports are collected in a folder, the script:
 ## **Example Output: Monthly Compliance Trend Report**  
 *Data below is randomly generated and do not belong to any particular organization or Jamf Pro Server*
 
-| Serial Number         | Computername   |   2025-01-01 |   2025-01-07 |   2025-01-14 |   2025-01-21 |
-|:----------------------|:---------------|-------------:|-------------:|-------------:|-------------:|
-| RC2DC83ZI6            | MacPro-BMNJ    |          9   |         18   |       36     |       86     |
-| W5TFT9L4YR            | MacStudio-YGE8 |         13   |         46   |       82     |       18     |
-| BMWGVVRCT0            | iMac-WVK2      |         98   |         79   |       70     |       22     |
-| W6ALH0489G            | iMac-P89E      |        116   |         15   |       51     |       24     |
-| K5AQTAIF7R            | MacStudio-2P2Z |         81   |         29   |       63     |       13     |
-| 3MTXVAYCMM            | iMac-VG9X      |         33   |          1   |       86     |       69     |
-| MEBIDFLI53            | MacStudio-PUFR |         80   |         31   |       70     |       28     |
-| 8IU1MZWJPS            | iMac-AR9N      |         86   |         97   |       19     |       81     |
-| Average Failed Checks |                |         64.5 |         39.5 |       59.625 |       42.625 |
+<style>
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid black; padding: 8px; text-align: center; }
+    .yellow { background-color: #ffff99; } /* Yellow */
+    .orange { background-color: #ffcc66; } /* Orange */
+    .red { background-color: #ff6666; } /* Red */
+</style>
+<table>
+<tr>
+<th>Serial Number</th>
+<th>Computername</th>
+<th>2025-01-01</th>
+<th>2025-01-07</th>
+<th>2025-01-14</th>
+<th>2025-01-21</th>
+</tr>
+<tr>
+<td>RC2DC83ZI6</td>
+<td>MacPro-BMNJ</td>
+<td class="yellow">22.0</td>
+<td class="yellow">3.0</td>
+<td class="orange">47.0</td>
+<td class="yellow">10.0</td>
+</tr>
+<tr>
+<td>W5TFT9L4YR</td>
+<td>MacStudio-YGE8</td>
+<td class="red">85.0</td>
+<td class="red">65.0</td>
+<td class="red">111.0</td>
+<td class="red">72.0</td>
+</tr>
+<tr>
+<td>BMWGVVRCT0</td>
+<td>iMac-WVK2</td>
+<td class="red">99.0</td>
+<td class="orange">47.0</td>
+<td class="red">118.0</td>
+<td class="red">89.0</td>
+</tr>
+<tr>
+<td>W6ALH0489G</td>
+<td>iMac-P89E</td>
+<td class="yellow">16.0</td>
+<td class="yellow">10.0</td>
+<td class="yellow">16.0</td>
+<td class="red">71.0</td>
+</tr>
+<tr>
+<td>K5AQTAIF7R</td>
+<td>MacStudio-2P2Z</td>
+<td class="red">83.0</td>
+<td class="red">54.0</td>
+<td class="red">80.0</td>
+<td class="yellow">14.0</td>
+</tr>
+<tr>
+<td>3MTXVAYCMM</td>
+<td>iMac-VG9X</td>
+<td class="red">104.0</td>
+<td class="red">110.0</td>
+<td class="yellow">6.0</td>
+<td class="red">75.0</td>
+</tr>
+<tr>
+<td>MEBIDFLI53</td>
+<td>MacStudio-PUFR</td>
+<td class="yellow">0.0</td>
+<td class="red">78.0</td>
+<td class="red">101.0</td>
+<td class="yellow">8.0</td>
+</tr>
+<tr>
+<td>8IU1MZWJPS</td>
+<td>iMac-AR9N</td>
+<td class="red">130.0</td>
+<td class="red">130.0</td>
+<td class="orange">41.0</td>
+<td class="yellow">5.0</td>
+</tr>
+<tr>
+<td>Average Failed Checks</td>
+<td></td>
+<td class="red">67.375</td>
+<td class="red">62.125</td>
+<td class="red">65.0</td>
+<td class="orange">43.0</td>
+</tr>
+</table>
 
 In addition to this, the individualized reports (ie. 2025-01-01T00_00_01 - Report - Compliance Audit Report.csv) are all included as individual sheets within the overall Excel workbook so that teams can drill down to see what mSCP rules a given system is failing.
 ---
