@@ -3,7 +3,7 @@ title: "Jamf Configuration Profiles Analysis of Restrictions Payload Implementat
 date: 2025-02-14
 tags: [jamf, macos, configuration profiles]
 categories: [Mac Management]
-pin: true
+pin: false
 ---
 ## Overview
 This document examines critical implementation challenges with Jamf Pro Computer Configuration Profiles, specifically focusing on the Restrictions Payload deployment mechanism. Three key issues have been identified, along with potential solutions and important operational considerations for organizations to implement while awaiting platform updates.
