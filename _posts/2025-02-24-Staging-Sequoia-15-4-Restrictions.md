@@ -1,7 +1,7 @@
 ---
 title: "Prepping for and Staging macOS 15.4 Restrictions for Apple Intelligence"
 date: 2025-02-24
-tags: [jamf, macos, configuration profiles, Apple Intelligence]
+tags: [jamf, macos, configuration profiles, Apple Intelligence, kandji, mosyle]
 categories: [Mac Management]
 pin: false
 ---
