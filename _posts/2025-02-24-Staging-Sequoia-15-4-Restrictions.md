@@ -29,7 +29,44 @@ Once saved, we can create a new Configuration Profile. A simple yet descriptive 
 
 I prefer to use JSON Schemas when building configuration profiles. So, under "Application & Custom Settings," we will use the External Applications and add a Custom Schema to include the newly introduced keys. 
 The following code contains just the macOS Sequoia 15.4 Restrictions:
-<script src="https://gist.github.com/tonyyo11/aa526b49aaa5f28d72e12838391029c9.js"></script>
+
+```json
+{
+  "title": "Restrictions (macOS) (com.apple.applicationaccess)",
+  "description": "macOS 15.4 Restrictions preferences",
+  "properties": {
+    "allowAppleIntelligenceReport": {
+      "type": "boolean",
+      "title": "Allow Apple Intelligence Report",
+      "default": true,
+      "description": "If 'true', allows Apple Intelligence Reports. Available in macOS 15.4 and later.",
+      "property_order": 5
+    },
+    "allowMailSmartReplies": {
+      "type": "boolean",
+      "title": "Allow Apple Mail Smart Replies",
+      "default": true,
+      "description": "If 'true', allows Apple Intelligence Mail Smart Replies. Available in macOS 15.4 and later.",
+      "property_order": 10
+    },
+    "allowSafariSummary": {
+      "type": "boolean",
+      "title": "Allow Apple Intelligence Safari Summary",
+      "default": true,
+      "description": "If 'true', allows Apple Intelligence Safari Summary. Available in macOS 15.4 and later.",
+      "property_order": 15
+    },
+    "allowNotesTranscription": {
+      "type": "boolean",
+      "title": "Allow Notes Transcription",
+      "default": true,
+      "description": "If 'true', allows Notes Transcriptions. This key is not Apple Intelligence related. Available in macOS 15.4 and later.",
+      "property_order": 20
+    }
+  }
+}
+```
+View the most current version of this code on [Gist.](https://gist.github.com/tonyyo11/aa526b49aaa5f28d72e12838391029c9)
 
 Once the schema has been added and saved, and the Preference Domain has been set to `com.apple.applicationaccess`, we can set the desired state for each key. In my current assignment, we must disable all Apple Intelligence functionality, so every key will be set to `FALSE`. 
 ![jamf_15_4_Profile_Schema](/assets/img/postimages/jamf_15_4_Profile_Schema.png)

@@ -15,7 +15,39 @@ In this post, we will create a Jamf Pro Extension Attribute (EA) to track instal
 We will use a script to retrieve installed VS Code extensions and report them to Jamf Pro.
 
 #### **Script for Extension Attribute**
-<script src="https://gist.github.com/tonyyo11/ddb26f2834817512c1fe1b1402aded20.js"></script>
+```bash
+#!/bin/bash
+
+###################################################################################################
+# Script Name:    [installedVSCodeExtensions.sh]
+# By:            Tony Young
+# Organization:   Cloud Lake Technology, an Akima company
+# Date:          February 26, 2025
+# 
+# Purpose:       Retrieve installed extensions within the Visual Studio Code application for macOS
+# Disclaimers:   Code originally written by @Fraser via the Mac Admins Slack Community - https://www.macadmins.org edited by Tony Young
+###################################################################################################
+# Set Initial Result
+result="Not installed"
+
+# Run as the current logged in user to grab their extensions
+loggedInUser=$( echo "show State:/Users/ConsoleUser" | scutil | awk '/Name :/ { print $3 }' )
+codePath="/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"
+
+# Check VS Code for installed extensions and include the current version installed
+if [[ -e "${codePath}" ]]; then
+  result=$(sudo -u "${loggedInUser}" "${codePath}" --list-extensions --show-versions)
+fi
+
+# If no extension found, return as such
+if [[ -z "${result}" ]]; then
+  result="No extensions found"
+fi
+
+# Return result for Jamf Pro EA
+echo "<result>${result}</result>"
+```
+View the most current version of this code on [Gist.](https://gist.github.com/tonyyo11/ddb26f2834817512c1fe1b1402aded20)
 
 1. Save this script.
 2. Create a new Extension Attribute within Jamf Pro. Set the Display name to something appropriate. For Example: Visual Studio Code Installed Extensions or something shorter like CS Code Extensions.
@@ -40,7 +72,18 @@ To automatically remediate the issue:
    - This should be scoped to the Smart Group created above. 
 
 #### **Removal Script**
-<script src="https://gist.github.com/tonyyo11/215069b5657e743387b67f2c3b255e50.js"></script>
+```bash
+#!/bin/bash
+
+# Get the current logged-in user and their home directory
+CURRENT_USER=$(stat -f %Su /dev/console)
+USER_HOME=$(eval echo ~$CURRENT_USER)
+
+rm -rf "$USER_HOME/.vscode/extensions/equinusocio.vsc-material-theme*"
+rm -rf "$USER_HOME/.vscode/extensions/equinusocio.vsc-material-theme-icons*"
+echo "Malicious extensions removed."
+```
+View the most current version of this code on [Gist.](https://gist.github.com/tonyyo11/215069b5657e743387b67f2c3b255e50)
 
 ### **Conclusion**
 Tracking VS Code extensions using Jamf Pro helps ensure security compliance and remove the installation of unsafe extensions. IT teams can use the Extension Attribute and Smart Groups to monitor, detect, and remediate security risks in their macOS environment.
