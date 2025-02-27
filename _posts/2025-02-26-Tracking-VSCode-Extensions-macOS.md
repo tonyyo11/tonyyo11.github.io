@@ -15,8 +15,7 @@ In this post, we will create a Jamf Pro Extension Attribute (EA) to track instal
 We will use a script to retrieve installed VS Code extensions and report them to Jamf Pro.
 
 #### **Script for Extension Attribute**
-<iframe src="https://gist.github.com/tonyyo11/ddb26f2834817512c1fe1b1402aded20.js?theme=dark" width="100%" height="500"></iframe>
-
+<script src="https://gist.github.com/tonyyo11/ddb26f2834817512c1fe1b1402aded20.js"></script>
 
 1. Save this script.
 2. Create a new Extension Attribute within Jamf Pro. Set the Display name to something appropriate. For Example: Visual Studio Code Installed Extensions or something shorter like CS Code Extensions.
