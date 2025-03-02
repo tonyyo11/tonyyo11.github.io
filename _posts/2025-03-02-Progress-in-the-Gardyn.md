@@ -19,7 +19,7 @@ I've purchased the Home in order to grow food, while the Studio's primary purpos
 
 I thought it would be mostly hands-off. It turns out that, much like managing IT infrastructure, running a smart garden requires discipline, a bit of creativity, and a willingness to troubleshoot when things don’t go as expected.
 
-![Wide shot of Gardyn Home and Gardyn Studio side by side](gardyn_home_studio.JPG "My Gardyn Home and Gardyn Studio growing side by side.")
+![Wide shot of Gardyn Home and Gardyn Studio side by side](/assets/img/postimages/gardyn_home_studio.JPG "My Gardyn Home and Gardyn Studio growing side by side.")
 
 ---
 
@@ -29,7 +29,7 @@ The decision to invest in Gardyn wasn’t just about having a cool gadget in my 
 
 It wasn't just about cost savings. Another major factor was **food safety**. In 2024, the United States saw a stark rise in food recalls, particularly for fresh produce, due to contamination concerns. I remember far too often watching the news, or reading on social media that a particular brand or batch of product were voluntarily recalled. The stress of having to check for whether or not I and my family consumed that brand or the particular batch of produce was nerve-wracking when your primary job as a parent is the safety and wellbeing of your children. With so many recalls on leafy greens, herbs, and other fresh foods, it made me think: *How often does this happen without us even knowing?* That’s when I knew: I needed a way to take control over what my family eats.
 
-![Close-up of lush green lettuce and herbs](gardyn_produce.JPG "A variety of fresh produce thriving in my Gardyn Home.")
+![Close-up of lush green lettuce and herbs](/assets/img/postimages/gardyn_produce.JPG "A variety of fresh produce thriving in my Gardyn Home.")
 
 ---
 
@@ -41,7 +41,7 @@ In reality, I quickly learned that having an AI assistant doesn’t mean you can
 
 Still, even with these quirks, Gardyn has already started proving its worth. I’ve cut down on grocery store trips for salad greens and herbs, and every time I harvest fresh basil for dinner, I feel like a tech-savvy homesteader that I so often see online, and my kids have developed a new appreciation for where their food comes from. In fact, picking a ripe strawberry shortly after it has finished turning red has become a family event. My youngest checks for a ripe strawberry daily, typically after school, hoping one is ready. Then, as typical children, the kids negotiate and debate over whose turn it is for the strawberry of the day. It’s not enough to replace store-bought fruit, but it’s enough to spark their curiosity and appreciation for growing food.
 
-![Child harvesting a fresh head of lettuce](gardyn_harvest.JPG "My child harvesting homegrown lettuce from our Gardyn system.")
+![Child harvesting a fresh head of lettuce](/assets/img/postimages/gardyn_harvest.JPG "My child harvesting homegrown lettuce from our Gardyn system.")
 
 ---
 
@@ -55,7 +55,7 @@ Kelby feels like a well-meaning intern who remembers to send reminders but doesn
 
 I've taken a different approach to avoid paying for multiple Kelby subscriptions across my two Gardyns: manual plant tracking via spreadsheets. Instead of relying on Kelby to tell me what to do on the smaller Gardyn Studio, I log plant growth myself and adjust accordingly, as well as copy any task required of me for the larger Gardyn Home. I do keep a pre-paid Kelby subscription on the larger Gardyn Home system as I paid for it when I purchased the device.
 
-![Diverse plant growth in Gardyn system](gardyn_mixed_growth.jpg "A mix of mature and young plants growing in my Gardyn Home.")
+![Diverse plant growth in Gardyn system](/assets/img/postimages/gardyn_mixed_growth.jpg "A mix of mature and young plants growing in my Gardyn Home.")
 
 ---
 
@@ -70,7 +70,7 @@ As plants mature, the towers become crowded, making it harder to clean and manag
 If Kelby had better customization options and real-time adjustments, it would feel like an authentic AI-driven experience rather than just a notification tool.  
 Additionally, having built-in pH and water quality sensors would make plant care even easier. Imagine if the system could detect and adjust for hard water, soft water, or nutrient imbalances automatically. Instead, proper pH is tracked manually.
 
-![Overcrowded plant growth in Gardyn system](gardyn_overcrowding.jpeg "Mature plants growing close together, showing spacing challenges.")
+![Overcrowded plant growth in Gardyn system](/assets/img/postimages/gardyn_overcrowding.jpeg "Mature plants growing close together, showing spacing challenges.")
 
 ---
 
@@ -84,7 +84,7 @@ At first glance, hydroponic gardening and IT management seem worlds apart. But a
 - **Scalability is key.** Whether you’re managing **10 Macs or 10,000**, best practices stay the same. Likewise, my approach wouldn't change much if I were managing 10 hydroponic systems.
 - **Creative problem-solving keeps things fun.** Just like I automate workflows in IT, I’ve found ways to streamline my gardening tasks, even getting my kids involved in simple maintenance.
 
-![Child pointing at Gardyn system](gardyn_child.jpg "My child observing the Gardyn system, learning about plant growth.")
+![Child pointing at Gardyn system](/assets/img/postimages/gardyn_child.jpg "My child observing the Gardyn system, learning about plant growth.")
 
 ---
 
@@ -95,7 +95,7 @@ Gardyn has been a rewarding addition to our home. It provides fresh food, saves 
 And who knows—maybe one day, Gardyn will roll out **the kind of automation and intelligence I expect from my IT systems**. If I could push a configuration profile to my Gardyn, I’d automate watering schedules based on plant maturity, set real-time pH monitoring alerts, and maybe even deploy a self-healing script to reset the system or Kelby when things get weird. Sadly, Kelby isn’t quite there yet. Until then, I’ll keep growing, learning, and—just like in IT—**finding creative ways to make technology work for me**. Who knows? Maybe one day, I’ll find myself managing a full-scale hydroponic homestead—with MDM-style automation for plants. The IT admin in me can’t help but dream.
 
 For now, I will wait and watch as the Gardyn Studio continues working hard to beautify the room with fresh flowers, picked by the wonderful Mrs. Young. Maybe one day, I won’t just be managing plants—I’ll be automating a full-fledged hydroponic homestead, complete with Kelby 2.0 and a Jamf Pro or Kandji-style dashboard for my garden.
-![Gardyn Studio Progress](gardyn_final.jpg "My Gardyn towers flourishing with fresh plants.")
+![Gardyn Studio Progress](/assets/img/postimages/gardyn_final.jpg "My Gardyn towers flourishing with fresh plants.")
 
 ---
 
