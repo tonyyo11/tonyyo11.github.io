@@ -50,32 +50,44 @@ Below are some of the certifications I've earned, with links to their Credly bad
 
 <div align="center">
 
-<a href="https://www.credly.com/badges/91fdd975-699a-47ea-8d60-8e1416c848ea/">
+<a href="https://www.credly.com/badges/91fdd975-699a-47ea-8d60-8e1416c848ea" target="_blank">
     <img src="https://images.credly.com/size/150x150/images/95dd090f-b8b2-4a61-8721-24c465552bdd/image.png" alt="ACSP Badge">
 </a>
 
-<a href="https://www.credly.com/badges/43875fe8-a752-4da0-a722-62edb83fc78b/public_url">
+<a href="https://www.credly.com/badges/43875fe8-a752-4da0-a722-62edb83fc78b/public_url" target="_blank">
     <img src="https://images.credly.com/size/150x150/images/a25c1ed8-cc6e-44e3-bbc9-47e3a847c69f/image.png" alt="Jamf 370 Badge">
 </a>
 
-<a href="https://images.credly.com/size/340x340/images/f967c0ef-3c7f-41f7-8ef3-5018ba923225/image.png">
-    <img src="https://account-cdn.jamf.com/25.2.4/assets/pages/training/v10/JAMF_300_badge.png" alt="Jamf 300 Badge">
+<a href="https://www.credly.com/badges/f967c0ef-3c7f-41f7-8ef3-5018ba923225/public_url" target="_blank">
+    <img src="https://images.credly.com/size/150x150/images/f967c0ef-3c7f-41f7-8ef3-5018ba923225/image.png" alt="Jamf 300 Badge">
 </a>
 
-<a href="https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url">
+<a href="https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url" target="_blank">
     <img src="https://images.credly.com/size/150x150/images/f4a1348c-c7d0-4552-bdfc-a283b710a857/blob" alt="Jamf Management Integrator Badge">
 </a>
 
-<a href="https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url">
+<a href="https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url" target="_blank">
     <img src="https://images.credly.com/size/150x150/images/5c14aaaf-bef5-4127-90d1-b75b058cff00/image.png" alt="Jamf Security Consultant Badge">
 </a>
 
-<a href="https://www.credly.com/badges/0169fbb2-3700-4e6d-9c4a-b77672d28ee3/public_url">
+<a href="https://www.credly.com/badges/f50b8bab-2799-40af-b896-c3c0682b1971/public_url" target="_blank">
+    <img src="https://images.credly.com/size/150x150/images/fb97a12f-c0f1-4f37-9b7d-4a830199fe84/GCC_badge_IT_Support_1000x1000.png" alt="GitHub Foundations Badge">
+</a>
+
+<a href="https://www.credly.com/badges/0169fbb2-3700-4e6d-9c4a-b77672d28ee3/public_url" target="_blank">
     <img src="https://images.credly.com/size/150x150/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/image.png" alt="Google Cybersecurity Badge">
 </a>
 
-<a href="https://www.credly.com/badges/aedae4b3-688a-493b-82ef-2eb66c4bccd3/public_url">
-    <img src="https://images.credly.com/size/150x150/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png" alt="GitHub Foundations Badge">
+<a href="https://www.credly.com/badges/0169fbb2-3700-4e6d-9c4a-b77672d28ee3/public_url" target="_blank">
+    <img src="https://images.credly.com/size/150x150/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/image.png" alt="Google IT Support Professional Badge">
+</a>
+
+<a href="https://www.credly.com/badges/9d8673db-a0f5-45a4-93bd-0eda127e5e13/public_url" target="_blank">
+    <img src="https://images.credly.com/size/150x150/images/ea3eec65-ddad-4242-9c59-1defac0fa2d9/image.png" alt="Google AI Essentials Badge">
+</a>
+
+<a href="https://www.credly.com/badges/11e80541-8e7e-4967-a666-d75d3e5007c8/public_url" target="_blank">
+    <img src="https://images.credly.com/size/150x150/images/ad50135d-61f4-4b63-a73e-98ce36b4f5c3/blob" alt="Google Agile Essentials Badge">
 </a>
 
 </div>
