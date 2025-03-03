@@ -3,84 +3,96 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I’m Tony Young, a Senior IT Operations Engineer and Team Lead specializing in macOS Systems Administration and Management. With over a decade of experience in enterprise IT, I’ve built my career around optimizing Apple device management, streamlining deployment processes, and ensuring security compliance at scale.
+# About Me
 
-Currently, I lead macOS management and engineering efforts at North Edge Technology, an AKIMA Company. My expertise includes Jamf Pro administration, security auditing, compliance enforcement, and automation for Apple devices. I’ve worked extensively on implementing the macOS Security Compliance Project (mSCP), guiding teams through security hardening initiatives, and ensuring that macOS environments meet strict compliance standards. My focus is on bridging the gap between security policies and practical IT implementation, ensuring that organizations can maintain both security and usability.
+I'm **Tony Young**, a Senior IT Operations Engineer and Team Lead specializing in macOS Systems Administration and Management. With over a decade of experience in enterprise IT, I focus on optimizing Apple device management, streamlining deployment processes, and ensuring security compliance at scale.
 
-One of my key responsibilities is mentoring junior engineers and IT staff, helping them develop the skills needed to excel in macOS security, automation, and enterprise management. I actively work to make complex concepts more accessible, whether through hands-on training, technical documentation, or collaborative projects. Recently, I’ve been guiding a junior engineer through the intricacies of the macOS Security Compliance Project, helping them grow into a leadership role within security auditing and compliance.
+## Professional Experience
 
-Beyond security and compliance, I have extensive experience in scripting and automation, particularly in Bash and Python. I use scripting to enhance efficiency, from automating device enrollments to aggregating Jamf Pro reports for long-term trend analysis. My team and I leverage automation to reduce manual workloads and ensure consistency in policy enforcement across hundreds or thousands of endpoints.
+### Senior Operations Engineer / Team Lead - Mac | Akima
 
-In addition to my technical work, I maintain “Patch Notes & Progress,” a blog where I share insights on macOS management, security, and IT best practices. My latest research, Jamf Configuration Profiles Analysis of Restrictions Payload Implementation, explores the challenges and nuances of deploying restrictions in enterprise environments. Through my writing, I aim to contribute to the broader IT community by providing practical insights, troubleshooting strategies, and lessons learned from real-world implementations.
+*Remote | August 2024 – Present*
 
-As technology continues to evolve, I stay committed to continuous learning, staying ahead of industry trends, and contributing to the macOS IT community. Whether it’s through hands-on engineering, process automation, security enforcement, or mentorship, my goal is to build scalable, secure, and efficient IT solutions that empower organizations and the people who rely on them.
+- **Lead macOS engineering initiatives** for U.S. Customs and Border Protection (CBP), overseeing enterprise-wide macOS implementation within DHS infrastructure.
+- **Develop and enforce macOS security frameworks** using Jamf Pro, evolving compliance to a zero-trust security model.
+- **Mentor and guide junior engineers**, fostering growth in macOS security and enterprise management.
 
-# Employment History  
+### Senior Mac Engineer | Indigo IT LLC
 
-## **Senior Operations Engineer / Team Lead - Mac**  
-### *Cloud Lake Technology (Akima Company)*  
-📍 Remote | 🗓 December 2024 – Present  
-Directing strategic Mac operations and engineering initiatives for **U.S. Customs and Border Protection (CBP)**, overseeing **enterprise-wide macOS implementation** within **DHS infrastructure**.  
+*Remote | May 2024 – August 2024*
 
----
+- **Managed CBP’s Apple ecosystem**, serving as Mac Engineering Lead and Apple SME before contract transition to Akima.
+- **Designed and administered Jamf Pro workflows**, enhancing automation and compliance.
 
-## **Senior Operations Engineer / Team Lead - Mac**  
-### *North Edge Technology (Akima Company)*  
-📍 Remote | 🗓 August 2024 – December 2024  
-- Continued leadership in CBP’s Mac fleet modernization after contract transition from Indigo IT to Akima.  
-- Developed a **macOS security framework** with **Jamf Pro**, evolving compliance to a **zero-trust** security model.  
+### Mac Systems Administrator | Compucom
 
----
+*Remote | August 2022 – May 2024*
 
-## **Senior Mac Engineer**  
-### *Indigo IT LLC*  
-📍 Remote | 🗓 May 2024 – August 2024  
-- Served as **Mac Engineering Lead** and **Apple SME**, managing CBP’s Apple ecosystem before contract transition.  
-- Designed and administered **Jamf Pro** workflows, enhancing automation and compliance.  
+- **Managed macOS deployment and security enforcement** for enterprise clients across finance and healthcare sectors.
+- **Improved patch management and automated software distribution** using Jamf Pro and Apple Business Manager.
 
----
+### Senior User Services Consultant | Carnegie Mellon University - Software Engineering Institute
 
-## **Mac Systems Administrator**  
-### *Compucom*  
-📍 Remote | 🗓 August 2022 – May 2024  
-- Managed **macOS deployment and security enforcement** for enterprise clients across **finance and healthcare**.  
-- Improved **patch management** and automated software distribution using **Jamf Pro** and **Apple Business Manager**.  
+*Pittsburgh, PA | December 2020 – August 2022*
 
----
+- **Led digital transformation for 500+ Macs**, ensuring compliance with NIST standards.
+- **Migrated Jamf Pro to the cloud**, reducing maintenance time by over 3 hours per month.
 
-## **Senior User Services Consultant**  
-### *Carnegie Mellon University - Software Engineering Institute*  
-📍 Pittsburgh, PA | 🗓 December 2020 – August 2022  
-- Led a **digital transformation** for **500+ Macs**, ensuring compliance with **NIST standards**.  
-- Migrated **Jamf Pro to cloud**, reducing maintenance time by **3+ hours per month**.  
+### User Services Consultant | Carnegie Mellon University - Software Engineering Institute
 
----
+*Pittsburgh, PA | July 2017 – December 2020*
 
-## **User Services Consultant**  
-### *Carnegie Mellon University - Software Engineering Institute*  
-📍 Pittsburgh, PA | 🗓 July 2017 – December 2020  
-- Provided enterprise IT support for **Mac, Windows, and Linux** environments.  
-- Implemented **Apple School Manager** and **Automated Device Enrollment** for streamlined onboarding.  
+- **Provided enterprise IT support** for Mac, Windows, and Linux environments.
+- **Implemented Apple School Manager and Automated Device Enrollment**, streamlining onboarding processes.
 
----
+## Certifications
 
-## **Technical Specialist**  
-### *Apple*  
-📍 Pittsburgh, PA | 🗓 August 2014 – July 2017  
-- Diagnosed and repaired Apple devices using **Apple Service Toolkit** and internal tools.  
+Below are some of the certifications I've earned, with links to their Credly badges for verification:
 
----
+- **Apple Certified Support Professional (ACSP)**
+  - ![ACSP Badge](https://images.credly.com/size/340x340/images/95dd090f-b8b2-4a61-8721-24c465552bdd/image.png)
+  - [View Credential](https://www.credly.com/badges/91fdd975-699a-47ea-8d60-8e1416c848ea/)
 
-## **AppleCare Advisor**  
-### *Apple*  
-📍 Remote | 🗓 May 2013 – August 2014  
-- Delivered award-winning **customer support** and troubleshooting for **Apple products**.  
+- **Jamf Certified Admin - Jamf Protect (Jamf 370)**
+  - ![Jamf 370 Badge](https://images.credly.com/size/340x340/images/a25c1ed8-cc6e-44e3-bbc9-47e3a847c69f/image.png)
+  - [View Credential](https://www.credly.com/badges/43875fe8-a752-4da0-a722-62edb83fc78b/public_url)
 
----
+- **Jamf Certified Admin - Jamf Pro Version 10 (Jamf 300)**
+  - ![Jamf 300 Badge](https://account-cdn.jamf.com/25.2.4/assets/pages/training/v10/JAMF_300_badge.png)
+  - [View Credential](https://images.credly.com/size/340x340/images/f967c0ef-3c7f-41f7-8ef3-5018ba923225/image.png)
+  
+- **Jamf Management Integrator (Jamf Partner Certificate)**
+  - ![Jamf Management Integrator Badge](https://images.credly.com/size/340x340/images/f4a1348c-c7d0-4552-bdfc-a283b710a857/blob)
+  - [View Credential](https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url)
 
-## **Sales Associate**  
-### *Best Buy*  
-📍 Monroeville, PA | 🗓 July 2012 – May 2013  
-- Merchandised and sold **computing products** including **Apple and Windows devices**.  
+- **Jamf Security Consultant (Jamf Partner Certificate)**
+  - ![Jamf Security Consultant Badge](https://images.credly.com/size/340x340/images/5c14aaaf-bef5-4127-90d1-b75b058cff00/image.png)
+  - [View Credential](https://www.credly.com/badges/bfe87de7-4edd-40cc-a11c-69a5b262e7e4/public_url)
 
----
+- **Google Cybersecurity Professional Certificate**
+  - ![Google Cybersecurity Badge](https://images.credly.com/size/340x340/images/0bf0f2da-a699-4c82-82e2-56dcf1f2e1c7/image.png)
+  - [View Credential](https://www.credly.com/badges/0169fbb2-3700-4e6d-9c4a-b77672d28ee3/public_url)
+
+- **GitHub Foundations**
+  - ![GitHub Foundations Badge](https://images.credly.com/size/340x340/images/024d0122-724d-4c5a-bd83-cfe3c4b7a073/image.png)
+  - [View Credential](https://www.credly.com/badges/aedae4b3-688a-493b-82ef-2eb66c4bccd3/public_url)
+
+
+## Blog
+
+In addition to my professional work, I maintain "Patch Notes & Progress," a blog where I share insights on macOS management, security, and IT best practices. My latest research includes analyses of Jamf Configuration Profiles and the implementation of restriction payloads in enterprise environments.
+
+## Continuous Learning
+
+As technology evolves, I remain committed to continuous learning, staying ahead of industry trends, and contributing to the macOS IT community. Whether through hands-on engineering, process automation, security enforcement, or mentorship, my goal is to build scalable, secure, and efficient IT solutions that empower organizations and their users.
+
+## Connect with Me Online
+
+I actively engage with the IT and macOS community across various platforms. Feel free to connect with me:
+
+- **LinkedIn**: [linkedin.com/in/tonyyo11](https://www.linkedin.com/in/tonyyo11)  
+- **Bluesky**: [bsky.app/profile/tonyyo11.bsky.social](https://bsky.app/profile/tonyyo11.bsky.social)  
+- **GitHub**: [github.com/tonyyo11](https://github.com/tonyyo11)  
+- **Mac Admins Slack**: [Join the Mac Admins Community](https://www.macadmins.org/)  
+
+If you're interested in discussing macOS security, automation, or enterprise Apple management strategies, feel free to reach out!
