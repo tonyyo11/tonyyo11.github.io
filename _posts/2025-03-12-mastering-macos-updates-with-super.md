@@ -52,11 +52,11 @@ If something does not appear right in your testing, you should review on-device 
 - **Wiki** - [Macjutsu/super - *S.U.P.E.R.M.A.N. v5.0.0*](https://github.com/Macjutsu/super/wiki)
 - **Reading** - Tech IT Out – [Getting Started With S.U.P.E.R.M.A.N.](https://techitout.xyz/2023/01/19/getting-started-with-s-u-p-e-r-m-a-n/)
 - **Reading** - FileWave Knowledge Base - [S.U.P.E.R.M.A.N. for macOS Software Updates (macOS Script)](https://kb.filewave.com/books/software-updates-apple/page/superman-for-macos-software-updates-macos-script)
-- **Video** - [S.U.P.E.R.M.A.N. II](https://www.youtube.com/watch?v=Lj26nuCH1jA) | JNUC 2023
-- **Video** - [How to Soar with S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=KSAOENlon4A) | Rocketman Tech LaunchPad (May 2023)
-- **Video** - [Need S.U.P.E.R.M.A.N. to Save Your Jamf Server?](https://www.youtube.com/watch?v=ILg37NUWz20) | Rocketman Tech LaunchPad (May 2024)
+- **Video** - [S.U.P.E.R.M.A.N. II](https://www.youtube.com/watch?v=Lj26nuCH1jA) - JNUC 2023
+- **Video** - [How to Soar with S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=KSAOENlon4A) - Rocketman Tech LaunchPad (May 2023)
+- **Video** - [Need S.U.P.E.R.M.A.N. to Save Your Jamf Server?](https://www.youtube.com/watch?v=ILg37NUWz20) - Rocketman Tech LaunchPad (May 2024)
 - **Reading** - Jamf Blog - [S.U.P.E.R.M.A.N III - JNUC 2024](https://www.jamf.com/blog/superman-macos-updates-mobile-device-management/)
-- **Video** - [Mobile Device Management - S.U.P.E.R.M.A.N. III](https://www.youtube.com/watch?v=ilVj6gqZiP4) | JNUC 2024
+- **Video** - [Mobile Device Management - S.U.P.E.R.M.A.N. III](https://www.youtube.com/watch?v=ilVj6gqZiP4) - JNUC 2024
 
 ## Testing and Implementation Recommendations
 
@@ -71,7 +71,7 @@ After having a general foundation on the capabilities of `super` , you, the Mac 
 I’ve reached out to Mac Admins online across multiple industries to gather some real-world examples of how others are configuring the tool for their platforms.
 Here are two real-world examples of simple configurations but have been given a lot of thought on implementation.
 
-Richard Smith supports a HigherED environment at the University of Waikato in New Zealand. You can find him on the Mac Admins Slack as @wakco 
+**Richard Smith** supports a HigherED environment at the University of Waikato in New Zealand. You can find him on the Mac Admins Slack as @wakco 
 
 > I only have two configurations:
 Labs - where super is configured to just perform updates immediately, but it is limited to running only on weekends.
@@ -79,23 +79,22 @@ Assigned - where super is configured with deferrals based on days since release,
 The same policy is used for both, including a `--reset-super` and any details I don't want in the config profiles. I also have Self Service and Support.app configured with `--workflow-install-now` `--workflow-reset-super-after-completion` for people to be able to trigger a check and update now.
 > 
 
-Andrew Stokes is a Client Engineer at Zillow. He shared how he configures super across his fleet. You can find him on Slack @TechTrekkie.
+**Andrew Stokes** is a Client Engineer at Zillow. He shared how he configures super across his fleet. You can find him on Slack @TechTrekkie.
 
 > I typically use three separate configurations:
 - One for most users
 - One for devices enrolled within the last 2 days
 
-One for a our incident management team to give them a longer window when they're on call and can't really reboot.
+> One for a our incident management team to give them a longer window when they're on call and can't really reboot.
 
-1st Config: I give a deadline of 5 days with `DeadlineDaysSoft`, and use `ScheduleZeroDateRelease` to base the zero date off of SOFA release date. I'll set `DeadlineDaysFocus` to 4 so if for some reason they have something causing a non-stop focus scenario, they'll at least get notifications that last 24 hours. I have `ScheduledInstallUserChoice` enabled to allow users to schedule the update, or pick one of the options from `DeferralTimerMenu` ranging from 30 min. to 2 days.
-`DialogTimeoutSoftDeadline` is set to 24 hours so they have  plenty of time for that final warning.
+> 1st Config: I give a deadline of 5 days with `DeadlineDaysSoft`, and use `ScheduleZeroDateRelease` to base the zero date off of SOFA release date. I'll set `DeadlineDaysFocus` to 4 so if for some reason they have something causing a non-stop focus scenario, they'll at least get notifications that last 24 hours. I have `ScheduledInstallUserChoice` enabled to allow users to schedule the update, or pick one of the options from `DeferralTimerMenu` ranging from 30 min. to 2 days. `DialogTimeoutSoftDeadline` is set to 24 hours so they have  plenty of time for that final warning.
 
-2nd Config: for devices enrolled in the last two days, I don't include `ScheduleZeroDateRelease`  and give them a soft deadline of 2 days. This is essentially for new hires to not force them into an immediate update on day 1 if it's past the window from the SOFA release date.
+> 2nd Config: for devices enrolled in the last two days, I don't include `ScheduleZeroDateRelease`  and give them a soft deadline of 2 days. This is essentially for new hires to not force them into an immediate update on day 1 if it's past the window from the SOFA release date.
 
-3rd Config, only difference from the first config is the `DeadlineDaysSoft` is set to 8 days.
+> 3rd Config, only difference from the first config is the `DeadlineDaysSoft` is set to 8 days.
 
-**Deployment/Update Rings:**
-I have 7 smart groups for deployment rings using an extension attribute based off of the UDID for the device, and use software update deferrals to space out when each ring will see a macOS update by 1 day each ring (Ring 1 will see on release day, Ring 2 release+1 and so on). Typically I'll set rings 5-7 on the same day unless I see issues with the first four.  The rings progress in size, the percentage of the mac population is as follows:
+> **Deployment/Update Rings:**
+> I have 7 smart groups for deployment rings using an extension attribute based off of the UDID for the device, and use software update deferrals to space out when each ring will see a macOS update by 1 day each ring (Ring 1 will see on release day, Ring 2 release+1 and so on). Typically I'll set rings 5-7 on the same day unless I see issues with the first four.  The rings progress in size, the percentage of the mac population is as follows:
 Ring 1 - 1%
 Ring 2 - 4%
 Ring 3 - 10%
@@ -104,17 +103,18 @@ Ring 5 - 20%
 Ring 6 - 20%
 Ring 7 - 25%
 
-**Apple Silicon Authentication:**
-The majority of our Macs have a LAPS admin account with a SecureToken, so I have a deployment script that will deploy super with relaunch disabled to do the initial install, and then the script that verifies the LAPS credentials and will trigger super to create a super service account using the LAPS account with the trigger `--auth-service-add-via-admin-account`.  If for some reason the checks against the LAPS account fail, it reverts to using `--auth-ask-user-to-save-password`
+> **Apple Silicon Authentication:**
+> The majority of our Macs have a LAPS admin account with a SecureToken, so I have a deployment script that will deploy super with relaunch disabled to do the initial install, and then the script that verifies the LAPS credentials and will trigger super to create a super service account using the LAPS account with the trigger `--auth-service-add-via-admin-account`.  If for some reason the checks against the LAPS account fail, it reverts to using `--auth-ask-user-to-save-password`
 
-**Upgrades:**
-For any upgrade deployments, I just use a separate script scoped to the appropriate macs with the following triggers:
+> **Upgrades:**
+> For any upgrade deployments, I just use a separate script scoped to the appropriate macs with the following triggers:
 `--install-macos-major-upgrades`
 `--install-macos-major-version-target=XX`
 `--workflow-reset-super-after-completion`
 > 
+---
 
-Now, lets look at some more scenario examples of how one can configure `super` in the enterprise. 
+Now, lets look at even more scenario examples of how one can configure `super` in the enterprise. 
 
 The following scenarios are meant to serve as simplistic examples and are by no means a step-by-step guide on how you, the reader, should/need to configure yourself. 
 
@@ -154,17 +154,17 @@ Some organizations opt to run macOS updates almost completely hands-off. With Su
 
 - **Scheduled Installation:** Highly automated setups often want to ensure the user doesn’t have to interact with super. You can also leverage Super’s **maintenance window** or **scheduled install** features to run updates during off-hours (e.g., nightly) to minimize disruption.
 
-** A Best Practice: ** If you need hands-off patching, configure Super with no (or very limited) deferrals and automate authentication**. Use an MDM integration or stored credentials for Apple Silicon so the process doesn’t stall for a password. Schedule the updates during low-usage times when possible to reduce impact.
+**A Best Practice:** If you need hands-off patching, configure Super with no (or very limited) deferrals and automate authentication. Use an MDM integration or stored credentials for Apple Silicon so the process doesn’t stall for a password. Schedule the updates during low-usage times when possible to reduce impact.
 
 ### **IT-Controlled Updates for Regulated Environments**
 
-IT often tightly controls updates in highly regulated industries (finance, healthcare, government, etc.). Organizations might **delay or manually approve updates** due to compliance checks or software compatibility testing. Super can be configured to support this IT-driven approach:
+IT often tightly controls updates in highly regulated industries (finance, healthcare, government, etc.). Organizations might delay or manually approve updates due to compliance checks or software compatibility testing. Super can be configured to support this IT-driven approach:
 
-- **Manual Trigger & Maintenance Windows:** Rather than running continuously, Super can be deployed or triggered only when IT is ready to roll out an update. Admins might push a Jamf policy to **initiate updates at a specific approved time**.
-- **Minimal User Choice:** In compliance-focused settings, you may choose **not to allow deferrals** or only allow very short deferrals (e.g. postpone by a few hours, or just a few days) once the update is triggered. The priority is ensuring devices patch promptly within mandated timeframes. Super can enforce an immediate restart or update once the scheduled time arrives, with limited ability for users to skip it.
-- **Block/Allow Specific Updates:** These organizations often differentiate between **minor security updates and major OS upgrades**. A common practice is to *enforce minor updates* (security patches) regularly but *delay major OS upgrades* until they are tested. Super supports this by configuration. By default, Super focuses on minor macOS updates; it will only upgrade to a new OS if explicitly allowed. For instance, adding the `AllowUpgrade` key set to true in Super’s config profile will permit jumping to the next macOS version. Not setting that means Super will stick to the current OS family’s updates – a helpful safeguard if you want to **hold off on major OS changes** (e.g. going from macOS 14 Sonoma to macOS 15 Sequoia) in regulated environments. A healthcare or government agency might use Super to enforce that all Macs apply, say, the latest macOS security update within 7 days of release (to meet security requirements). They might **hold back major version upgrades** for months - to a max of 90 days, and only push them via Super after thorough testing.
+- **Manual Trigger & Maintenance Windows:** Rather than running continuously, Super can be deployed or triggered only when IT is ready to roll out an update. Admins might push a Jamf policy to initiate updates at a specific approved time.
+- **Minimal User Choice:** In compliance-focused settings, you may choose not to allow deferrals or only allow very short deferrals (e.g. postpone by a few hours, or just a few days) once the update is triggered. The priority is ensuring devices patch promptly within mandated timeframes. Super can enforce an immediate restart or update once the scheduled time arrives, with limited ability for users to skip it.
+- **Block/Allow Specific Updates:** These organizations often differentiate between **minor security updates and major OS upgrades**. A common practice is to *enforce minor updates* (security patches) regularly but *delay major OS upgrades* until they are tested. Super supports this by configuration. By default, Super focuses on minor macOS updates; it will only upgrade to a new OS if explicitly allowed. For instance, adding the `AllowUpgrade` key set to true in Super’s config profile will permit jumping to the next macOS version. Not setting that means Super will stick to the current OS family’s updates – a helpful safeguard if you want to hold off on major OS changes (e.g. going from macOS 14 Sonoma to macOS 15 Sequoia) in regulated environments. A healthcare or government agency might use Super to enforce that all Macs apply, say, the latest macOS security update within 7 days of release (to meet security requirements). They might hold back major version upgrades for months - to a max of 90 days, and only push them via Super after thorough testing.
 
-**A Best Practice:** In these environments, **integrate Super with your change-management process**. Use configuration profiles to set a policy that *disables automatic major upgrades* (unless needed) and consider using **Super’s scheduling or maintenance window** to apply updates during authorized times. Ensure any required credentials (Jamf API or local admin) are in place on Apple Silicon Macs so that when you trigger the update, it is complete without user input. This approach gives IT full control over *when* updates occur, aligning with regulatory or business requirements.
+**A Best Practice:** In these environments, **integrate Super with your change-management process**. Use configuration profiles to set a policy that *disables automatic major upgrades* (unless needed) and consider using Super’s scheduling or maintenance window to apply updates during authorized times. Ensure any required credentials (Jamf API or local admin) are in place on Apple Silicon Macs so that when you trigger the update, it is complete without user input. This approach gives IT full control over *when* updates occur, aligning with regulatory or business requirements.
 
 ### **Hybrid Approach – Automation with User Deferrals**
 
@@ -178,7 +178,7 @@ Many organizations strike a balance between behind-the-scenes automation and use
 
 - **Use Case – Corporate Offices & Education (Staff/Faculty):** This balanced approach is increasingly common in enterprise and education. Employees or faculty appreciate not being surprised by an immediate reboot, but the organization still needs everyone updated within e.g. a week or two for security. Super’s deferral and notification features were designed exactly for this scenario: *encourage* users to update while eventually *enforcing* it. The result often is fewer help-desk tickets and a high compliance rate by the deadline.
 
-**Best Practice:** Configure Super’s **deferral options and deadline** to align with your desired grace period. Many admins choose a short deferral interval (like allowing 1-day deferrals up to 7 days) or a fixed deadline (e.g.,) “next Monday”). Use Super’s messaging customization to communicate to users what’s happening and by when clearly. This approach keeps users in the loop and somewhat in control, but guarantees updates aren’t postponed indefinitely. If using Jamf make use of and monitor extension attributes to ensure devices do meet the deadline and adjust the balance of deferral vs. force as needed for your user base.
+**Best Practice:** Configure Super’s deferral options and deadline to align with your desired grace period. Many admins choose a short deferral interval (like allowing 1-day deferrals up to 7 days) or a fixed deadline (e.g.,) “next Monday”). Use Super’s messaging customization to communicate to users what’s happening and by when clearly. This approach keeps users in the loop and somewhat in control, but guarantees updates aren’t postponed indefinitely. If using Jamf make use of and monitor extension attributes to ensure devices do meet the deadline and adjust the balance of deferral vs. force as needed for your user base.
 
 ### **Best Practice:** Tailor Super's configuration to your industry's demands:
 
@@ -196,4 +196,4 @@ Super's broad feature set — from deferral counts to scheduled installs — all
 
 The 5.0 release of S.U.P.E.R.M.A.N offers substantial improvements in update management and scheduling. It’s already used in education, enterprise, and government settings to keep Macs updated with minimal hassle￼. Whether you want fully automated, strictly controlled, or balanced updates, there’s likely a Super configuration that fits. Many organizations are still evaluating upgrading their deployments from 3.x or 4.x to the latest version. Now with 5.1.0-beta1, Mac Admins can begin the careful testing and implementation process to help organizations effectively leverage these benefits.
 
-Want to learn more? Join the conversation at the [Mac Admins Foundation Slack](https://www.macadmins.org/) in the channel [#super](https://macadmins.slack.com/archives/C03LKQ8EN2C).
+**Want to learn more?** Join the conversation at the [Mac Admins Foundation Slack](https://www.macadmins.org/) in the channel [#super](https://macadmins.slack.com/archives/C03LKQ8EN2C).
