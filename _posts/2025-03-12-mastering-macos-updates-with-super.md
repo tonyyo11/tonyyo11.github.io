@@ -146,11 +146,11 @@ Every time Apple releases a new update, the organization must deploy an update t
 
 Some organizations opt to run macOS updates almost completely hands-off. With Super configured with nothing but default behaviors, updates download in the background, and the decision is mainly left up to the end user. 
 
-![image.png](attachment:fd1082ee-b712-4141-b61a-3e843d4ddde4:image.png)
+![Super No Deadlines](/assets/img/postimages/macOS-Update-Upgrade-Dialog.png)
 
 - **No User Authentication Prompts:** On **Intel Macs**, Super can install updates as root without any additional credentials. On **Apple Silicon Macs**, fully silent updates require either an MDM command or supplying admin credentials to Super (more on that below). If neither is configured, Super will **prompt the logged-in user for their password** at install time. The best practice for automation is to avoid that prompt by providing credentials or using MDM, ensuring updates run without user intervention.
 
-![image.png](attachment:5117bde6-1051-402d-95ba-5903bc3e0229:image.png)
+![Super Apple Silicon Authentication](/assets/img/postimages/Example-User-Authentication-Dialog.png)
 
 - **Scheduled Installation:** Highly automated setups often want to ensure the user doesn’t have to interact with super. You can also leverage Super’s **maintenance window** or **scheduled install** features to run updates during off-hours (e.g., nightly) to minimize disruption.
 
@@ -174,7 +174,7 @@ Many organizations strike a balance between behind-the-scenes automation and use
 - **Custom Notifications and UX:** Super’s strength is in its user communication. It uses IBM Notifier for customizable dialogs. In a hybrid model, you can configure **polite reminders that grow more insistent** as the deadline nears – for example, initial pop-ups explaining an update is available, later notifications counting down days left, and final ones that warn of an imminent auto-restart. This helps encourage users to act independently before they hit the hard enforcement. Custom notifications are handled via the “[Custom Display Accessory](https://github.com/Macjutsu/super/wiki/Display-Customization)” settings within super’s configuration.
 - **User-Scheduled Installation:** To further empower users, Super supports letting the **end user pick a specific time** to run the update via the `ScheduledInstallUserChoice` key. For instance, the prompt might offer an “Install tonight at 11:00 PM” option. This hybrid tactic increases compliance (users schedule it themselves) while still ensuring it happens soon.
 
-![image.png](attachment:7f30eb59-4bba-4a2e-93c4-a5e589fa826c:image.png)
+![Super Schedule Install User Choice](/assets/img/postimages/Scheduled-Install-User-Choice-Deadline-Dialog.png)
 
 - **Use Case – Corporate Offices & Education (Staff/Faculty):** This balanced approach is increasingly common in enterprise and education. Employees or faculty appreciate not being surprised by an immediate reboot, but the organization still needs everyone updated within e.g. a week or two for security. Super’s deferral and notification features were designed exactly for this scenario: *encourage* users to update while eventually *enforcing* it. The result often is fewer help-desk tickets and a high compliance rate by the deadline.
 
