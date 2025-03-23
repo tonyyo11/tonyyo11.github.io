@@ -104,7 +104,7 @@ Planned Improvements:
 
 ## Further Enhancements Down The Road
 
-I am actively paying attention to Jamf’s Compliance reporting feature (currently in beta and only supports CIS Level 1 and Level 2 for now - **Cloud only**). I presently do not see an option to export reports through the Compliance GUI, or schedule regular reports to be emailed, but the built-in tool does automatically generate the extension attributes needed to then create an advanced computer search for reports. That being said, I have proactively created a Jamf Feature Request here to implement the core concepts of my script into the tooling since the feature is exclusive to cloud-hosted environments. 
+I am actively paying attention to Jamf’s Compliance reporting feature (currently in beta and only supports CIS Level 1 and Level 2 for now - **Cloud only**). I presently do not see an option to export reports through the Compliance GUI, or schedule regular reports to be emailed, but the built-in tool does automatically generate the extension attributes needed to then create an advanced computer search for reports. That being said, I have proactively created a Jamf Feature Request [here: JPRO-I-1194](https://ideas.jamf.com/ideas/JPRO-I-1194) to implement the core concepts of my script into the tooling since the feature is exclusive to cloud-hosted environments. 
 
 ---
 
