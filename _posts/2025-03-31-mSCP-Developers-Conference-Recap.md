@@ -81,9 +81,3 @@ The mSCP Developer Conference was a pivotal moment—not just for the project bu
 Thanks again to everyone who helped make the conference special. To the entire mSCP team, the Mac Admins Foundation, and all the friends, new and old, I met in person: **I appreciate you all.**
 
 Let’s keep building this together.
-
----
-### Support My Work
-
-If you enjoyed this post and would like to support my efforts to cover industry events and share insights on macOS security compliance, please consider buying me a coffee. Your support helps me continue to create content that connects and informs our community.
-<a href="https://www.buymeacoffee.com/Tonyyo11" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a> 
