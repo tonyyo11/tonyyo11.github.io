@@ -18,7 +18,7 @@ The conference wasn’t just a retrospective—it was a look forward into the pr
 ---
 
 ## What's Coming in mSCP 2.0?
-![Section Banner - What's Coming in mSCP 2.0](//assets/img/postimages/GettingToV2.png)
+![Section Banner - What's Coming in mSCP 2.0](/assets/img/postimages/GettingToV2.png)
 
 Here’s a taste of what’s ahead:
 
