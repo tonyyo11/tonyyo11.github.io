@@ -3,7 +3,7 @@
 title: "Mastering macOS Updates with Super 5.1.0: New Features and Real-World Deployment Strategies"
 date: 2025-03-12
 tags: [macOS, super, GitHub, superman, open-source, macOS Updates, softwareupdate]
-categories: [Mac Administrator]
+categories: [Mac Management]
 pin: false
 ---
 ![Mastering macOS Updates Banner Image](/assets/img/postimages/masteringmacOSUpdatesBanner.png)
