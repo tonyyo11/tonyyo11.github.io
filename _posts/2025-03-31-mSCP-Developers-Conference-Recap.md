@@ -29,6 +29,7 @@ Here’s a taste of what’s ahead:
 Side Note: If you're wondering, *“Federal Office for Information Security”* is what BSI translates to in English, per Wikipedia**.** The conference discussed the best way to implement localization support into the project.
 - **Simplification**: Easier to follow updates and unified configuration will lead to improved consistency, reduced costs, and faster time to market.
 - **Dependency Cleanup**: Removing ruby from the project and moving to from asciidoc to markdown for documentation creation will add to the simplification and consolidation within the structure of the project.
+
 ---
 
 ## Impact on Mac Administration
@@ -48,7 +49,8 @@ Vendors can contact the project directly by reaching out to [applesec@nist.gov](
 **Standardization is coming.** But that will only happen if vendors understand the demand from us—the practitioners in the trenches. The more they hear it, the faster mSCP can become a universal framework for secure, auditable Apple device management.
 
 The current roadmap has mSCP 2.0 in alpha testing, with beta coming in Fall 2025. The official **2.0 release is scheduled for June 19th, 2026**, marking the 6th anniversary of the project's initial release (v0.9).
---
+
+---
 
 ## Implementation & Recommendations
 ![Section Banner - Implementation & Recommendations](/assets/img/postimages/mSCP_DevConf_Recommendations.png)
@@ -62,6 +64,7 @@ If you’re a Mac Admin who uses mSCP but hasn’t yet dipped a toe into the dev
 
 > Grassroots got it done. Grassroots will get it done again. 
 > - Stephen Quinn, ITL
+
 ---
 
 ## A Personal Highlight
@@ -70,7 +73,7 @@ I’ll be honest—I wasn’t expecting this: during the opening remarks, **Hann
 
 To be publicly recognized by NIST leadership for what often feels like “just doing my job” on Slack and in the trenches of macOS security was a deeply meaningful moment—one I’ll remember forever. That acknowledgment reminded me how much of a difference our community support truly makes.
 
-And, to top it off—I finally got to meet so many of you in person! It was a day full of folks walking up to me, going, “You’re Tony?! I see you in Slack all the time!” That was the cherry on top of an already memorable day.
+And, to top it off—I finally got to meet so many of you in person! It was a day full of folks walking up to me, going, *“You’re Tony?! I see you in Slack all the time!”* That was the cherry on top of an already memorable day.
 
 ## Conclusion & Next Steps
 
