@@ -146,6 +146,8 @@ paginate: 10
 baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
+plugins:
+  - jekyll-sitemap
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
