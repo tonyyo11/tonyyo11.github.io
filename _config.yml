@@ -15,10 +15,10 @@ timezone: America/New_York
 
 title: Patch Notes and Progress # the main title
 
-tagline: Thoughts and Blogs by Tony Young # it will display as the subtitle
+tagline: Insights and Strategies for macOS Management and Security Compliance by Tony Young # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Thoughts and Technical Blogs by Tony Young.
+  Empowering IT administrators with in-depth articles and tutorials on macOS administration, effective MDM deployment, and maintaining robust security compliance across Apple devices. Written by Tony Young.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
