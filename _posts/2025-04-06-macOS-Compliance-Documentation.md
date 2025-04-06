@@ -3,8 +3,6 @@ title: "macOS Compliance Documentation: A Workflow with the macOS Security Compl
 date: 2025-04-06
 description: "Learn how to document macOS compliance baselines using mSCP and Jamf Compliance Editor. Build audit-ready workflows with tailored spreadsheets and guidance."
 image: 
-	path: /assets/img/postimages/Banner_msCP_Documentation.png
-	alt: Banner Image for mSCP Compliance Documentation
 	lqip: /assets/img/postimages/Banner_msCP_Documentation.png
 tags: [macOS, Compliance, Security, CIS, DISA STIG, Conference, NIST, mSCP]
 categories: [Mac Management]
