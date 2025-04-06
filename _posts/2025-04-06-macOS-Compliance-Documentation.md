@@ -99,7 +99,7 @@ To document rules that were excluded, I reverse the process:
 4. Save the file as:
     `patchnotes_cis_lvl2_exempted.jce` 
     
-![Naming the exempted baseline settings in JCE.](/assets/img/postimages/JCE_Saved_Finder_Exempted.png)
+![Naming the exempted baseline settings in JCE.](/assets/img/postimages/JCE_Saveed_Finder_Exempted.png)
 
 > Note: This post focuses on broad enforcement decisions and organizationally wide exemptions or exclusions. If you’re managing exemptions for specific departments or user groups—rather than organization-wide exclusions—check out the linked resources at the end of this post. Several articles walk through scoped exemptions and targeted configurations using JCE and mSCP.
 {: .prompt-info }
