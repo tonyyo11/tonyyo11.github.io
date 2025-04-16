@@ -221,10 +221,6 @@ In short, I want to be the go-to expert for building secure, scalable, and autom
 
 Before retirement, my north star is **financial independence**. I want to reach a point where my family doesn’t worry about what comes next. No more paycheck-to-paycheck anxiety. Just enough stability to live fully and freely.
 
-Ultimately, I want to be known as the person who makes macOS security and compliance seamless at scale. Not the guy who just applies CIS benchmarks, but the one who automates them, enforces them intelligently, and ensures they don’t break user workflows.
-
-I want to be recognized for mentoring the next generation of macOS security engineers. There aren’t enough professionals who understand both Apple IT and security at a deep level—and I want to help change that.
-
 That’s why I give back through mentorship with the **Mac Admins Foundation**, where they’ve ran a pilot program supporting professionals at all levels of their careers as they navigate the challenges of Apple IT. It’s incredibly rewarding to see someone gain confidence, build expertise, and find their place in this field—especially knowing I played a small role in that growth. And on the flip side, my mentee spoke right back into my career as we were at rather equivalent positions in our respective organizations, making it less of a mentor-mentee relationship but two people feeding into each other’s life and work. 
 
 I also volunteer my time in the **Mac Admins Slack** community, answering questions, sharing scripts, and troubleshooting weird edge cases. It’s more than just helping people—it’s about strengthening the entire ecosystem. The Slack community helped me immensely earlier in my career, and now I’m proud to contribute to the same space that shaped me.
