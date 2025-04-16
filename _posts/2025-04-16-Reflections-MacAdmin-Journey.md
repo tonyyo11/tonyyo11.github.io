@@ -249,18 +249,20 @@ As I move forward, I remain committed to continuous growth, community involvemen
 ---
 
 <details>
-  <summary><strong> 
-![AI Transparency](https://img.shields.io/badge/Responsible%20AI%20Use-%E2%9C%94%EF%B8%8F-blueviolet)</strong></summary>
+  <summary>
+    <img src="https://img.shields.io/badge/Responsible%20AI%20Use-%E2%9C%94%EF%B8%8F-blueviolet" alt="AI Transparency Badge">
+    <strong> Responsible GenAI Use</strong>
+  </summary>
+  <p>This blog post reflects my lived experience and personal growth—but to shape and refine it, I used a few trusted AI tools:</p>
 
-This blog post reflects my lived experience and personal growth—but to shape and refine it, I used a few trusted AI tools:
+  <ul>
+    <li><strong>ChatGPT</strong> – for organizing and clarifying thoughts</li>
+    <li><strong>Notion AI</strong> – for editing and structural drafts</li>
+    <li><strong>Apple Intelligence</strong> – for summarization and reminders</li>
+    <li><strong>Grammarly</strong> – for grammar correction, suggestions, and proofreading</li>
+  </ul>
 
-- **ChatGPT** for organizing and clarifying thoughts  
-- **Notion AI** for editing and structural drafts  
-- **Apple Intelligence** for summarization and reminders  
-- **Grammarly** for grammar correction, suggestions, and other proof reading.
+  <p>These tools acted like co-pilots—helping me connect the dots, polish my language, and turn scattered notes into a narrative I’m proud of.</p>
 
-These tools acted like co-pilots—helping me connect the dots, polish my language, and turn scattered notes into a narrative I’m proud of.
-
-I believe in **responsible use of generative AI**—transparent, ethical, and human-led. If you’re exploring similar reflections or want to level up your documentation and storytelling, I encourage experimenting with GenAI as a productivity aid—but always with authenticity and transparency at the core.
-
+  <p>I believe in <strong>responsible use of generative AI</strong>—transparent, ethical, and human-led. If you’re exploring similar reflections or want to level up your documentation and storytelling, I encourage experimenting with GenAI as a productivity aid—but always with authenticity and transparency at the core.</p>
 </details>
