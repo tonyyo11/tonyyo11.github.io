@@ -44,7 +44,7 @@ This new Super Categories Extesnion Attribute is meant to complement existing Su
 - **Dialog Prompts**
 - **Complete**
 
-More on the Category Breakdowns here:
+**More on the Category Breakdowns here:**
 <details>
 <summary>Click to expand</summary>
 
@@ -68,9 +68,9 @@ More on the Category Breakdowns here:
 <br>
      <strong>Example</strong>
 <br>
-    <code>`</code>
+    <code>
     Thu Apr 03 11:17:43: Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
-    <code>`</code>
+    </code>
 <br>
     This is mapped to <strong>Complete</strong>.
 <br>
@@ -95,11 +95,11 @@ More on the Category Breakdowns here:
 <br>
      <strong>Example Audit Log Snippets</strong>
 <br>
-    <code>`</code>
-    Thu Apr 03 11:16:20 super[31359]: Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
-    Thu Apr 03 11:16:35 super[32958]: Status: Resetting all local (non-managed and non-authentication) preferences.
+    <code>
+    Thu Apr 03 11:16:20 super[31359]: Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.<br>
+    Thu Apr 03 11:16:35 super[32958]: Status: Resetting all local (non-managed and non-authentication) preferences.<br>
     Thu Apr 03 11:17:18 super[36126]: Status: Resetting all local (non-managed and non-authentication) preferences.
-    <code>`</code>
+    </code>
 <br>
     - Full workflow completion messages that include <strong>“scheduled to automatically relaunch”</strong> are mapped to <strong>Pending</strong> (for audit log purposes), and resetting actions are mapped to <strong>Resetting</strong>.<br>
 <br>
@@ -107,14 +107,12 @@ More on the Category Breakdowns here:
 </details>
 
 This simplifies complex log data into concise, actionable states. Whether a workflow is actively running, stuck in user deferral, or has completed, you’ll know at a glance.
-
 There are such a vast amount of statuses that are returnable when using Super, which is why this EA exists.
 
-Expand to see the full list of 75 possible results returnable with the `super-Status-Jamf-Pro-EA.sh` Script
+**Expand to see the full list of 75 possible results returnable with the `super-Status-Jamf-Pro-EA.sh` Script**
 <details>
 <summary>Click to expand</summary>
 
-    
     1. "Inactive Error: Unrecognized Options: ${unrecognized_options_array[*]%%=*}"<br>
     2. "Inactive Error: Apple silicon authentication options could not be validated and no failover option was specified, the workflow cannot continue."<br>
     3. "Inactive Error: Initial startup validation failed."<br>
@@ -192,7 +190,8 @@ Expand to see the full list of 75 possible results returnable with the `super-St
     75. "Pending: Unable to submit inventory to Jamf Pro, trying again in ${deferral_timer_minutes} minutes."<br>
     76. "Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."<br>
 </details>
-Expand to see the full list of 57 possible results returnable with the `super-Audit-Log-Jamf-Pro-EA.sh` Script
+
+**Expand to see the full list of 57 possible results returnable with the `super-Audit-Log-Jamf-Pro-EA.sh` Script**
 <details>
 <summary>Click to expand</summary>
 
