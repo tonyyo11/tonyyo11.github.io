@@ -43,213 +43,218 @@ This new Super Categories Extesnion Attribute is meant to complement existing Su
 - **Running SoftwareUpdate**
 - **Dialog Prompts**
 - **Complete**
-- More on the Category Breakdowns here:
+
+More on the Category Breakdowns here:
 <details>
 <summary>Click to expand</summary>
 
-    
+<br>
     ### **For Super Status EA (Local Property List)**
-    
+<br>
     For statuses returned by the `super-Status-Jamf-Pro-EA.sh` Extension Attribute, the new categories and rules for mapping are:
-    
-    - **Error:**
-        - Any status containing the substring **“Inactive Error:”** is immediately classified as an **Error**.
-    - **Inactive:**
-        - Any status beginning with **“Inactive:”** (unless caught by other more specific rules) is mapped to **Inactive**.
-    - **Running SoftwareUpdate:**
-        - Any status starting with **“Running:”** that does **not** include the term **“Dialog”** indicates that a SUPERMAN workflow is actively processing a software update.
-    - **Dialog Prompts:**
-        - Any status starting with **“Running:”** that includes **“Dialog”** requires user interaction and is thus mapped to **Dialog Prompts**.
-    - **Pending:**
-        - Any status containing **“Pending:”** (provided it does not include other overriding conditions) is categorized as **Pending**.
-    - **Complete:**
-        - Any status containing **“Full super workflow complete!”** is forced to map to **Complete** even if it indicates that an automatic relaunch is scheduled. The local status is therefore considered complete regardless of whether a relaunch will occur.
-    
+<br>
+    - **Error:**<br>
+        - Any status containing the substring **“Inactive Error:”** is immediately classified as an **Error**.<br>
+    - **Inactive:**<br>
+        - Any status beginning with **“Inactive:”** (unless caught by other more specific rules) is mapped to **Inactive**.<br>
+    - **Running SoftwareUpdate:**<br>
+        - Any status starting with **“Running:”** that does **not** include the term **“Dialog”** indicates that a SUPERMAN workflow is actively processing a software update.<br>
+    - **Dialog Prompts:**<br>
+        - Any status starting with **“Running:”** that includes **“Dialog”** requires user interaction and is thus mapped to **Dialog Prompts**.<br>
+    - **Pending:**<br>
+        - Any status containing **“Pending:”** (provided it does not include other overriding conditions) is categorized as **Pending**.<br>
+    - **Complete:**<br>
+        - Any status containing **“Full super workflow complete!”** is forced to map to **Complete** even if it indicates that an automatic relaunch is scheduled. The local status is therefore considered complete regardless of whether a relaunch will occur.<br>
+<br>
     ### **Example**
-    
+<br>
     ```
     Thu Apr 03 11:17:43: Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
     ```
-    
+<br>
     This is mapped to **Complete**.
-    
+<br>
     ### **For Super Audit EA (Audit Log)**
-    
+<br>
     For the status returned from the `super-Audit-Log-Jamf-Pro-EA.sh` Extension Attribute log entries, the mapping is defined as:
-    
-    - **Resetting:**
-        - Any status that contains phrases such as **“Status: Resetting”**, **“Status: Deleting”**, **“Status: Migrating”**, or any reference to **“log_super_audit:”** is categorized as **Resetting**. These indicate actions like credential or preference resets.
-    - **Pending:**
-        - Entries with **“Status: Setting new scheduled installation”** or **“Restarting computer”** are mapped to **Pending**.
-        - In addition, if a full workflow completion message includes **“scheduled to automatically relaunch”**, then it is also mapped to **Pending**.
-    - **Running SoftwareUpdate:**
-        - Any line mentioning **“softwareupdate:”**, **“MDM:”**, or **“Installation:”** is mapped to **Running SoftwareUpdate** because these denote that the macOS update or upgrade workflows are active.
-    - **Inactive:**
-        - If the status message includes **“Inactive”**, it is mapped to **Inactive**, unless another rule takes precedence.
-    - **Error:**
-        - Any audit log entry with **“Error:”** or **“Warning:”** is categorized as **Error**.
-        - Furthermore, for full workflow completion messages, if the text explicitly states **“automatic relaunch is disabled”**, the entry is mapped to **Error**.
-    - **Complete:**
-        - Any status indicating successful completion (using phrases like **“Completed installation”**, **“completed!”**, or **“all available”**) is mapped to **Complete**, as long as it does not meet one of the above Pending criteria.
-    
+<br>
+    - **Resetting:**<br>
+        - Any status that contains phrases such as **“Status: Resetting”**, **“Status: Deleting”**, **“Status: Migrating”**, or any reference to **“log_super_audit:”** is categorized as **Resetting**. These indicate actions like credential or preference resets.<br>
+    - **Pending:**<br>
+        - Entries with **“Status: Setting new scheduled installation”** or **“Restarting computer”** are mapped to **Pending**.<br>
+        - In addition, if a full workflow completion message includes **“scheduled to automatically relaunch”**, then it is also mapped to **Pending**.<br>
+    - **Running SoftwareUpdate:**<br>
+        - Any line mentioning **“softwareupdate:”**, **“MDM:”**, or **“Installation:”** is mapped to **Running SoftwareUpdate** because these denote that the macOS update or upgrade workflows are active.<br>
+    - **Inactive:**<br>
+        - If the status message includes **“Inactive”**, it is mapped to **Inactive**, unless another rule takes precedence.<br>
+    - **Error:**<br>
+        - Any audit log entry with **“Error:”** or **“Warning:”** is categorized as **Error**.<br>
+        - Furthermore, for full workflow completion messages, if the text explicitly states **“automatic relaunch is disabled”**, the entry is mapped to **Error**.<br>
+    - **Complete:**<br>
+        - Any status indicating successful completion (using phrases like **“Completed installation”**, **“completed!”**, or **“all available”**) is mapped to **Complete**, as long as it does not meet one of the above Pending criteria.<br>
+<br>
     ### **Example Audit Log Snippets**
-    
+<br>
     ```
     Thu Apr 03 11:16:20 super[31359]: Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
     Thu Apr 03 11:16:35 super[32958]: Status: Resetting all local (non-managed and non-authentication) preferences.
     Thu Apr 03 11:17:18 super[36126]: Status: Resetting all local (non-managed and non-authentication) preferences.
     ```
-    
-    - Full workflow completion messages that include **“scheduled to automatically relaunch”** are mapped to **Pending** (for audit log purposes), and resetting actions are mapped to **Resetting**.
-
+<br>
+    - Full workflow completion messages that include **“scheduled to automatically relaunch”** are mapped to **Pending** (for audit log purposes), and resetting actions are mapped to **Resetting**.<br>
+<br>
 
 </details>
+
 This simplifies complex log data into concise, actionable states. Whether a workflow is actively running, stuck in user deferral, or has completed, you’ll know at a glance.
 
 There are such a vast amount of statuses that are returnable when using Super, which is why this EA exists.
 
-- Expand to see the full list of 75 possible results returnable with the `super-Status-Jamf-Pro-EA.sh` Script
+Expand to see the full list of 75 possible results returnable with the `super-Status-Jamf-Pro-EA.sh` Script
 <details>
 <summary>Click to expand</summary>
 
-    1. "Inactive Error: Unrecognized Options: ${unrecognized_options_array[*]%%=*}"
-    2. "Inactive Error: Apple silicon authentication options could not be validated and no failover option was specified, the workflow cannot continue."
-    3. "Inactive Error: Initial startup validation failed."
-    4. "Inactive Error: Configured authentication workflow can not currently install macOS updates/upgrades, install now workflow can not continue."
-    5. "Inactive Error: Network unavailable, install now workflow can not continue."
-    6. "Inactive Error: Checking for macOS software status workflow failed, install now workflow can not continue."
-    7. "Inactive Error: Download macOS update/upgrade workflow failed, install now workflow can not continue."
-    8. "Inactive Error: Installation of macOS update/upgrade via softwareupdate failed, install now workflow can not continue."
-    9. "Inactive Error: Installation of macOS major upgrade via installer application failed, install now workflow can not continue."
-    10. "Inactive Error: Download/install of macOS via MDM failed, install now workflow can not continue."
-    11. "Inactive Error: macOS update/upgrade workflow failed, install now workflow can not continue."
-    12. "Inactive Error: macOS update/upgrade workflow failed, install now workflow can not continue."
-    13. "Inactive Error: Some Jamf Pro Policies failed, install now workflow can not continue."
-    14. "Inactive: Full super workflow complete! Automatic relaunch is disabled."
-    15. "Inactive Error: Some non-system macOS software updates did not complete, install now workflow can not continue."
-    16. "Running: Installation workflow."
-    17. "Running: Startup workflow."
-    18. "Running: Check for software update status workflow."
-    19. "Running: softwareupdate: Starting ${macos_msu_title} authenticated download workflow."
-    20. "Running: softwareupdate: Starting ${macos_msu_title} download workflow."
-    21. "Running: mist_cli: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} download installer workflow."
-    22. "Running: softwareupdate: Starting non-system macOS software updates installation workflow."
-    23. "Running: softwareupdate: Starting Safari ${non_system_msu_safari_target} update installation workflow."
-    24. "Running: softwareupdate: Starting ${macos_msu_label} download and upgrade workflow."
-    25. "Running: softwareupdate: Starting ${macos_msu_label} upgrade workflow."
-    26. "Running: softwareupdate: Starting ${macos_msu_label} download and update workflow."
-    27. "Running: softwareupdate: Starting ${macos_msu_label} update workflow."
-    28. "Running: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install upgrade workflow."
-    29. "Running: MDM: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install workflow with user authenticated failover."
-    30. "Running: MDM: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install workflow."
-    31. "Running: MDM: Starting macOS ${macos_msu_version} download workflow with user authenticated failover."
-    32. "Running: MDM: Starting macOS ${macos_msu_version} download workflow."
-    33. "Running: MDM: Starting macOS ${macos_msu_version} download and update/upgrade workflow with user authenticated failover."
-    34. "Running: MDM: Starting macOS ${macos_msu_version} download and update/upgrade workflow."
-    35. "Running: MDM: Starting macOS ${macos_msu_version} update/upgrade workflow with user authenticated failover."
-    36. "Running: MDM: Starting macOS ${macos_msu_version} update/upgrade workflow."
-    37. "Running: Restart validation workflow."
-    38. "Running: Installing Jamf Pro Policy triggers."
-    39. "Running: Dialog user scheduled installation."
-    40. "Running: Dialog soft deadline."
-    41. "Running: Dialog user authentication."
-    42. "Pending: Configured authentication workflow is not currently possible, trying again in ${deferral_timer_minutes} minutes."
-    43. "Pending: Network unavailable, trying again in ${deferral_timer_minutes} minutes."
-    44. "Pending: Scheduled installation on $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install}, with a warning notification ${scheduled_install_reminder_item} minutes prior, deferring for ${deferral_timer_minutes} minutes from now."
-    45. "Pending: Scheduled installation on $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install}, deferring for ${deferral_timer_minutes} minutes from now."
-    46. "Pending: Checking for macOS software status workflow failed, trying restart validation workflow again in ${deferral_timer_minutes} minutes."
-    47. "Pending: Checking for macOS software status workflow failed, trying again in ${deferral_timer_minutes} minutes."
-    48. Pending: Download macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."
-    49. "Pending: Installation of macOS update/upgrade via softwareupdate failed, trying again in ${deferral_timer_minutes} minutes."
-    50. "Pending: Installation of macOS major upgrade via installer application failed, trying again in ${deferral_timer_minutes} minutes."
-    51. "Pending: Download/install of macOS via MDM failed, trying again in ${deferral_timer_minutes} minutes."
-    52. "Pending: Some non-system macOS software updates did not complete, trying again in ${deferral_timer_minutes} minutes."
-    53. "Pending: Safari update did not complete, trying again in ${deferral_timer_minutes} minutes."
-    54. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."
-    55. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."
-    56. "Pending: Some non-system macOS software updates remain available for installation, trying restart validation workflow again in ${deferral_timer_minutes} minutes."
-    57. "Pending: Unable to submit inventory or perform check-in via Jamf Pro, trying restart validation workflow again in ${deferral_timer_minutes} minutes."
-    58. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."
-    59. Running: Dialog insufficient storage."
-    60. "Running: Dialog power required."
-    61. "Running: Dialog user choice."
-    62. "Pending: User chose to defer for ${deferral_timer_minutes} minutes."
-    63. "Pending: User chose to defer, setting a deferral of ${deferral_timer_minutes} minutes."
-    64. "Pending: Display timeout automatically chose to defer for ${deferral_timer_minutes} minutes."
-    65. "Pending: Display timeout automatically chose to defer, using the default deferral of ${deferral_timer_minutes} minutes."
-    66. "Pending: User authentication for scheduled restart failed, trying again in ${deferral_timer_minutes} minutes."
-    67. "Pending: Display timeout automatically chose to defer, using the default deferral of ${deferral_timer_minutes} minutes."
-    68. "Pending: Configured authentication workflow is not currently possible, trying again in ${deferral_timer_minutes} minutes."
-    69. "Pending: Automatic schedule workflow active deferral until ${schedule_workflow_active_next_start}, deferring for ${deferral_timer_minutes} minutes."
-    70. "Inactive Error: No valid Apple slicon authentication, install now workflow can not continue."
-    71. "Pending: No current active user, due to limitations in macOS the only download workflow can not continue, trying again in ${deferral_timer_minutes} minutes."
-    72. "Pending: The system started up less than $RECENT_STARTUP_AUTO_DEFERRAL_SECONDS seconds ago so it's unsafe to assume current active user status, trying again in ${deferral_timer_minutes} minutes."
-    73. "Pending: Automatic user focus deferral, trying again in ${deferral_timer_minutes} minutes."
-    74. "Pending: System restart is imminent and the super restart validation workflow is scheduled to automatically relaunch at next startup."
-    75. "Pending: Unable to submit inventory to Jamf Pro, trying again in ${deferral_timer_minutes} minutes."
-    76. "Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."
+    
+    1. "Inactive Error: Unrecognized Options: ${unrecognized_options_array[*]%%=*}"<br>
+    2. "Inactive Error: Apple silicon authentication options could not be validated and no failover option was specified, the workflow cannot continue."<br>
+    3. "Inactive Error: Initial startup validation failed."<br>
+    4. "Inactive Error: Configured authentication workflow can not currently install macOS updates/upgrades, install now workflow can not continue."<br>
+    5. "Inactive Error: Network unavailable, install now workflow can not continue."<br>
+    6. "Inactive Error: Checking for macOS software status workflow failed, install now workflow can not continue."<br>
+    7. "Inactive Error: Download macOS update/upgrade workflow failed, install now workflow can not continue."<br>
+    8. "Inactive Error: Installation of macOS update/upgrade via softwareupdate failed, install now workflow can not continue."<br>
+    9. "Inactive Error: Installation of macOS major upgrade via installer application failed, install now workflow can not continue."<br>
+    10. "Inactive Error: Download/install of macOS via MDM failed, install now workflow can not continue."<br>
+    11. "Inactive Error: macOS update/upgrade workflow failed, install now workflow can not continue."<br>
+    12. "Inactive Error: macOS update/upgrade workflow failed, install now workflow can not continue."<br>
+    13. "Inactive Error: Some Jamf Pro Policies failed, install now workflow can not continue."<br>
+    14. "Inactive: Full super workflow complete! Automatic relaunch is disabled."<br>
+    15. "Inactive Error: Some non-system macOS software updates did not complete, install now workflow can not continue."<br>
+    16. "Running: Installation workflow."<br>
+    17. "Running: Startup workflow."<br>
+    18. "Running: Check for software update status workflow."<br>
+    19. "Running: softwareupdate: Starting ${macos_msu_title} authenticated download workflow."<br>
+    20. "Running: softwareupdate: Starting ${macos_msu_title} download workflow."<br>
+    21. "Running: mist_cli: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} download installer workflow."<br>
+    22. "Running: softwareupdate: Starting non-system macOS software updates installation workflow."<br>
+    23. "Running: softwareupdate: Starting Safari ${non_system_msu_safari_target} update installation workflow."<br>
+    24. "Running: softwareupdate: Starting ${macos_msu_label} download and upgrade workflow."<br>
+    25. "Running: softwareupdate: Starting ${macos_msu_label} upgrade workflow."<br>
+    26. "Running: softwareupdate: Starting ${macos_msu_label} download and update workflow."<br>
+    27. "Running: softwareupdate: Starting ${macos_msu_label} update workflow."<br>
+    28. "Running: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install upgrade workflow."<br>
+    29. "Running: MDM: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install workflow with user authenticated failover."<br>
+    30. "Running: MDM: Starting ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} install workflow."<br>
+    31. "Running: MDM: Starting macOS ${macos_msu_version} download workflow with user authenticated failover."<br>
+    32. "Running: MDM: Starting macOS ${macos_msu_version} download workflow."<br>
+    33. "Running: MDM: Starting macOS ${macos_msu_version} download and update/upgrade workflow with user authenticated failover."<br>
+    34. "Running: MDM: Starting macOS ${macos_msu_version} download and update/upgrade workflow."<br>
+    35. "Running: MDM: Starting macOS ${macos_msu_version} update/upgrade workflow with user authenticated failover."<br>
+    36. "Running: MDM: Starting macOS ${macos_msu_version} update/upgrade workflow."<br>
+    37. "Running: Restart validation workflow."<br>
+    38. "Running: Installing Jamf Pro Policy triggers."<br>
+    39. "Running: Dialog user scheduled installation."<br>
+    40. "Running: Dialog soft deadline."<br>
+    41. "Running: Dialog user authentication."<br>
+    42. "Pending: Configured authentication workflow is not currently possible, trying again in ${deferral_timer_minutes} minutes."<br>
+    43. "Pending: Network unavailable, trying again in ${deferral_timer_minutes} minutes."<br>
+    44. "Pending: Scheduled installation on $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install}, with a warning notification ${scheduled_install_reminder_item} minutes prior, deferring for ${deferral_timer_minutes} minutes from now."<br>
+    45. "Pending: Scheduled installation on $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install}, deferring for ${deferral_timer_minutes} minutes from now."<br>
+    46. "Pending: Checking for macOS software status workflow failed, trying restart validation workflow again in ${deferral_timer_minutes} minutes."<br>
+    47. "Pending: Checking for macOS software status workflow failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    48. Pending: Download macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    49. "Pending: Installation of macOS update/upgrade via softwareupdate failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    50. "Pending: Installation of macOS major upgrade via installer application failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    51. "Pending: Download/install of macOS via MDM failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    52. "Pending: Some non-system macOS software updates did not complete, trying again in ${deferral_timer_minutes} minutes."<br>
+    53. "Pending: Safari update did not complete, trying again in ${deferral_timer_minutes} minutes."<br>
+    54. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    55. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    56. "Pending: Some non-system macOS software updates remain available for installation, trying restart validation workflow again in ${deferral_timer_minutes} minutes."<br>
+    57. "Pending: Unable to submit inventory or perform check-in via Jamf Pro, trying restart validation workflow again in ${deferral_timer_minutes} minutes."<br>
+    58. "Pending: macOS update/upgrade workflow failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    59. Running: Dialog insufficient storage."<br>
+    60. "Running: Dialog power required."<br>
+    61. "Running: Dialog user choice."<br>
+    62. "Pending: User chose to defer for ${deferral_timer_minutes} minutes."<br>
+    63. "Pending: User chose to defer, setting a deferral of ${deferral_timer_minutes} minutes."<br>
+    64. "Pending: Display timeout automatically chose to defer for ${deferral_timer_minutes} minutes."<br>
+    65. "Pending: Display timeout automatically chose to defer, using the default deferral of ${deferral_timer_minutes} minutes."<br>
+    66. "Pending: User authentication for scheduled restart failed, trying again in ${deferral_timer_minutes} minutes."<br>
+    67. "Pending: Display timeout automatically chose to defer, using the default deferral of ${deferral_timer_minutes} minutes."<br>
+    68. "Pending: Configured authentication workflow is not currently possible, trying again in ${deferral_timer_minutes} minutes."<br>
+    69. "Pending: Automatic schedule workflow active deferral until ${schedule_workflow_active_next_start}, deferring for ${deferral_timer_minutes} minutes."<br>
+    70. "Inactive Error: No valid Apple slicon authentication, install now workflow can not continue."<br>
+    71. "Pending: No current active user, due to limitations in macOS the only download workflow can not continue, trying again in ${deferral_timer_minutes} minutes."<br>
+    72. "Pending: The system started up less than $RECENT_STARTUP_AUTO_DEFERRAL_SECONDS seconds ago so it's unsafe to assume current active user status, trying again in ${deferral_timer_minutes} minutes."<br>
+    73. "Pending: Automatic user focus deferral, trying again in ${deferral_timer_minutes} minutes."<br>
+    74. "Pending: System restart is imminent and the super restart validation workflow is scheduled to automatically relaunch at next startup."<br>
+    75. "Pending: Unable to submit inventory to Jamf Pro, trying again in ${deferral_timer_minutes} minutes."<br>
+    76. "Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."<br>
 </details>
-- Expand to see the full list of 57 possible results returnable with the `super-Audit-Log-Jamf-Pro-EA.sh` Script
+Expand to see the full list of 57 possible results returnable with the `super-Audit-Log-Jamf-Pro-EA.sh` Script
 <details>
 <summary>Click to expand</summary>
 
-    1. "Status: Resetting all local (non-managed and non-authentication) preferences."
-    2. "Status: Resetting all local deferral timer preferences."
-    3. "Status: Deleting all scheduled installation preferences."
-    4. "Status: Deleting all local deadline count preferences."
-    5. "Status: Deleting all local deadline days preferences."
-    6. "Status: Deleting all local deadline date preferences."
-    7. "Status: Deleting all local dialog timeout preferences."
-    8. "Status: Deleting saved credentials for the --auth-ask-user-to-save-password option."
-    9. "Status: Deleting saved credentials for the --auth-local-account option."
-    10. "Status: Deleting the super service account and saved credentials."
-    11. "Status: Deleting saved credentials for the --auth-jamf-client option."
-    12. "Status: Deleting saved credentials for the --auth-jamf-account option."
-    13. "Status: Deleting saved credentials for legacy local account."
-    14. "Status: Deleting local account and saved credentials for legacy super service account."
-    15. "Status: Deleting saved credentials for legacy Jamf Pro API account."
-    16. "Status: Migrating saved legacy local account credentials..."
-    17. "Status: Migrating saved legacy super service account credentials..."
-    18. "Status: Migrating saved legacy Jamf Pro API account credentials..."
-    19. "Status: Saved new credentials for the --auth-local-account option."
-    20. "Status: Saved migrated credentials for the --auth-local-account option."
-    21. "log_super_audit: Created new super service account."
-    22. "log_super_audit: Created new super service account."
-    23. "log_super_audit: Validated migrated super service account."
-    24. "log_super_audit: Validated migrated super service account."
-    25. Status: Saved new credentials for the --auth-jamf-client option."
-    26. "Status: Saved new credentials for the --auth-jamf-account option."
-    27. "Status: Saved migrated credentials for the --auth-jamf-account option."
-    28. "Status: Deleting saved credentials for legacy local account."
-    29. "Status: Deleting saved credentials for legacy super service account."
-    30. "Status: Deleting saved credentials for legacy Jamf Pro API account."
-    31. "Installation: Copying super ${SUPER_VERSION} to ${SUPER_FOLDER}/super."
-    32. "Status: Setting new automatic zero date based on the ${workflow_target} release date of ${schedule_zero_date}."
-    33. "Status: Setting new automatic zero date based on the ${workflow_target} workflow start date of ${schedule_zero_date}."
-    34. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the soonest workflow active time frame after zero day."
-    35. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the current schedule workflow active time frame."
-    36. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the latest workflow active time frame on the original scheduled installation date."
-    37. "Status: Setting new scheduled installation for ${workflow_scheduled_install} which is ${scheduled_install_days} days after zero date."
-    38. "softwareupdate: ${macos_msu_title_downloaded} download and preparation complete."
-    39. "Status: A macOS installer is now available at: /Applications/Install ${macos_installer_title}.app"
-    40. "softwareupdate: macOS update/upgrade is prepared and ready for restart!"
-    41. "Status: ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} is prepared and ready for restart!"
-    42. "MDM: ${macos_msu_label} upgrade is prepared and ready for restart!"
-    43. "MDM: ${macos_msu_label} update is prepared and ready for restart!"
-    44. "MDM: ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} installer is prepared and ready for restart!"
-    45. "Status: Completed installation of all non-system macOS software updates!"
-    46. "Status: Completed installation of Safari update!"
-    47. "Status: Restarting computer in one minute..."
-    48. "Status: Restarting computer in one minute..."
-    49. "Warning: Some macOS software updates/upgrades did not complete after last restart, continuing workflow."
-    50. "Status: Jamf Pro Policy with Trigger \"${jamf_policy_trigger}\" was successful."
-    51. "Status: Setting new workflow target to ${workflow_target}".
-    52. "Warning: Previous workflow target of ${workflow_target_previous} has been changed to ${workflow_target}."
-    53. "Status: Completed installation of all non-system macOS software updates!"
-    54. "Status: All available and enabled macOS software updates/upgrades completed!"
-    55. "Status: All Jamf Pro Policies completed."
-    56. "Status: Full super workflow complete! Automatic relaunch is disabled."
-    57. "Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."
+    1. "Status: Resetting all local (non-managed and non-authentication) preferences."<br>
+    2. "Status: Resetting all local deferral timer preferences."<br>
+    3. "Status: Deleting all scheduled installation preferences."<br>
+    4. "Status: Deleting all local deadline count preferences."<br>
+    5. "Status: Deleting all local deadline days preferences."<br>
+    6. "Status: Deleting all local deadline date preferences."<br>
+    7. "Status: Deleting all local dialog timeout preferences."<br>
+    8. "Status: Deleting saved credentials for the --auth-ask-user-to-save-password option."<br>
+    9. "Status: Deleting saved credentials for the --auth-local-account option."<br>
+    10. "Status: Deleting the super service account and saved credentials."<br>
+    11. "Status: Deleting saved credentials for the --auth-jamf-client option."<br>
+    12. "Status: Deleting saved credentials for the --auth-jamf-account option."<br>
+    13. "Status: Deleting saved credentials for legacy local account."<br>
+    14. "Status: Deleting local account and saved credentials for legacy super service account."<br>
+    15. "Status: Deleting saved credentials for legacy Jamf Pro API account."<br>
+    16. "Status: Migrating saved legacy local account credentials..."<br>
+    17. "Status: Migrating saved legacy super service account credentials..."<br>
+    18. "Status: Migrating saved legacy Jamf Pro API account credentials..."<br>
+    19. "Status: Saved new credentials for the --auth-local-account option."<br>
+    20. "Status: Saved migrated credentials for the --auth-local-account option."<br>
+    21. "log_super_audit: Created new super service account."<br>
+    22. "log_super_audit: Created new super service account."<br>
+    23. "log_super_audit: Validated migrated super service account."<br>
+    24. "log_super_audit: Validated migrated super service account."<br>
+    25. Status: Saved new credentials for the --auth-jamf-client option."<br>
+    26. "Status: Saved new credentials for the --auth-jamf-account option."<br>
+    27. "Status: Saved migrated credentials for the --auth-jamf-account option."<br>
+    28. "Status: Deleting saved credentials for legacy local account."<br>
+    29. "Status: Deleting saved credentials for legacy super service account."<br>
+    30. "Status: Deleting saved credentials for legacy Jamf Pro API account."<br>
+    31. "Installation: Copying super ${SUPER_VERSION} to ${SUPER_FOLDER}/super."<br>
+    32. "Status: Setting new automatic zero date based on the ${workflow_target} release date of ${schedule_zero_date}."<br>
+    33. "Status: Setting new automatic zero date based on the ${workflow_target} workflow start date of ${schedule_zero_date}."<br>
+    34. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the soonest workflow active time frame after zero day."<br>
+    35. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the current schedule workflow active time frame."<br>
+    36. "Status: Setting new scheduled installation for $(date -j -f %Y-%m-%d "${workflow_scheduled_install:0:10}" +%a | tr '[:lower:]' '[:upper:]') ${workflow_scheduled_install} which is the start of the latest workflow active time frame on the original scheduled installation date."<br>
+    37. "Status: Setting new scheduled installation for ${workflow_scheduled_install} which is ${scheduled_install_days} days after zero date."<br>
+    38. "softwareupdate: ${macos_msu_title_downloaded} download and preparation complete."<br>
+    39. "Status: A macOS installer is now available at: /Applications/Install ${macos_installer_title}.app"<br>
+    40. "softwareupdate: macOS update/upgrade is prepared and ready for restart!"<br>
+    41. "Status: ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} is prepared and ready for restart!"<br>
+    42. "MDM: ${macos_msu_label} upgrade is prepared and ready for restart!"<br>
+    43. "MDM: ${macos_msu_label} update is prepared and ready for restart!"<br>
+    44. "MDM: ${macos_installer_title} ${macos_installer_version}-${macos_installer_build} installer is prepared and ready for restart!"<br>
+    45. "Status: Completed installation of all non-system macOS software updates!"<br>
+    46. "Status: Completed installation of Safari update!"<br>
+    47. "Status: Restarting computer in one minute..."<br>
+    48. "Status: Restarting computer in one minute..."<br>
+    49. "Warning: Some macOS software updates/upgrades did not complete after last restart, continuing workflow."<br>
+    50. "Status: Jamf Pro Policy with Trigger \"${jamf_policy_trigger}\" was successful."<br>
+    51. "Status: Setting new workflow target to ${workflow_target}".<br>
+    52. "Warning: Previous workflow target of ${workflow_target_previous} has been changed to ${workflow_target}."<br>
+    53. "Status: Completed installation of all non-system macOS software updates!"<br>
+    54. "Status: All available and enabled macOS software updates/upgrades completed!"<br>
+    55. "Status: All Jamf Pro Policies completed."<br>
+    56. "Status: Full super workflow complete! Automatic relaunch is disabled."<br>
+    57. "Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."<br>
+<br>
+
 </details>
 ---
 
