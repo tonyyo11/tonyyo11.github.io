@@ -49,59 +49,59 @@ More on the Category Breakdowns here:
 <summary>Click to expand</summary>
 
 <br>
-    ### **For Super Status EA (Local Property List)**
+     <strong>For Super Status EA (Local Property List)</strong>
 <br>
-    For statuses returned by the `super-Status-Jamf-Pro-EA.sh` Extension Attribute, the new categories and rules for mapping are:
+    For statuses returned by the <code>super-Status-Jamf-Pro-EA.sh</code> Extension Attribute, the new categories and rules for mapping are:
 <br>
-    - **Error:**<br>
-        - Any status containing the substring **“Inactive Error:”** is immediately classified as an **Error**.<br>
-    - **Inactive:**<br>
-        - Any status beginning with **“Inactive:”** (unless caught by other more specific rules) is mapped to **Inactive**.<br>
-    - **Running SoftwareUpdate:**<br>
-        - Any status starting with **“Running:”** that does **not** include the term **“Dialog”** indicates that a SUPERMAN workflow is actively processing a software update.<br>
-    - **Dialog Prompts:**<br>
-        - Any status starting with **“Running:”** that includes **“Dialog”** requires user interaction and is thus mapped to **Dialog Prompts**.<br>
-    - **Pending:**<br>
-        - Any status containing **“Pending:”** (provided it does not include other overriding conditions) is categorized as **Pending**.<br>
-    - **Complete:**<br>
-        - Any status containing **“Full super workflow complete!”** is forced to map to **Complete** even if it indicates that an automatic relaunch is scheduled. The local status is therefore considered complete regardless of whether a relaunch will occur.<br>
+    - <strong>Error:</strong><br>
+        - Any status containing the substring <strong>“Inactive Error:”</strong> is immediately classified as an <strong>Error</strong>.<br>
+    - <strong>Inactive:</strong><br>
+        - Any status beginning with <strong>“Inactive:”</strong> (unless caught by other more specific rules) is mapped to <strong>Inactive</strong>.<br>
+    - <strong>Running SoftwareUpdate:</strong><br>
+        - Any status starting with <strong>“Running:”</strong> that does <strong>not</strong> include the term <strong>“Dialog”</strong> indicates that a SUPERMAN workflow is actively processing a software update.<br>
+    - <strong>Dialog Prompts:</strong><br>
+        - Any status starting with <strong>“Running:”</strong> that includes <strong>“Dialog”</strong> requires user interaction and is thus mapped to <strong>Dialog Prompts</strong>.<br>
+    - <strong>Pending:</strong><br>
+        - Any status containing <strong>“Pending:”</strong> (provided it does not include other overriding conditions) is categorized as <strong>Pending</strong>.<br>
+    - <strong>Complete:</strong><br>
+        - Any status containing <strong>“Full super workflow complete!”</strong> is forced to map to <strong>Complete</strong> even if it indicates that an automatic relaunch is scheduled. The local status is therefore considered complete regardless of whether a relaunch will occur.<br>
 <br>
-    ### **Example**
+     <strong>Example</strong>
 <br>
-    ```
+    <code>`</code>
     Thu Apr 03 11:17:43: Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
-    ```
+    <code>`</code>
 <br>
-    This is mapped to **Complete**.
+    This is mapped to <strong>Complete</strong>.
 <br>
-    ### **For Super Audit EA (Audit Log)**
+     <strong>For Super Audit EA (Audit Log)</strong>
 <br>
-    For the status returned from the `super-Audit-Log-Jamf-Pro-EA.sh` Extension Attribute log entries, the mapping is defined as:
+    For the status returned from the <code>super-Audit-Log-Jamf-Pro-EA.sh</code> Extension Attribute log entries, the mapping is defined as:
 <br>
-    - **Resetting:**<br>
-        - Any status that contains phrases such as **“Status: Resetting”**, **“Status: Deleting”**, **“Status: Migrating”**, or any reference to **“log_super_audit:”** is categorized as **Resetting**. These indicate actions like credential or preference resets.<br>
-    - **Pending:**<br>
-        - Entries with **“Status: Setting new scheduled installation”** or **“Restarting computer”** are mapped to **Pending**.<br>
-        - In addition, if a full workflow completion message includes **“scheduled to automatically relaunch”**, then it is also mapped to **Pending**.<br>
-    - **Running SoftwareUpdate:**<br>
-        - Any line mentioning **“softwareupdate:”**, **“MDM:”**, or **“Installation:”** is mapped to **Running SoftwareUpdate** because these denote that the macOS update or upgrade workflows are active.<br>
-    - **Inactive:**<br>
-        - If the status message includes **“Inactive”**, it is mapped to **Inactive**, unless another rule takes precedence.<br>
-    - **Error:**<br>
-        - Any audit log entry with **“Error:”** or **“Warning:”** is categorized as **Error**.<br>
-        - Furthermore, for full workflow completion messages, if the text explicitly states **“automatic relaunch is disabled”**, the entry is mapped to **Error**.<br>
-    - **Complete:**<br>
-        - Any status indicating successful completion (using phrases like **“Completed installation”**, **“completed!”**, or **“all available”**) is mapped to **Complete**, as long as it does not meet one of the above Pending criteria.<br>
+    - <strong>Resetting:</strong><br>
+        - Any status that contains phrases such as <strong>“Status: Resetting”</strong>, <strong>“Status: Deleting”</strong>, <strong>“Status: Migrating”</strong>, or any reference to <strong>“log_super_audit:”</strong> is categorized as <strong>Resetting</strong>. These indicate actions like credential or preference resets.<br>
+    - <strong>Pending:</strong><br>
+        - Entries with <strong>“Status: Setting new scheduled installation”</strong> or <strong>“Restarting computer”</strong> are mapped to <strong>Pending</strong>.<br>
+        - In addition, if a full workflow completion message includes <strong>“scheduled to automatically relaunch”</strong>, then it is also mapped to <strong>Pending</strong>.<br>
+    - <strong>Running SoftwareUpdate:</strong><br>
+        - Any line mentioning <strong>“softwareupdate:”</strong>, <strong>“MDM:”</strong>, or <strong>“Installation:”</strong> is mapped to <strong>Running SoftwareUpdate</strong> because these denote that the macOS update or upgrade workflows are active.<br>
+    - <strong>Inactive:</strong><br>
+        - If the status message includes <strong>“Inactive”</strong>, it is mapped to <strong>Inactive</strong>, unless another rule takes precedence.<br>
+    - <strong>Error:</strong><br>
+        - Any audit log entry with <strong>“Error:”</strong> or <strong>“Warning:”</strong> is categorized as <strong>Error</strong>.<br>
+        - Furthermore, for full workflow completion messages, if the text explicitly states <strong>“automatic relaunch is disabled”</strong>, the entry is mapped to <strong>Error</strong>.<br>
+    - <strong>Complete:</strong><br>
+        - Any status indicating successful completion (using phrases like <strong>“Completed installation”</strong>, <strong>“completed!”</strong>, or <strong>“all available”</strong>) is mapped to <strong>Complete</strong>, as long as it does not meet one of the above Pending criteria.<br>
 <br>
-    ### **Example Audit Log Snippets**
+     <strong>Example Audit Log Snippets</strong>
 <br>
-    ```
+    <code>`</code>
     Thu Apr 03 11:16:20 super[31359]: Status: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
     Thu Apr 03 11:16:35 super[32958]: Status: Resetting all local (non-managed and non-authentication) preferences.
     Thu Apr 03 11:17:18 super[36126]: Status: Resetting all local (non-managed and non-authentication) preferences.
-    ```
+    <code>`</code>
 <br>
-    - Full workflow completion messages that include **“scheduled to automatically relaunch”** are mapped to **Pending** (for audit log purposes), and resetting actions are mapped to **Resetting**.<br>
+    - Full workflow completion messages that include <strong>“scheduled to automatically relaunch”</strong> are mapped to <strong>Pending</strong> (for audit log purposes), and resetting actions are mapped to <strong>Resetting</strong>.<br>
 <br>
 
 </details>
