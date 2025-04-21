@@ -3,7 +3,7 @@ title: "Enhancing Super Status Reporting in Jamf Pro"
 date: 2025-04-21 14:00:00 -0400
 description: "Categorizing, Tracking, and Trending SUPERMAN v5.1. Introducing set of complementary Jamf Pro Extension Attributes that work to surface SUPERMAN’s status data in a simplified format IT and Help Desk teams can use immediately, while fitting in nicely with the other useful extension attributes that currently exist."
 tags: [macOS, Reporting, Jamf Pro, Jamf, super, Audit, softwareupdate, Software Updates, Extension Attributes, macjutsu]
-categories: [Mac Administration]
+categories: [Mac Management]
 pin: false
 ---
 
