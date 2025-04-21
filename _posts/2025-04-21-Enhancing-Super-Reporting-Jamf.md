@@ -71,26 +71,26 @@ This new Super Categories Extesnion Attribute is meant to complement existing Su
     <code>
     Thu Apr 03 11:17:43: Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in 360 minutes.
     </code>
-<br>
+<br><br>
     This is mapped to <strong>Complete</strong>.
-<br>
+<br><br>
      <strong>For Super Audit EA (Audit Log)</strong>
 <br>
     For the status returned from the <code>super-Audit-Log-Jamf-Pro-EA.sh</code> Extension Attribute log entries, the mapping is defined as:
 <br>
-    - <strong>Resetting:</strong><br>
+     <strong>Resetting:</strong><br>
         - Any status that contains phrases such as <strong>“Status: Resetting”</strong>, <strong>“Status: Deleting”</strong>, <strong>“Status: Migrating”</strong>, or any reference to <strong>“log_super_audit:”</strong> is categorized as <strong>Resetting</strong>. These indicate actions like credential or preference resets.<br>
-    - <strong>Pending:</strong><br>
+     <strong>Pending:</strong><br>
         - Entries with <strong>“Status: Setting new scheduled installation”</strong> or <strong>“Restarting computer”</strong> are mapped to <strong>Pending</strong>.<br>
         - In addition, if a full workflow completion message includes <strong>“scheduled to automatically relaunch”</strong>, then it is also mapped to <strong>Pending</strong>.<br>
-    - <strong>Running SoftwareUpdate:</strong><br>
+     <strong>Running SoftwareUpdate:</strong><br>
         - Any line mentioning <strong>“softwareupdate:”</strong>, <strong>“MDM:”</strong>, or <strong>“Installation:”</strong> is mapped to <strong>Running SoftwareUpdate</strong> because these denote that the macOS update or upgrade workflows are active.<br>
-    - <strong>Inactive:</strong><br>
+     <strong>Inactive:</strong><br>
         - If the status message includes <strong>“Inactive”</strong>, it is mapped to <strong>Inactive</strong>, unless another rule takes precedence.<br>
-    - <strong>Error:</strong><br>
+     <strong>Error:</strong><br>
         - Any audit log entry with <strong>“Error:”</strong> or <strong>“Warning:”</strong> is categorized as <strong>Error</strong>.<br>
         - Furthermore, for full workflow completion messages, if the text explicitly states <strong>“automatic relaunch is disabled”</strong>, the entry is mapped to <strong>Error</strong>.<br>
-    - <strong>Complete:</strong><br>
+     <strong>Complete:</strong><br>
         - Any status indicating successful completion (using phrases like <strong>“Completed installation”</strong>, <strong>“completed!”</strong>, or <strong>“all available”</strong>) is mapped to <strong>Complete</strong>, as long as it does not meet one of the above Pending criteria.<br>
 <br>
      <strong>Example Audit Log Snippets</strong>
@@ -100,11 +100,12 @@ This new Super Categories Extesnion Attribute is meant to complement existing Su
     Thu Apr 03 11:16:35 super[32958]: Status: Resetting all local (non-managed and non-authentication) preferences.<br>
     Thu Apr 03 11:17:18 super[36126]: Status: Resetting all local (non-managed and non-authentication) preferences.
     </code>
-<br>
+<br><br>
     - Full workflow completion messages that include <strong>“scheduled to automatically relaunch”</strong> are mapped to <strong>Pending</strong> (for audit log purposes), and resetting actions are mapped to <strong>Resetting</strong>.<br>
 <br>
 
 </details>
+
 
 This simplifies complex log data into concise, actionable states. Whether a workflow is actively running, stuck in user deferral, or has completed, you’ll know at a glance.
 There are such a vast amount of statuses that are returnable when using Super, which is why this EA exists.
@@ -190,6 +191,7 @@ There are such a vast amount of statuses that are returnable when using Super, w
     75. "Pending: Unable to submit inventory to Jamf Pro, trying again in ${deferral_timer_minutes} minutes."<br>
     76. "Pending: Full super workflow complete! The super workflow is scheduled to automatically relaunch in ${deferral_timer_minutes} minutes."<br>
 </details>
+
 
 **Expand to see the full list of 57 possible results returnable with the `super-Audit-Log-Jamf-Pro-EA.sh` Script**
 <details>
