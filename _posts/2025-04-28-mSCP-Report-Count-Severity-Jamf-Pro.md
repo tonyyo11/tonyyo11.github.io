@@ -10,7 +10,7 @@ pin: false
 
 I am back with another Jamf Pro Extension Attribute, which turns mSCP compliance failure counts into categorized counts by DISA STIG severity buckets—Category I (High), II (Medium), III (Low), plus Unspecified for any unmapped controls. Designed for organizations implementing STIG baselines, it makes prioritization and reporting a breeze.
 
-Note: The macOS Security Compliance Project (mSCP) applies severity to various rules, based upon the DISA STIG. If implementing the Center for Internet Security (CIS) Benchmark for macOS, this extension attribute truly should not apply. {: .prompt-info }
+> Note: The macOS Security Compliance Project (mSCP) applies severity to various rules, based upon the DISA STIG. If implementing the Center for Internet Security (CIS) Benchmark for macOS, this extension attribute truly should not apply. {: .prompt-info }
 
 Lets review a rule from mSCP – *edited for simplicity.*
 
