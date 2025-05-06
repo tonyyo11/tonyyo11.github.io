@@ -116,7 +116,7 @@ Lines for every single cashier lane stretched to the back of the store. If you�
 
 The kids got a kick out of it all, which made it much easier for me to deal with my own impatience.
 
-![Three smiling children riding inside an over‑filled grocery cart in the frozen‑foods aisle](/assets/img/postimages/GiantEagle_YoungFamily.JPG)
+![Three smiling children riding inside an over‑filled grocery cart in the frozen‑foods aisle](/assets/img/postimages/GiantEagle_YoungFamily.jpg)
 
 $350 later, we are finished checking out. Groceries for the new week and to replace what we had to toss. 
 
@@ -205,7 +205,3 @@ Equipment used:
     - You can use this [Referral Link](https://www.jackery.com/pages/referral-invited?referralCode=4G0SNU) to save an extra 3%
 - **Firman** H07553 Electric Start 120/24OV with Power Cord 9400 / 7500-Watt Dual-fuel (gasoline/propane) Portable Generator
 	- [Link to Buy on Lowes.com](https://www.lowes.com/pd/Firman-Dual-Fuel-Generator/5001896805)
-
-### Transparency note — responsible GenAI use
-
-Parts of this post were drafted with help from a generative‑AI assistant (ChatGPT). I used the tool to untangle timelines, surface key details, and tighten language; every fact, opinion, and final edit was reviewed and approved by me. AI served as a writing aid, not an authority, and any errors or oversights remain my responsibility.
