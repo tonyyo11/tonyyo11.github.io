@@ -16,7 +16,7 @@ I feel like I’ve gone to great lengths to set my family up for the most possib
 
 I will say I did a lot to prepare for emergencies. I have Mountain House emergency food packs, a Jackery battery system and solar panels, go bags for the entire family, other emergency supplies, first aid kits, and more. I sized my backup power like one would size UPS solutions - providing enough power and then some for your needs.
 
-Shortly after the 2024 presidential election - many people from all backgrounds were in a state of “what do we do when this all hits the fan?” And I surely was one of them. I am also one of those who have seen far too many movies not to think - this is fiction on my screen but could easily become reality. Just watch “Leave the World Behind.” I had been prepared when I had to leave my home for any reason or emergency with my family. As a black man in America, fathering black children, you have to do everything within your power to be prepared for all possible scenarios. 
+Shortly after the 2024 presidential election - many people from all backgrounds were in a state of “what do we do when this all hits the fan?” And I surely was one of them. I am also one of those who have seen far too many movies not to think - this is fiction on my screen but could easily become reality. Just watch “Leave the World Behind.” I had been prepared when I had to leave my home for any reason or emergency with my family. As a black man in America fathering black children, you have to do everything within your power to be prepared for all possible scenarios. 
 
 But this week has shown me where I left a few holes. 
 
@@ -112,11 +112,11 @@ Giant Eagle (a regional grocery chain—not to be confused with Giant) offers cu
 
 Lines for every single cashier lane stretched to the back of the store. If you’re from the Pittsburgh region, it felt like sitting on the Parkway West (I-376) Inbound at 6:30 AM during rush hour in the middle of a major highway construction project and no detours… it took about 30 minutes to go from the back of the store to the front to be able to check out.
 
-![Long checkout lines at Giant Eagle; carts packed, balloons overhead, ‘Express Lane 20 items’ sign prominent](/assets/img/postimages/BusyGiantEagleGroceryStore.jpeg)
+![Long checkout lines at Giant Eagle; carts packed, balloons overhead, ‘Express Lane 20 items’ sign prominent](/assets/img/postimages/BusyGiantEagleGroceryStore.JPG)
 
 The kids got a kick out of it all, which made it much easier for me to deal with my own impatience.
 
-![Three smiling children riding inside an over‑filled grocery cart in the frozen‑foods aisle](/assets/img/postimages/GiantEagle_YoungFamily.jpeg)
+![Three smiling children riding inside an over‑filled grocery cart in the frozen‑foods aisle](/assets/img/postimages/GiantEagle_YoungFamily.JPG)
 
 $350 later, we are finished checking out. Groceries for the new week and to replace what we had to toss. 
 
@@ -134,16 +134,16 @@ For the first time in a very long time, my youngest child tells me they are read
 
 Thirty-six minutes past midnight, Duquesne Light arrives on the scene. 
 
-![Duquesne Light bucket truck arriving on a dark, foggy street to replace a snapped utility pole](/assets/img/postimages/IMG_5630.jpeg)
-![Lineworkers in reflective jackets setting up equipment around a sedan pinned by downed power lines](/assets/img/postimages/IMG_5631.jpeg)
-![Bucket truck flood‑lighting the road while crews remove broken pole sections at 3 a.m.](/assets/img/postimages/IMG_5632.jpeg)
-![Final inspection of the newly set pole; truck spotlights cut through predawn mist](/assets/img/postimages/IMG_5636.jpeg)
+![Duquesne Light bucket truck arriving on a dark, foggy street to replace a snapped utility pole](/assets/img/postimages/IMG_5630.JPG)
+![Lineworkers in reflective jackets setting up equipment around a sedan pinned by downed power lines](/assets/img/postimages/IMG_5631.JPG)
+![Bucket truck flood‑lighting the road while crews remove broken pole sections at 3 a.m.](/assets/img/postimages/IMG_5632.JPG)
+![Final inspection of the newly set pole; truck spotlights cut through predawn mist](/assets/img/postimages/IMG_5636.JPG)
 
 As fog covers my street at 4:40 in the morning, we have full power once again.
 
 After the sun comes up, I am finally able to turn off the generator. 
 
-![Close‑up of Firman generator control panel as the switch is turned to OFF](/assets/img/postimages/PowerOffGenerator.jpeg)
+![Close‑up of Firman generator control panel as the switch is turned to OFF](/assets/img/postimages/PowerOffGenerator.GIF)
 
 Now, I could focus on recovery. I connected my Eero router to my phone’s hotspot, and the rest of my home came back online. Notifications from all of my smart home accessories began to flow in immediately - with my Airthings home monitor alerting me on high everything: humidity, CO2, and Radon. I had actually planned on writing about my use of Airthings accessories.
 
