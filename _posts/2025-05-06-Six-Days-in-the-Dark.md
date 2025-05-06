@@ -1,6 +1,6 @@
 ---
-title: Six Days in the Dark
-date: 2025‑05‑06 13:45:00 -0400
+title: "Six Days in the Dark"
+date: 2025-05-06 13:45:00 -0400
 description: "On Tuesday, April 29th, 2025, a major storm system rolled through the Pittsburgh, Pennsylvania region and beyond, leaving widespread damage—and six powerless days for my family. I did a lot to prepare for emergencies, but this week has shown me where the holes were in my planning."
 categories: [Off the Clock]
 tags: [resilience, family, emergency‑prep, natural disaster, Pittsburgh]
