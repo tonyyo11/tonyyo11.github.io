@@ -5,7 +5,7 @@ description: "A personal reflection on layoffs, AI disruption, and the evolving 
 categories: [Off the Clock]
 tags: [MacAdmins, Careers, Mentorship, College, Layoffs, Parenting, AI, Duolingo]
 ---
-![Banner Image for Thoughts on the Tech Job Market in 2025”](/assets/img/postimages/ThoughtsObJobMarket25.gif){: lqip="/assets/img/postimages/ThoughtsObJobMarket25.gif" }
+![Banner Image for Thoughts on the Tech Job Market in 2025”](/assets/img/postimages/ThoughtsOnTechJobMarket25.gif){: lqip="/assets/img/postimages/ThoughtsOnTechJobMarket25.gif" }
 
 Recently, I’ve seen more and more conversations in the Mac Admins Slack community about the state of the tech job market. Admins are sharing news articles, [Reddit threads](https://www.reddit.com/r/technology/comments/1kx7c6v/the_age_of_ai_layoffs_is_already_here_the/), and their own stories of layoffs, career pivots, and job search fatigue.
 
