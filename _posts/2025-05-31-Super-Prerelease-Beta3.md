@@ -73,9 +73,9 @@ super --config-start-temp=ActiveExploit
 
 There is a general best practice when using `super`; set **permanent** settings via a configuration profile, and **temporary** settings via script parameters (if using Jamf Pro). But also, only include the configuration settings/keys that you absolutely need, and to not set every possible option for the sake of setting every possible option. Now with 5.1.0, alternate temporary settings can be saved into a localized `.plist` file to be called when needed. Once the workflow defined by the temporary configuration has completed, `super` returns to the default configuration or the main `super` preferences (if there is no alternate default configuration). Additionally, settings that are only found in the main `super` preferences are also used in the workflow.
 
-Testing Continues
+## Testing Continues
 
-If you’ve built out a creative use of `super` previously that doesn’t fit in a set-it-and-forget-it method, I would love to know what you’ve done thus far. How will you adapt and update your setup with the newly supported alternate configurations within `super`? Consider sharing those here on this post, in GitHub as a discussion or issue, or within the #super channel on the MacAdmins Slack.
+If you’ve built out a creative use of `super` previously that doesn’t fit in a set-it-and-forget-it method, I would love to know what you’ve done thus far. How will you adapt and update your setup with the newly supported alternate configurations within `super`? Consider sharing those here on this post, in GitHub as a discussion or issue, or within the _#super_ channel on the MacAdmins Slack.
 
 ---
 
