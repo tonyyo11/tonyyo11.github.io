@@ -85,11 +85,11 @@ Check out additional posts relating to `super` on the [Patch Notes and Progress 
 
 ### Video Resources
 
-- [It's a Script...It's a Daemon...It's S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=MjfMOhxQ5AM) | JNUC 2022
-- [S.U.P.E.R.M.A.N. II](https://www.youtube.com/watch?v=Lj26nuCH1jA) | JNUC 2023
-- [How to Soar with S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=KSAOENlon4A) | Rocketman Tech LaunchPad (May 2023)
-- [Need S.U.P.E.R.M.A.N. to Save Your Jamf Server? --- How to Optimize macOS Software Updates & The Upgrade Experience - S.U.P.E.R.M.A.N version 4.](https://www.youtube.com/watch?v=ILg37NUWz20) | Rocketman Tech LaunchPad (May 2024)
-- [S.U.P.E.R.M.A.N. 5.1 (Beta) - Q&A Forum with Kevin White](https://www.youtube.com/watch?v=aEBMNUGaKYY) | Rocketman Tech LaunchPad (May 2025)
+- [It's a Script...It's a Daemon...It's S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=MjfMOhxQ5AM) -- JNUC 2022
+- [S.U.P.E.R.M.A.N. II](https://www.youtube.com/watch?v=Lj26nuCH1jA) -- JNUC 2023
+- [How to Soar with S.U.P.E.R.M.A.N.](https://www.youtube.com/watch?v=KSAOENlon4A) -- Rocketman Tech LaunchPad (May 2023)
+- [Need S.U.P.E.R.M.A.N. to Save Your Jamf Server? --- How to Optimize macOS Software Updates & The Upgrade Experience - S.U.P.E.R.M.A.N version 4.](https://www.youtube.com/watch?v=ILg37NUWz20) -- Rocketman Tech LaunchPad (May 2024)
+- [S.U.P.E.R.M.A.N. 5.1 (Beta) - Q&A Forum with Kevin White](https://www.youtube.com/watch?v=aEBMNUGaKYY) -- Rocketman Tech LaunchPad (May 2025)
 
 ---
 
