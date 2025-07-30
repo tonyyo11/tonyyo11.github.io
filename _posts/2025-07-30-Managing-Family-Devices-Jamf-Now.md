@@ -46,7 +46,7 @@ Honestly, the first time was pretty painless. Here’s how it went:
 4. Add devices to AppleCare One under my account.
     1. As of July 24th, 2025, Apple has made available a new “[AppleCare One](https://www.apple.com/newsroom/2025/07/apple-introduces-applecare-one-streamlining-coverage-into-a-single-plan/)” subscription plan. With this plan, you can cover up to three devices under AppleCare+ for $19.99/month and additional device for $5.99/month each. Unfortunately AppleCare One is not designed currently for family sharing, with Apple calling out “*AppleCare One plans can cover devices that are on the same Apple Account as the subscriber.*” To get around this, I temporarily signed into iCloud for my children’s devices, added the iPads to AppleCare One, then signed out and switched to their Apple Accounts. Note: Doing this disables Theft and Loss coverage under AppleCare One.
         
-        ![Showing devices added to my AppleCare One subscription](/assets/img/postimages/macOSAppleCareWarrantySection.png)
+        ![Showing devices added to my AppleCare One subscription](/assets/img/postimages/macOSAppleCareWarrantySection.jpeg)
         
 5. Enrolled each device by navigating to the enrollment URL in Jamf Now.
     
