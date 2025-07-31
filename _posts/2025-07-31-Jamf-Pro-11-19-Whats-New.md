@@ -1,6 +1,6 @@
 ---
 title: "Jamf Pro 11.19 Updates and Enhancements"
-date: 2025-07-31 12:00:00 -0400
+date: 2025-07-31 11:30:00 -0400
 description: "Jamf Pro 11.19 Update: What’s New and Interesting for Jamf Admins"
 categories: [Mac Management]
 tags: [macOS, iOS, iPadOS, Jamf Pro, Jamf]
