@@ -47,6 +47,4 @@ Will you be enabling Impact Alerts? And what groups will you be adding some extr
 
 ## Mac Tip of the Day
 
-Did you know the original Mac Finder icon (the little smiling face) is called the “Happy Mac”? It’s been greeting users since 1984.
-
-![Happy Mac Icon](/assets/img/postimages/happymac_og.webp){: width="627" height="420" .w-50 .right}
+Did you know the original Mac Finder icon (the little smiling face) is called the “Happy Mac”? It’s been greeting users since 1984. ![Happy Mac Icon](/assets/img/postimages/happymac_og.webp){: width="627" height="420" .w-50 .right}
