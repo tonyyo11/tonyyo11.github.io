@@ -32,11 +32,10 @@ If I select “Open,” a welcomed change that I do not know whether it was adde
 ![Benchmark Rules showing added and modified rules](/assets/img/postimages/BenchmarkRules_AddedModified.png){: width="687" height="1099" .w-50 .right}
 
 This becomes extremely helpful to admins to be aware of when CIS or other Standards/Benchmarks organizations and entities publish revisions, which in turn make their way into the macOS Security Compliance Project itself, and then into Jamf Pro.
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-> It’s important to note that Added and Modified Rules are not automatically activated within your benchmark. You must decide on the added or modified rules, then save the draft and ultimately deploy the latest iteration to your fleet. 
-{: .prompt-warning }
-<!-- markdownlint-restore -->
+
+**It’s important to note that Added and Modified Rules are not automatically activated within your benchmark. You must decide on the added or modified rules, then save the draft and ultimately deploy the latest iteration to your fleet.**
+
+---
 
 Once the changes have been deployed, I am now ready to generate my documentation for management and other stakeholders.
 
