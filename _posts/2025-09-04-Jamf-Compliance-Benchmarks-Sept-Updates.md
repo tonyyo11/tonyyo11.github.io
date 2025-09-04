@@ -1,0 +1,62 @@
+---
+Title: "Jamf Expands Compliance Benchmarks with Audit Docs and Status Exports"
+date: 2025-09-04 12:15:00 -0400
+description: "A look at Jamf Pro’s new Compliance Benchmark features: auditing documentation exports, compliance status reporting, and what it means for Mac administration workflows."
+categories: [Mac Management]
+tags: [macOS, Jamf, Jamf Pro, Compliance, Compliance Benchmarks, mSCP, macOS Security Compliance Project ]
+---
+
+![Jamf Compliance Benchmarks Updates.png](/assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png){: lqip="/assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png" }
+
+On September 4th, 2025, Jamf announced updates to its Compliance Benchmarks feature within Jamf Pro Cloud.
+
+[Compliance Benchmarks now offer export of auditing documentation and compliance status](https://community.jamf.com/release-announcements-177/compliance-benchmarks-now-offer-export-of-auditing-documentation-and-compliance-status-56112) is the announcement, to which Jamf states:
+
+> Today, we are proud to announce two new highly demanded exports within the Compliance capability in Jamf Pro - something you have been asking for since the initial launch of Compliance in April.
+   1. **Auditing documentation:** Holding the benchmark settings as configured by the admin, this set of documents is aimed to serve for compliance audits purposes. Those of you already using Jamf Compliance Editor or mSCP are familiar with these - now the adoc, pdf, html, and xlsx documents for each supported OS version are available right under Compliance Configuration tab in Jamf Pro.
+   2. **Compliance status:** After enabling the computer-level compliance reporting in July, you can now export the overall compliance status, i.e. number of passing and failing computers for each rule in a benchmark, into csv file - very similar to the one produced by Compliance baselines in Jamf Protect. With this export, you can report compliance against a configured benchmark regularly and keep historical records of adopting compliance over your fleet.
+> 
+
+I have been able to access my Jamf Pro Cloud and review the new functionality, so let’s take a look.
+
+Once logged into my Jamf Pro server, I navigate to the Compliance section, where I have a CIS Level 2 benchmark currently enabled and deployed to my systems. I immediately notice **“Update available”** on my entry, letting me know there’s something new or different.
+
+![Jamf Pro Compliance Benchmarks Dashboard showing CIS Level 2](/assets/img/postimages/ComplianceDashboard.png)
+
+As I open my benchmark again, the “Update available” message points me to the benchmark rules as the location where the change has been applied. A new button is now available: “Get auditing documents”. I will come back to that shortly.
+
+![Jamf Pro Compliance Benchmarks Dashboard showing CIS Level 2 details](/assets/img/postimages/Compliance_CISLVL2_Benchmark.png)
+
+If I select “Open,” a welcomed change that I do not know whether it was added previously, or part of this most current update, is that newer rules have been appropriately labeled, as well as modified rules, as the macOS Security Compliance Project pushes changes to the various rules. 
+
+![Benchmark Rules showing added and modified rules](/assets/img/postimages/BenchmarkRules_AddedModified.png){: width="687" height="1099" .w-50 .right}
+
+This becomes extremely helpful to admins to be aware of when CIS or other Standards/Benchmarks organizations and entities publish revisions, which in turn make their way into the macOS Security Compliance Project itself, and then into Jamf Pro.
+<!-- markdownlint-capture -->
+<!-- markdownlint-disable -->
+> It’s important to note that Added and Modified Rules are not automatically activated within your benchmark. You must decide on the added or modified rules, then save the draft and ultimately deploy the latest iteration to your fleet. 
+{: .prompt-warning }
+<!-- markdownlint-restore -->
+
+Once the changes have been deployed, I am now ready to generate my documentation for management and other stakeholders.
+
+Once I select “Get auditing documents”, I am presented with the option to download an `.adoc` `.pdf` `.html` or `.xlsx` file, one for each OS available. 
+
+![List of downloadable documentation generated from the Jamf Compliance Benchmarks](/assets/img/postimages/BenchmarkAuditingDocuments.png)
+
+The files are download in the format of `<Benchmark Name>_<OS_Version>_YYYY-MM-DD.<format>`, so for example, `CIS Level 2_macOS_15_2025-09-04.pdf` 
+
+![PDF of the Jamf Compliance Benchmarks Export for macOS Sequoia](/assets/img/postimages/JamfExportedCompliancePDF.png)
+
+Opening the downloaded file, everything has been generated just as it would be via the desktop application Jamf Compliance Editor or by using the macOS Security Compliance project via the terminal. 
+The one call out, which I will have to submit a Jamf Feature Request for on behalf of the Mac Admins community, is that the documentation generated by Jamf Pro doesn’t show which iteration of mSCP it used in the creation of the benchmark - hence the “unspecified (unspecified)”, as well as no option for organizational customization with a logo and the ability to indicate who within the organization tailored the benchmark as shown below where the Sequoia Guidance, Revision 2.0 of the macOS Security Compliance Project was used to generate and edit the CIS Level 2 benchmark using Jamf Compliance Editor. I have been able to add a company logo and my name as the person editing the rules.
+
+![PDF of the Jamf Compliance Editor Export for macOS Sequoia with custom logo](/assets/img/postimages/JCECompliancePDF.png)
+
+![PDF of the Jamf Compliance Editor Export for macOS Sequoia with tailoring author](/assets/img/postimages/JCECompliancePDF2.png)
+
+Another change I would love to see relates to exporting current compliance statuses. Whenever I export the compliance states, I am given a spreadsheet showing the numbers: the total number of devices in compliance and the total number not in compliance. I would absolutely love if this included subsequent “drill down” sheets showing and logging *which* devices are passing and *which* devices are not.
+
+![Exported spreadsheet of current compliance statuses](/assets/img/postimages/ComplianceStatusReportExport.png)
+
+What are your thoughts on the enhancements to Compliance Benchmarks? Will you make use of it?
