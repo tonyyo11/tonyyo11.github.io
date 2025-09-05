@@ -54,6 +54,9 @@ The one call out, which I will have to submit a Jamf Feature Request for on beha
 
 ![PDF of the Jamf Compliance Editor Export for macOS Sequoia with tailoring author](/assets/img/postimages/JCECompliancePDF2.png)
 
+> **EDIT September 5th 2025** -- The Team at Jamf has informed me that the reason my originally generated PDF did not show the same data, where it has the "unspecified (unspecified)" line, is the result of missing data in their setup, and only affects Compliance Benchmarks that have been generated months ago. But by deploying the most current changes to you benchmark - as called out earlier in this post, once you generate the auditing documentation (which I initially generated before actually deploying changes), the documentation will have all of the proper wording, as it looks when generating documentation using Jamf Compliance Editor. They also state that customized logo and organizational authors are on their roadmap of items to work on. 
+{: .prompt-info }
+
 Another change I would love to see relates to exporting current compliance statuses. Whenever I export the compliance states, I am given a spreadsheet showing the numbers: the total number of devices in compliance and the total number not in compliance. I would absolutely love if this included subsequent “drill down” sheets showing and logging *which* devices are passing and *which* devices are not.
 
 ![Exported spreadsheet of current compliance statuses](/assets/img/postimages/ComplianceStatusReportExport.png)
