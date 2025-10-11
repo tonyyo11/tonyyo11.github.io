@@ -85,7 +85,7 @@ _Console hosted us as Rioja in Downtown Denver, CO._
 
   <!-- Column 1, Row 1 -->
   <figure style="margin:0;grid-column:1;grid-row:1;">
-    <img src="/assets/img/postimages/1759852422008.jpeg"
+    <img src="/assets/img/postimages/9E927242-5EC1-422A-85FD-525D065328DB_1_105_c.jpeg"
          alt="Dinner table — group shot"
          loading="lazy"
          style="width:100%;height:auto;display:block;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.08);">
