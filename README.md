@@ -1,45 +1,43 @@
-# **About This Site — And Me**
+# Chirpy Starter
 
-Hi, I’m Tony Young. This website reflects my career and my curiosity.
+[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
+[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
-This is the place where my work and my life intersect — where technical deep dives live alongside garden updates, where enterprise-grade macOS security shares space with stories about parenting in the digital age. It’s all part of the same ecosystem: a life shaped by systems thinking, thoughtful automation, and human-centered problem-solving.
+When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
+`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
+from the theme's gem. If you have ever installed this theme gem, you can use the command
+`bundle info --path jekyll-theme-chirpy` to locate these files.
 
-# **What You’ll Find Here**
+The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
+able to enjoy the out-of-the-box experience when using feature-rich themes.
 
-This site is built to serve a few purposes:
+To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
+Jekyll site. The following is a list of targets:
 
-- Mac Administration Guides & Patch Notes: As a Senior IT Operations Engineer and MacAdmin Team Lead, I hope to share everything from Jamf Pro automation to Docker workflows and MDM best practices. Whether you’re building your first Extension Attribute or auditing your fleet against the macOS Security Compliance Project (mSCP), I write with you in mind.
-- Off the Clock: A small corner of the site where I reflect on things outside of IT — like growing produce with my Gardyn towers, teaching my kids about tech, or monitoring indoor air quality with smart sensors. It’s a reminder that life doesn’t pause when an admin console closes.
-- Career Reflections & Industry Trends: I also write about leadership, team development, career growth, and the evolving challenges of managing Apple hardware in enterprise environments. My post on Reflections from the MacAdmin Journey dives into the wins, pivots, and lessons from the past decade of my career.
+```shell
+.
+├── _config.yml
+├── _plugins
+├── _tabs
+└── index.html
+```
 
-# **Who I Am**
+To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
+latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
 
-I didn’t grow up coding or tinkering with Linux distros. My tech journey began on retail floors — helping customers find the right MacBook or troubleshooting their iPhones. That grounding in real-world problems taught me the value of clear communication and the power of well-configured technology.
+## Usage
 
-Today, I manage enterprise Apple environments spanning hundreds of devices, secure them to federal compliance standards, and mentor the next generation of MacAdmins. I’ve worked across education, federal, and private sectors, building zero-touch deployment pipelines, enforcing patch compliance at scale, and architecting solutions that balance automation with audit readiness.
+Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
-My specialties include:
+## Contributing
 
-- Jamf Pro engineering and API automation
-- macOS security and DISA STIG/mSCP compliance
-- Mentoring junior engineers on real-world fleet management
-- Bridging the gap between technical and operational goals
+This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
 
-But at my core, I enjoy building systems that work—whether that’s a script to track software updates or a Sunday schedule to harvest basil with my kids.
+## License
 
-# **Why This Site Exists**
+This work is published under [MIT][mit] License.
 
-Too often in IT, knowledge lives in private messages or buried inside PDF documentation. I created this space to share the lessons I’ve learned — the ones you won’t always find in official guides. When something frustrates me enough to debug it at midnight, or delights me enough to tell my team about it the next morning, you’ll likely find it written up here.
-
-This site is for fellow MacAdmins, IT engineers, team leads, tinkerers, and anyone trying to bring more clarity to the chaos of managing modern technology. And sometimes, it’s just for me — a space to write, reflect, and connect.
-
-# **Thanks for Stopping By**
-
-If something here helps you fix a bug, think differently about IT, or feel a little less alone in your work — then this site is doing its job.
-
-Want to collaborate, connect, or talk tech? I actively engage with the IT and macOS community across various platforms. Feel free to connect with me:
-
-- **LinkedIn**: [linkedin.com/in/tonyyo11](https://www.linkedin.com/in/tonyyo11)
-- **Bluesky**: [bsky.app/profile/tonyyo11.bsky.social](https://bsky.app/profile/tonyyo11.bsky.social)
-- **GitHub**: [github.com/tonyyo11](https://github.com/tonyyo11)
-- **Mac Admins Slack**: [Join the Mac Admins Community](https://www.macadmins.org/)
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
+[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
+[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
