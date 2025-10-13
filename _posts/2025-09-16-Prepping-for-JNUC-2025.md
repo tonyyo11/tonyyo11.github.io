@@ -4,10 +4,11 @@ date: 2025-09-16 10:30:00 -0400
 description: "Prepping for my first in-person JNUC: sessions, sponsorship, and community expectations."
 categories: [Off the Clock]
 tags: [macOS, Jamf, Jamf Pro, Conferences, JNUC, Jamf Nation, Jamf Nation User Conference]
+image:
+  path: /assets/img/postimages/Prep_for_JNUC.gif
+  lqip: /assets/img/postimages/Prep_for_JNUC.gif
+  alt: Prepping for JNUC 2025
 ---
-
-![Prep for JNUC.gif](/assets/img/postimages/Prep_for_JNUC.gif){: lqip="/assets/img/postimages/Prep_for_JNUC.gif" }
-
 
 This October, I’ll be heading to Denver, Colorado, for the Jamf Nation User Conference (JNUC 2025).  It’s a week that brings together community, learning, and all things new with Jamf, and this year, I’m especially honored to be attending as one of the recipients of the JNUC Diversity Sponsorship.
 

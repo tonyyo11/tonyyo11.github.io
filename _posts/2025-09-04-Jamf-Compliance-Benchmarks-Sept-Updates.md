@@ -4,9 +4,11 @@ date: 2025-09-04 12:15:00 -0400
 description: "A look at Jamf Pro’s new Compliance Benchmark features: auditing documentation exports, compliance status reporting, and what it means for Mac administration workflows."
 categories: [Mac Management]
 tags: [macOS, Jamf, Jamf Pro, Compliance, Compliance Benchmarks, mSCP, macOS Security Compliance Project ]
+image:
+  path: /assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png
+  lqip: /assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png
+  alt: Jamf Compliance Benchmarks Updates Banner Image
 ---
-
-![Jamf Compliance Benchmarks Updates.png](/assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png){: lqip="/assets/img/postimages/Jamf_Compliance_Benchmarks_Updates.png" }
 
 On September 4th, 2025, Jamf announced updates to its Compliance Benchmarks feature within Jamf Pro Cloud.
 

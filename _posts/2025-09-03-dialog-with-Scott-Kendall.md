@@ -4,9 +4,11 @@ date: 2025-09-03 09:30:00 -0400
 description: "An Interview with Scott Kendall on swiftDialog, Jamf Pro, and real-world macOS automation at Giant Eagle—tooling, scripts, and community best practices."
 categories: [Mac Management]
 tags: [macOS, Jamf, Jamf Pro, swiftDialog, Scott Kendall, Interview, MacAdmins ]
+image:
+  path: /assets/img/postimages/dialogwithScottKendall.png
+  lqip: /assets/img/postimages/dialogwithScottKendall.png
+  alt: A Dialog with Scott Kendall Banner Image
 ---
-
-![A Dialog with Scott Kendall Banner Image](/assets/img/postimages/dialogwithScottKendall.png){: lqip="/assets/img/postimages/dialogwithScottKendall.png" }
 
 As a Mac Admin myself, I’ve always believed the most impactful innovations often come from the heart of our community, from admins quietly building solutions and generously sharing their tools with peers. When I discovered the powerful yet approachable GUI scripts created by Scott Kendall, particularly those that leverage the open-source tool swiftDialog, I knew immediately that I wanted to highlight his work. Scott’s practical, user-centric approach makes complex macOS management tasks accessible for admins of all skill levels.
 

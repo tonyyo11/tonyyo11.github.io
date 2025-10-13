@@ -4,9 +4,11 @@ date: 2025-07-31 11:30:00 -0400
 description: "Jamf Pro 11.19 Update: What’s New and Interesting for Jamf Admins"
 categories: [Mac Management]
 tags: [macOS, iOS, iPadOS, Jamf Pro, Jamf]
+image:
+  path: /assets/img/postimages/JamfPro1119Banner.png
+  lqip: /assets/img/postimages/JamfPro1119Banner.png
+  alt: Jamf Pro 11.19 Banner Image
 ---
-
-![Jamf Pro 11.19 Banner Image](/assets/img/postimages/JamfPro1119Banner.png){: lqip="/assets/img/postimages/JamfPro1119Banner.png" }
 
 The recent release Jamf Pro 11.19 introduces two features that give admins more guardrails around large-scale changes. A **very** welcomed new feature set in the recent release - Impact Alert Notifications, and Descriptions for Computer Groups. These features help you avoid accidental mass-scoping errors and document the purpose of each group right in the UI. 
 

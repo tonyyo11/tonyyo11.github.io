@@ -4,10 +4,10 @@ date: 2025-10-06 15:00:00 -0400
 description: "super 5.1.0‑rc1 for Mac Admins: precise targeting, Tahoe support, and sturdier installer flows"
 categories: [Mac Management]
 tags: [macOS, macOS patch notes, Apple MDM updates, Jamf Pro, super 5.1.0‑rc1, macOS Tahoe 26, Sequoia, Mac administration best practices, super, Tahoe, Sonoma, macOS, Jamf]
+image:
+  path: /assets/img/postimages/SUPER_5.1.0-rc1.png
+  lqip: /assets/img/postimages/SUPER_5.1.0-rc1.png
 ---
-
-
-![SUPER 5.1.0-rc1.png](/assets/img/postimages/SUPER_5.1.0-rc1.png){: lqip="/assets/img/postimages/SUPER_5.1.0-rc1.png" }
 
 Kevin White has shipped a new pre-release of super: [v5.1.0-rc1](https://github.com/Macjutsu/super/tree/5.1.0-rc1) (Oct 2, 2025). It builds on the 5.1.0 beta series and adds exact‑version targets, Tahoe 26 support, temp‑override for crisis workflows, and automatic mist‑cli + build validation. This closes gaps where softwareupdate output stalled upgrades and reduces pre‑staging toil.
 

@@ -4,8 +4,11 @@ date: 2025-05-31 14:00:00 -0400
 description: "Explore the power of alternate configs in SUPERMAN’s latest prerelease and how they unlock new workflows for Mac Admins and macOS update compliance."
 categories: [Mac Management]
 tags: [super, superman, macOS, softwareupdate, prerelease, macjutsu, Jamf Pro, workflow, configuration, beta testing]
+image:
+  path: /assets/img/postimages/super5.1.0-beta3banner.png
+  lqip: /assets/img/postimages/super5.1.0-beta3banner.png
+  alt: super 5.1.0-beta3 Banner Image
 ---
-![Banner Image for SUPERMAN 5.1.0-beta3 Post](/assets/img/postimages/super5.1.0-beta3banner.png){: lqip="/assets/img/postimages/super5.1.0-beta3banner.png" }
 
 On Friday, May 30th, 2025, Kevin White, aka Macjutsu, pushed an update to the `super` 5.1.0 prerelease. As a strong advocate for the tool, I feel like these changes have been directly targeted at myself. `super` 5.1.0-beta3 adds a superpower (pun intended) that I and other Mac Admins have long wanted: configuration flexibility.
 

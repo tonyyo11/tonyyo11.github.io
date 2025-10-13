@@ -4,10 +4,11 @@ date: 2025-05-06 13:45:00 -0400
 description: "On Tuesday, April 29th, 2025, a major storm system rolled through the Pittsburgh, Pennsylvania region and beyond, leaving widespread damage—and six powerless days for my family. I did a lot to prepare for emergencies, but this week has shown me where the holes were in my planning."
 categories: [Off the Clock]
 tags: [resilience, family, emergency‑prep, natural disaster, Pittsburgh]
+image:
+  path: /assets/img/postimages/SixDaysInTheDarkBanner.png
+  lqip: /assets/img/postimages/SixDaysInTheDarkBanner.png
+  alt: Storm‑damaged neighborhood banner with title “Six Days in the Dark”
 ---
-
-![Storm‑damaged neighborhood banner with title “Six Days in the Dark”](/assets/img/postimages/SixDaysInTheDarkBanner.png){: lqip="/assets/img/postimages/SixDaysInTheDarkBanner.png" }
-
 On Tuesday, April 29th, 2025, a major storm system rolled through the Pittsburgh, Pennsylvania region and beyond, leaving widespread damage—and six powerless days for my family. 
 
 For nearly an entire week, our home was dependent on running on battery backups and generators. By Thursday night, I was already $1000+ in the hole (Final tally: roughly $2,600).

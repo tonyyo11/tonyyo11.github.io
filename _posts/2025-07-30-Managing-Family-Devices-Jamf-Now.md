@@ -4,6 +4,10 @@ date: 2025-07-30 13:00:00 -0400
 description: "How I keep my kids safe, apps up-to-date, and sanity intact by effortlessly manage every iPhone, iPad, and Mac in my home with Jamf Now."
 categories: [Mac Management]
 tags: [Family, macOS, iOS, iPadOS, Jamf Now, Jamf, Jamf Protect]
+image:
+  path: /assets/img/postimages/ManagingFamilyAppleDevices_Cover.png
+  lqip: /assets/img/postimages/ManagingFamilyAppleDevices_Cover.png
+  alt: Managing Family Apple Devices with Jamf Now Banner
 ---
 
 ![Managing Family Apple Devices with Jamf Now Banner](/assets/img/postimages/ManagingFamilyAppleDevices_Cover.png){: lqip="/assets/img/postimages/ManagingFamilyAppleDevices_Cover.png" }

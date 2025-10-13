@@ -4,8 +4,11 @@ date: 2025-08-24 14:30:00 -0400
 description: "An early reflection on AppleCare One: Apple’s new all-in-one coverage subscription. Here’s what works, what doesn’t, and how it compares to traditional AppleCare+ plans for families and individuals alike."
 categories: [Off the Clock]
 tags: [macOS, iOS, iPadOS, AppleCare, Apple, Subscriptions, Family Sharing ]
+image:
+  path: /assets/img/postimages/AppleCareOneBanner.png
+  lqip: /assets/img/postimages/AppleCareOneBanner.png
+  alt: Early Thoughts on AppleCare One Banner
 ---
-![Early Thoughts on AppleCare One Banner](/assets/img/postimages/AppleCareOneBanner.png){: lqip="/assets/img/postimages/AppleCareOneBanner.png" }
 
 Apple recently [introduced AppleCare One](https://www.apple.com/newsroom/2025/07/apple-introduces-applecare-one-streamlining-coverage-into-a-single-plan/), a new subscription that combines all of Apple’s device coverage options into a single plan. The overall idea is simple: instead of managing separate AppleCare+ subscriptions for each device, you get one bundle that covers everything tied to your Apple Account.
 
