@@ -4,9 +4,11 @@ date: 2025-05-30 16:45:00 -0400
 description: "A personal reflection on layoffs, AI disruption, and the evolving path into tech—from the perspective of a seasoned Mac Admin, mentor, and parent in 2025."
 categories: [Off the Clock]
 tags: [MacAdmins, Careers, Mentorship, College, Layoffs, Parenting, AI, Duolingo]
+image:
+  path: /assets/img/postimages/ThoughtsOnTechJobMarket25.gif
+  lqip: /assets/img/postimages/ThoughtsOnTechJobMarket25.gif
+  alt: Banner Image for Thoughts on the Tech Job Market in 2025
 ---
-![Banner Image for Thoughts on the Tech Job Market in 2025”](/assets/img/postimages/ThoughtsOnTechJobMarket25.gif){: lqip="/assets/img/postimages/ThoughtsOnTechJobMarket25.gif" }
-
 Recently, I’ve seen more and more conversations in the Mac Admins Slack community about the state of the tech job market. Admins are sharing news articles, [Reddit threads](https://www.reddit.com/r/technology/comments/1kx7c6v/the_age_of_ai_layoffs_is_already_here_the/), and their own stories of layoffs, career pivots, and job search fatigue.
 
 I’ve been reading along and reflecting. As someone who’s spent the better part of my career in Apple administration and IT operations, these conversations hit close to home. I’ve seen this industry evolve in real time—from when IT felt like a future-proof field, to today’s AI-driven uncertainty. And now, I’m not just thinking about my own path, but what it means for new admins, for friends struggling to find work, and even for my children and their future.
