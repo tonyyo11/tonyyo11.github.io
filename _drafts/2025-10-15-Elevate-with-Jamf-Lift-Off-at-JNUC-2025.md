@@ -376,7 +376,7 @@ The next twelve months will define if and how organizations transitions from man
 
 Jamf isn’t just patching tools together; they’re architecting a platform that mirrors how modern IT teams actually operate: cross-functional, API-driven, and human-centered.
 
-For me personally, this trip was more than professional development — it was proof that investing in community pays real dividends, and that the future of Mac administration is equal parts scripting, empathy, and strategy. I’ve been stopped countless times in the hallway, even one time while on a FaceTime call with my family, to “*you’re Tony Young from Slack right?*” and have been asked questions about `super`, or told that this very blog has been extremely helpful to other admins. 
+For me personally, this trip was more than professional development — it was proof that investing in community pays real dividends, and that the future of Mac administration is equal parts scripting, empathy, and strategy. I’ve been stopped countless times in the hallway, even one time while on a FaceTime call with my family, to “*you’re Tony Young from Slack right?*” and have been asked questions about `super`, or told that this very blog has been extremely helpful to other admins. I will admit that I do wish I took far more photos with people, as my daughter would say when putting new artwork onto our refridgerator, __"for the memories."__ I wish I spent even more time in the hallways chatting with people and making far more connections, even if it resulted in missing a session or two - as the sessions were recorded and I'll be able to watch later. The community, the conversations, and the connections far outweighed the ideas gathered during presentations for me personally. I truly hope I'll find my way back to JNUC.
 
 ![Views of the clouds as I flew out of Denver.](/assets/img/postimages/DD123415-ABE8-4735-9BA8-EA9C5D0735CA_1_102_o.jpeg){: .w-40 .right}
 I started the year very intentional to be as involved as I possibly could be within the Community, and it has been paying off every step of the way.
@@ -384,9 +384,6 @@ I started the year very intentional to be as involved as I possibly could be wit
 As my plane descended back into Pittsburgh, I realized this week wasn’t just my first flight — it was my lift-off into the next phase of Apple administration: one defined by automation, openness, and community. 
 
 My next step will be catching up with on-demand videos of the sessions I was unable to attend in person, reviewing all of my notes and prepare my team for the fresh ideas I’ll be bringing back with me as I return to work.
-
-
-
 
 ![I used Notion to take notes during JNUC for the sessions and braindates I had the opportunity to attend. This will help when I need to review with my team.](/assets/img/postimages/Notion_JNUC_Notes.png)
 _I used Notion to take notes during JNUC for the sessions and braindates I had the opportunity to attend. This will help when I need to review with my team._
