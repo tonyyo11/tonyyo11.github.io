@@ -50,11 +50,11 @@ Comparing my planned schedule against what I have favorited to come back and rev
 
 ![My current planned JNUC 2025 Agenda](assets/img/postimages/JNUC_Agenda.png)
 
-My current planned JNUC 2025 Agenda
+_My current planned JNUC 2025 Agenda_
 
 ![I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints.](assets/img/postimages/JNUC_Agenda_and_Favs.png)
 
-I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints.
+_I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints._
 
 A few highlights I’m especially looking forward to include:
 
