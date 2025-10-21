@@ -48,11 +48,11 @@ Building my schedule for JNUC 2025 has been no small task—there are far more s
 
 Comparing my planned schedule against what I have favorited to come back and review, it will be non-stop each and every day of the conference, with little break in between. Several sessions have already been marked as full. And while Jamf can always adjust things between now and the conference, I think I’ve created a decent combination of sessions across various levels and categories. 
 
-![My current planned JNUC 2025 Agenda](assets/img/postimages/JNUC_Agenda.png)
+![My current planned JNUC 2025 Agenda](/assets/img/postimages/JNUC_Agenda.png)
 
 _My current planned JNUC 2025 Agenda_
 
-![I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints.](assets/img/postimages/JNUC_Agenda_and_Favs.png)
+![I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints.](/assets/img/postimages/JNUC_Agenda_and_Favs.png)
 
 _I have overlaid all the sessions I have favorited so that I can watch them on demand later due to overlapping and time constraints._
 
