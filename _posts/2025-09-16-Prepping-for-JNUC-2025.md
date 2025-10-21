@@ -1,5 +1,5 @@
 ---
-Title: "Prepping for JNUC 2025"
+title: "Prepping for JNUC 2025"
 date: 2025-09-16 10:30:00 -0400
 description: "Prepping for my first in-person JNUC: sessions, sponsorship, and community expectations."
 categories: [Off the Clock]

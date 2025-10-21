@@ -1,5 +1,5 @@
 ---
-Title: "super 5.1.0-rc1 for Mac Admins"
+title: "super 5.1.0-rc1 for Mac Admins"
 date: 2025-10-06 15:00:00 -0400
 description: "super 5.1.0‑rc1 for Mac Admins: precise targeting, Tahoe support, and sturdier installer flows"
 categories: [Mac Management]

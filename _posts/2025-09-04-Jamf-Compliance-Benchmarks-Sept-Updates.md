@@ -1,5 +1,5 @@
 ---
-Title: "Jamf Expands Compliance Benchmarks with Audit Docs and Status Exports"
+title: "Jamf Expands Compliance Benchmarks with Audit Docs and Status Exports"
 date: 2025-09-04 12:15:00 -0400
 description: "A look at Jamf Pro’s new Compliance Benchmark features: auditing documentation exports, compliance status reporting, and what it means for Mac administration workflows."
 categories: [Mac Management]

@@ -1,5 +1,5 @@
 ---
-Title: "Elevate with Jamf: Lift Off into the Future of Mac Administration at JNUC 2025"
+title: "Elevate with Jamf: Lift Off into the Future of Mac Administration at JNUC 2025"
 date: 2025-10-13 11:00:00 -0400
 description: "Reflections from JNUC 2025 — automation, openness, and community taking Mac management to new heights."
 categories: [Off the Clock]

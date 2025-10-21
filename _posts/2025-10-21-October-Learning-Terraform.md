@@ -1,5 +1,5 @@
 ---
-Title: "Last Month: Prepping for  Learning Terraform and an Exercise on Automation [October 2025]"
+title: "Last Month: Prepping for  Learning Terraform and an Exercise on Automation [October 2025]"
 date: 2025-10-21 11:00:00 -0400
 description: "October Learning to go from Click-Ops to Infrastructure as Code — exploring how Terraform, Tart, and Jamf Pro can work together to automate Apple device management, testing, and CI/CD workflows."
 categories: [Mac Management]
