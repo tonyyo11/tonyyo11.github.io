@@ -145,8 +145,3 @@ I’ll be documenting every step along the way and sharing sanitized examples of
 # Mac Tip of the Day
 
 Use `tart clone <template> <new-vm-name>` instead of rebuilding — it’s nearly instant and preserves your macOS updates, making it perfect for disposable test VMs.
-
-### Song of the day
-
-<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/album/darekarescramble/1636628149?i=1636628155"></iframe>
-
