@@ -10,7 +10,6 @@ image:
   alt: Kandji Is Now Iru: A New Chapter for Apple-First Management in the AI Era. Background Photo by mikita on Unsplash 
 ---
 
-
 ## **Kandji Rebrands**
 
 Kandji, the Apple device management platform known for its elegant automation and compliance workflows, has officially become [**Iru**](https://www.iru.com/meet-iru/) (pronounced *EE-roo*).
