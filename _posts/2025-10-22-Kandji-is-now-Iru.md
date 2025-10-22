@@ -7,7 +7,7 @@ tags: [Kandji, Iru, Identity, MDM, DDM, AI, Artificial Intelligence, macOS]
 image:
   path: /assets/img/postimages/Kandji_is_Now_Iru.png
   lqip: /assets/img/postimages/Kandji_is_Now_Iru.png
-  alt: Kandji Is Now Iru: A New Chapter for Apple-First Management in the AI Era. Background Photo by mikita on Unsplash 
+  alt: Kandji Is Now Iru. Background Photo by mikita on Unsplash
 ---
 
 # Kandji Rebrands
