@@ -19,8 +19,8 @@ As announced by [Weldon Dodd in the Mac Admins Slack community](https://macadmin
 For Mac Admins, this change invites both curiosity and confidence: curiosity about what “AI-powered” truly means for device management, and confidence that the same Kandji team—and their Apple-first philosophy—remain firmly in place.
 
 
-![*Image: Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes*](/assets/img/postimages/iru-logo-for-light-bg.png)
-_Image: Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes_
+![Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes](/assets/img/postimages/iru-logo-for-light-bg.png)
+_Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes_
 
 # Key Changes & New Capabilities
 
