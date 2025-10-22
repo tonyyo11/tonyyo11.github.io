@@ -93,3 +93,18 @@ As Apple’s ecosystem becomes more declarative, intelligent, and identity-aware
 Visit [Iru’s official announcement](https://www.globenewswire.com/news-release/2025/10/22/3171148/0/en/Kandji-Is-Now-Iru-the-IT-Security-Platform-Built-for-the-AI-Era.html) and [Meet Iru](https://www.iru.com/meet-iru/) to learn more. 
 
 And until the channel is renamed in the Mac Admins Slack Community, you can visit [#kandji](https://macadmins.slack.com/archives/CG56F2SVD) for more conversation. 
+
+---
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/Responsible%20AI%20Use-%E2%9C%94%EF%B8%8F-blueviolet" alt="AI Transparency Badge">
+    <strong> Responsible GenAI Use</strong>
+  </summary>
+  <p>This blog post was created with the use of the following Artificial Intelligence tools:</p>
+
+  <ul>
+    <li><strong>Apple Intelligence</strong> – for summarization and combination of the Iru Press release, and comments from the MacAdmins Slack Community #kandji channel</li>
+    <li><strong>Grammarly</strong> – for grammar correction, and proofreading</li>
+  </ul>
+</details>
