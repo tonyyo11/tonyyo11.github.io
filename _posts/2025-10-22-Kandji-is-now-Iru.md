@@ -10,7 +10,7 @@ image:
   alt: Kandji Is Now Iru: A New Chapter for Apple-First Management in the AI Era. Background Photo by mikita on Unsplash 
 ---
 
-## **Kandji Rebrands**
+# Kandji Rebrands
 
 Kandji, the Apple device management platform known for its elegant automation and compliance workflows, has officially become [**Iru**](https://www.iru.com/meet-iru/) (pronounced *EE-roo*).
 
@@ -18,12 +18,11 @@ As announced by [Weldon Dodd in the Mac Admins Slack community](https://macadmin
 
 For Mac Admins, this change invites both curiosity and confidence: curiosity about what “AI-powered” truly means for device management, and confidence that the same Kandji team—and their Apple-first philosophy—remain firmly in place.
 
----
 
 ![*Image: Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes*](/assets/img/postimages/iru-logo-for-light-bg.png)
 _Image: Iru logo © 2025 Iru, Inc. Used here for informational and editorial purposes_
 
-## **Key Changes & New Capabilities**
+# Key Changes & New Capabilities
 
 - **New Name, Same Apple Focus**
     Apple remains the foundation. Existing Kandji configurations, devices, and agents continue operating without disruption.
@@ -45,7 +44,7 @@ _Image: Iru logo © 2025 Iru, Inc. Used here for informational and editorial pur
 
 ---
 
-## **Impact on Mac Administration**
+# Impact on Mac Administration
 
 For Apple administrators, the transition from Kandji to Iru represents **evolution, not disruption**.
 
@@ -62,7 +61,7 @@ Here’s what matters most for day-to-day management:
     
 ---
 
-## **Implementation & Recommendations**
+# Implementation & Recommendations
 
 If your organization currently uses Kandji:
 
@@ -73,7 +72,7 @@ If your organization currently uses Kandji:
 
 ---
 
-## **The Bigger Picture**
+## The Bigger Picture
 
 This shift reflects a major theme across modern IT: **the convergence of MDM, IAM, and compliance** under an AI-driven architecture.
 
@@ -83,7 +82,7 @@ Their message, *“elegance through abstraction and automation as a force multip
 
 ---
 
-## **Conclusion**
+## Conclusion
 
 Kandji’s evolution into **Iru (EE-roo)** isn’t a departure—it’s a graduation.
 
