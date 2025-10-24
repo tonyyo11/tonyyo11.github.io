@@ -216,7 +216,7 @@ Rather than restating everything, Jamf’s recap and video tell the story best. 
   </figure>
 </div>
 
-![Photo by [Brandon Taitt](https://macadmins.slack.com/files/UF7LS77MX/F09K3P49LSH/screenshot_2025-10-07_at_10.23.50___am.png) - Mac Admins Slack](/assets/img/postimages/Screenshot_2025-10-07_at_10.23.50_AM.png)
+![Photo by Brandon Taitt Mac Admins Slack](/assets/img/postimages/Screenshot_2025-10-07_at_10.23.50_AM.png)
 _Photo by Brandon Taitt on Mac Admins Slack_
 
 <!-- Day 1: Keynote — two-across -->
@@ -241,7 +241,7 @@ This year’s keynote emphasized Jamf’s transition from a management tool to a
 ![Left: Chris Schasse of Rocketman Tech | Middle: Me | Right: Kevin White of Macjutsu](/assets/img/postimages/A212DDFB-D2FB-43B1-B857-4F7AE3EF75AC_1_105_c.jpeg){: .w-60 .right}
 Then came a personal high point: being named **Rocketman Tech’s LaunchPad “Newcomer of the Year”** during their LaunchPad Awards Show. That community acknowledgment meant the world — proof that consistency and helping others really do ripple outward.
 
-![Thank you letter from the Jamf Diversity & Inclusion Team given during their DEIB Happy Hour.](/assets/img/postimages/6AAE6687-8D6C-4D38-A0E2-04C4CE72804B_1_105_c.jpeg){: .w-40 .right}
+![Thank you letter from the Jamf Diversity & Inclusion Team given during their DEIB Happy Hour.](/assets/img/postimages/6AAE6687-8D6C-4D38-A0E2-04C4CE72804B_1_105_c.jpeg){: width="768" height="1024" .w-40 .right}
 I ended the day at Jamf’s **DEIB Sponsorship Happy Hour**, where I met other diversity-scholarship recipients and Jamf’s inclusion leads. It was equal parts professional and personal inspiration.
 
 I did not manage to do the Day One Happy Hour Crawl afterwards as my body hit me with with tiredness. The Happy Hour Crawl was a thing due to there being about four or five different happy hours hosted by various organizations throughout the night for attendees to choose from.
@@ -342,7 +342,7 @@ If you’ve ever wished your Jamf configuration lived in version control, now’
 
 Even if you don’t migrate everything at once, start small — try managing a Smart Group or Policy via Terraform, commit it to GitHub, and run your first CI/CD test with GitHub Actions or GitLab CI. The payoff is traceability and reproducibility — two things compliance teams love.
 
-But in that same regard, IaC for Jamf Pro may not be for every one or every team. “Click-Ops” is still here and perfectly fine. But I encourage everyone to explore new ways to enhance your workflows. **As the technology continues to change and improve, so must we.**
+But in that same regard, IaC for Jamf Pro may not be for everyone or every team. “Click-Ops” is still here and perfectly fine. But I encourage everyone to explore new ways to enhance your workflows. **As the technology continues to change and improve, so must we.**
 
 ### **2. Audit your current Configuration Profiles before Blueprints roll out fully**
 
@@ -368,7 +368,7 @@ Nearly every major JNUC session tied back to collaboration — and no platform c
 
 With Jamf moving faster toward API extensibility, community-driven solutions will become essential. Join, listen, contribute, and stay connected — because the best documentation for the next era of Mac management isn’t a PDF or even a wiki, it’s a conversation.
 
-The next twelve months will define if and how organizations transitions from manual configuration to automated governance — and the Admins who invest early in reproducibility, identity integration, and community knowledge-sharing will be the ones shaping the standards everyone else follows.
+The next twelve months will define if and how organizations transition from manual configuration to automated governance — and the Admins who invest early in reproducibility, identity integration, and community knowledge-sharing will be the ones shaping the standards everyone else follows.
 
 ---
 
@@ -378,7 +378,7 @@ Jamf isn’t just patching tools together; they’re architecting a platform tha
 
 For me personally, this trip was more than professional development — it was proof that investing in community pays real dividends, and that the future of Mac administration is equal parts scripting, empathy, and strategy. I’ve been stopped countless times in the hallway, even one time while on a FaceTime call with my family, to “*you’re Tony Young from Slack right?*” and have been asked questions about `super`, or told that this very blog has been extremely helpful to other admins. I will admit that I do wish I took far more photos with people, as my daughter would say when putting new artwork onto our refridgerator, __"for the memories."__ I wish I spent even more time in the hallways chatting with people and making far more connections, even if it resulted in missing a session or two - as the sessions were recorded and I'll be able to watch later. The community, the conversations, and the connections far outweighed the ideas gathered during presentations for me personally. I truly hope I'll find my way back to JNUC.
 
-![Views of the clouds as I flew out of Denver.](/assets/img/postimages/DD123415-ABE8-4735-9BA8-EA9C5D0735CA_1_102_o.jpeg){: .w-40 .right}
+![Views of the clouds as I flew out of Denver.](/assets/img/postimages/DD123415-ABE8-4735-9BA8-EA9C5D0735CA_1_102_o.jpeg){: width="768" height="1024" .w-40 .right}
 I started the year very intentional to be as involved as I possibly could be within the Community, and it has been paying off every step of the way.
 
 As my plane descended back into Pittsburgh, I realized this week wasn’t just my first flight — it was my lift-off into the next phase of Apple administration: one defined by automation, openness, and community. 
