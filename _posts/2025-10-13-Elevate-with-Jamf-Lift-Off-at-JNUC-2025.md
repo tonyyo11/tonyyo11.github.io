@@ -241,7 +241,7 @@ This year’s keynote emphasized Jamf’s transition from a management tool to a
 ![Left: Chris Schasse of Rocketman Tech | Middle: Me | Right: Kevin White of Macjutsu](/assets/img/postimages/A212DDFB-D2FB-43B1-B857-4F7AE3EF75AC_1_105_c.jpeg){: .w-60 .right}
 Then came a personal high point: being named **Rocketman Tech’s LaunchPad “Newcomer of the Year”** during their LaunchPad Awards Show. That community acknowledgment meant the world — proof that consistency and helping others really do ripple outward.
 
-![Thank you letter from the Jamf Diversity & Inclusion Team given during their DEIB Happy Hour.](/assets/img/postimages/6AAE6687-8D6C-4D38-A0E2-04C4CE72804B_1_105_c.jpeg){: width="768" height="1024" .w-40 .right}
+![Thank you letter from the Jamf Diversity & Inclusion Team given during their DEIB Happy Hour.](/assets/img/postimages/6AAE6687-8D6C-4D38-A0E2-04C4CE72804B_1_105_c.jpeg){: width="384" height="512" .w-40 .right}
 I ended the day at Jamf’s **DEIB Sponsorship Happy Hour**, where I met other diversity-scholarship recipients and Jamf’s inclusion leads. It was equal parts professional and personal inspiration.
 
 I did not manage to do the Day One Happy Hour Crawl afterwards as my body hit me with with tiredness. The Happy Hour Crawl was a thing due to there being about four or five different happy hours hosted by various organizations throughout the night for attendees to choose from.
