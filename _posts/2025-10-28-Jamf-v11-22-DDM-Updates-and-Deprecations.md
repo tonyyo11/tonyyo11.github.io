@@ -22,13 +22,9 @@ Reviewing the [release notes](https://learn.jamf.com/en-US/bundle/jamf-pro-relea
 
 Under [deprecations](https://learn.jamf.com/en-US/bundle/jamf-pro-release-notes-current/page/Deprecations_and_Removals.html), though, the primary purpose for this post is the following callout:
 
-<aside>
-
-**Support for MDM software updates via remote command**
-
-The ability to deploy software updates via remote command using the **Management** tab in an individual device record or via mass action will be removed in **late 2026.** Managed software updates will remain functional.
-
-</aside>
+> **Support for MDM software updates via remote command**
+> The ability to deploy software updates via remote command using the **Management** tab in an individual device record or via mass action will be removed in **late 2026.** Managed software updates will remain functional.
+{: .prompt-danger }
 
 This deprecation is in line with Apple’s [announced deprecations](https://support.apple.com/en-us/124963#:~:text=Software%20update%20management%20using%20mobile%20device%20management%20commands%2C%20restrictions%2C%20the%20com.apple.SoftwareUpdate%20payload%2C%20and%20queries%20is%20deprecated%20and%20will%20be%20removed%20next%20year.%20Going%20forward%2C%20software%20updates%20can%20be%20managed%20and%20enforced%20using%20only%20declarative%20software%20update%20management) around software updates in macOS and iOS/iPadOS 26:
 
