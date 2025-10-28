@@ -66,7 +66,7 @@ To replicate this profile in a supported manner, you’ll want to take advantage
 {%
   include embed/video.html
   src='/assets/vid/Blueprint_SoftwareUpdate_Deferrals.mov'
-  types='ogg|mov'
+  types='mov'
   title='Configuring Jamf Blueprint for Software Update and Deferrals'
   autoplay=true
   loop=true
