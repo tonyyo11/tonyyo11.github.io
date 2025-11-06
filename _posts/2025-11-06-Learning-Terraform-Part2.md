@@ -114,7 +114,7 @@ Inside Jamf, I created several API roles to use with Terraform.
 
 <div class="img-grid">
   <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM%201.png">
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM2.png">
   </figure>
   <figure>
     <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.23.14_AM.png">
