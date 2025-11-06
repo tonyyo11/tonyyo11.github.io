@@ -168,7 +168,6 @@ I’ve even created a dedicated Claude project for my Terraform-with-Jamf setup 
 Over the coming months, I’ll be:
 
 - Diving deeper into the [Deployment Theory Terraform Provider documentation](https://github.com/deploymenttheory/terraform-provider-jamfpro/tree/main/docs).
-    
     ![image.png](/assets/img/postimages/terraform-provider-jamfpro-policy.png)
     
 - Learning how to migrate existing Jamf Pro configurations into Terraform-managed HCL definitions.
@@ -189,9 +188,9 @@ So, to any Mac Admin curious about Terraform: start small. Use a sandbox. Break 
 
 ### Additional Resources and Readings:
 
-- MacAdmin Musings: [**Terraform 101: Resources and Data Sources](https://macadminmusings.com/blog/2025/10/28/terraform-101-resources-and-data-sources/) (Part 4)**
+- MacAdmin Musings: [**Terraform 101: Resources and Data Sources**](https://macadminmusings.com/blog/2025/10/28/terraform-101-resources-and-data-sources/) Part 4
     - This post introduces the two most fundamental concepts in Terraform: `resources` and `data sources`. These form the basis of every configuration, and they’re how Terraform interacts with the real world. - Scott Blake
-- MacAdmin Musings: [**Terraform 101: Command Line Interface](https://macadminmusings.com/blog/2025/11/05/terraform-101-command-line-interface/) (Part 5)**
+- MacAdmin Musings: [**Terraform 101: Command Line Interface**](https://macadminmusings.com/blog/2025/11/05/terraform-101-command-line-interface/) Part 5
     - The CLI is how you interact with Terraform: initializing a project, previewing changes, applying updates, and cleaning up resources. It’s also where you’ll see Terraform’s declarative nature in action by analyzing the difference between your configuration and reality, then taking the steps needed to bring them in sync.
 - Sound Mac Guy: [**What’s new with terraform-provider-axm (AppleCare, that’s what)**](https://soundmacguy.wordpress.com/2025/11/06/whats-new-with-terraform-provider-axm-applecare-thats-what/)
     - Apple recently, and quietly bumped their [Apple School and Business Manager API](https://developer.apple.com/documentation/apple-school-and-business-manager-api) to 1.3+. Along came a [new endpoint](https://developer.apple.com/documentation/applebusinessmanagerapi/get-all-apple-care-coverage-for-an-orgdevice) for querying AppleCare coverage details for individual devices.
