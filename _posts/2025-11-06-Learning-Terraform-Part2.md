@@ -96,28 +96,28 @@ Inside Jamf, I created several API roles to use with Terraform.
 
 <div class="img-grid">
   <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.14.37_AM.png">
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.14.37_AM.png" alt="Jamf API roles created for Terraform learning sandbox">
   </figure>
   <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.16.41_AM.png">
-  </figure>
-</div>
-
-<div class="img-grid">
-  <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.19.24_AM.png">
-  </figure>
-  <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM.png">
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.16.41_AM.png" alt="Jamf API roles created for Terraform learning sandbox">
   </figure>
 </div>
 
 <div class="img-grid">
   <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM2.png">
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.19.24_AM.png" alt="Jamf API roles created for Terraform learning sandbox">
   </figure>
   <figure>
-    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.23.14_AM.png">
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM.png" alt="Jamf API roles created for Terraform learning sandbox">
+  </figure>
+</div>
+
+<div class="img-grid">
+  <figure>
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.20.52_AM2.png" alt="Jamf API roles created for Terraform learning sandbox">
+  </figure>
+  <figure>
+    <img src="/assets/img/postimages/Screenshot_2025-10-25_at_7.23.14_AM.png" alt="Jamf API roles created for Terraform learning sandbox">
 
   </figure>
 </div>
