@@ -14,7 +14,6 @@ image:
 > **Jump to:**  
 > [Origin story](#why-terraform-at-jamf) ·
 > [Starter repos & first steps](#starter-repos-and-first-steps) ·
-> [Providers landscape](#providers-landscape) ·
 > [Change management & GitOps](#change-management-and-gitops-mindset) ·
 > [Where IaC is headed](#where-iac-is-headed-for-mac-admins)
 
