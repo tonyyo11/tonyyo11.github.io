@@ -12,7 +12,7 @@ image:
 ---
 
 > **Jump to:**  
-> [Origin story](#origin-story-why-terraform-at-jamf) ·
+> [Origin story](#why-terraform-at-jamf) ·
 > [Starter repos & first steps](#starter-repos-and-first-steps) ·
 > [Providers landscape](#providers-landscape) ·
 > [Change management & GitOps](#change-management-and-gitops-mindset) ·
