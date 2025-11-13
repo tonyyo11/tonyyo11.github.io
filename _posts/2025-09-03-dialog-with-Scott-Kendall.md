@@ -2,7 +2,7 @@
 title: "A Dialog with Scott Kendall - On swiftDialog and Ohio River Valley Ingenuity"
 date: 2025-09-03 09:30:00 -0400
 description: "An Interview with Scott Kendall on swiftDialog, Jamf Pro, and real-world macOS automation at Giant Eagle—tooling, scripts, and community best practices."
-categories: [Mac Management]
+categories: [Mac Management, Inteviews]
 tags: [macOS, Jamf, Jamf Pro, swiftDialog, Scott Kendall, Interview, MacAdmins ]
 image:
   path: /assets/img/postimages/dialogwithScottKendall.png
