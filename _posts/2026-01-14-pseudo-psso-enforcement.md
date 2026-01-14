@@ -21,7 +21,7 @@ In many environments, Platform SSO registration ends up being “available” ra
 
 That’s why P.S.E.U.D.O. is timely.
 
-[**P.S.E.U.D.O. (Platform SSO Enforcement (of) User Device Onboarding)**](https://github.com/Macjutsu/pseudo/tree/main), or just pseudo, is an open-source script by Kevin M. White that’s designed to optimize and enforce the macOS Platform SSO registration experience. This is accomplished by combining swiftDialog, PPPC permissions, and macOS automation frameworks to keep users focused on the registration and completion flows. Kevin, also known as Macjutsu, is also the creator and maintainer of [**super](https://github.com/Macjutsu/super) (sometimes stylized as S.U.P.E.R.M.A.N.)**
+[**P.S.E.U.D.O. (Platform SSO Enforcement (of) User Device Onboarding)**](https://github.com/Macjutsu/pseudo/tree/main), or just pseudo, is an open-source script by Kevin M. White that’s designed to optimize and enforce the macOS Platform SSO registration experience. This is accomplished by combining swiftDialog, PPPC permissions, and macOS automation frameworks to keep users focused on the registration and completion flows. Kevin, also known as Macjutsu, is also the creator and maintainer of [**super**](https://github.com/Macjutsu/super) (sometimes stylized as S.U.P.E.R.M.A.N.)
 
 And because this is hitting right when many of us are expanding and leaning harder into device compliance signals, it lands at exactly the right moment.
 
