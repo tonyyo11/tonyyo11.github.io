@@ -11,7 +11,7 @@ image:
   alt: P.S.E.U.D.O. enforces Platform SSO registration on macOS with an admin-friendly dialog workflow.
 ---
 
-# **Introduction**
+## **Introduction**
 
 Platform Single Sign-on (Platform SSO) is one of the more practical identity upgrades Apple has shipped in a while. It connects macOS sign-in to your identity provider more directly, reduces repeated prompts, and makes it easier to build consistent access workflows, whether you’re using Microsoft Entra ID or Okta.
 
@@ -25,7 +25,7 @@ That’s why P.S.E.U.D.O. is timely.
 
 And because this is hitting right when many of us are expanding and leaning harder into device compliance signals, it lands at exactly the right moment.
 
-# **What pseudo does**
+## **What pseudo does**
 
 At a high level, pseudo is a “*make the right path the easy path*” tool. By using built-in frameworks, it presents the right screens and guides users step-by-step until registration is complete.
 
@@ -39,7 +39,7 @@ This matters because Platform SSO can be successfully deployed yet still fail as
 
 ![PSSO-Start.jpg](/assets/img/postimages/PSSO-Start.jpg)
 
-# **Why this is timely for Conditional Access and device compliance**
+## **Why this is timely for Conditional Access and device compliance**
 
 The challenge is that registration doesn’t have a native ‘must-enroll by X date’ switch. Without a helper workflow, enforcement tends to happen only when users hit a blocked resource.
 
@@ -57,7 +57,7 @@ P.S.E.U.D.O. flips that around.
 
 Instead of waiting for users to run into Conditional Access, you can proactively guide them through the registration experience at your discretion (during onboarding, during a change window, or as part of a campaign).
 
-# **The evolution I’m working on: Smart card support with Platform SSO**
+## **The evolution I’m working on: Smart card support with Platform SSO**
 
 The original pseudo-workflow was designed around Touch ID enablement and Platform SSO enforcement. What makes P.S.E.U.D.O. even more interesting is that the community is already improving it, not just talking about it. [Patrick Gallagher, aka patgmac](https://github.com/patgmac), has a [PR in the main project](https://github.com/Macjutsu/pseudo/pull/3) that makes Touch ID optional, which helps the workflow fit more environments. Patrick has also worked to ensure that pseudo functions work properly in environments that use Workspace ONE, not just Jamf Pro. That same “make it work where you are” mindset is what pushed me to start adding smart card support. My fork isn’t just “add smart cards.” The goal is for pseudo to handle Secure Enclave, password, and smart card Platform SSO flows, and to automatically choose the right path by inspecting the Platform SSO configuration profile already deployed on the system.
 
@@ -72,13 +72,13 @@ So the goal of my fork is straightforward:
 
 ![PSSO Smartcard Registration from forked repository](/assets/img/postimages/PSSO-smartcard.png)
 
-# **Under the hood: swiftDialog 3.0 and why it matters**
+## **Under the hood: swiftDialog 3.0 and why it matters**
 
 pseudo relies on swiftDialog because it is one of the best tools we have in the Mac admin community for delivering clear, branded, actionable prompts without building a full app.
 
 It’s important to note that `pseudo` uses swiftDialog 3.x, which is currently in beta. More importantly, per the swiftDialog 3.0 GitHub entry, it supports only macOS Sequoia 15.x and macOS Tahoe 26.x. macOS Sonoma 14.x and earlier are not supported. I would highly recommend upgrading your Sonoma systems to Sequoia or Tahoe, whichever the individual systems may support.
 
-# **Impact on Mac administration**
+## **Impact on Mac administration**
 
 Here’s what changes when you add a tool like pseudo into your Platform SSO rollout plan:
 
@@ -94,7 +94,7 @@ If the workflow guides users at the right time (instead of blocking them mid-day
 
 You can still enforce compliance in Entra Conditional Access (and you should), but now that enforcement is your backstop, not your primary onboarding strategy.
 
-# **Implementation notes and recommendations**
+## **Implementation notes and recommendations**
 
 Below is the deployment mindset I’d recommend, based on how pseudo is structured.
 
@@ -115,7 +115,7 @@ Below is the deployment mindset I’d recommend, based on how pseudo is structur
 - Environments where users routinely postpone registration until they get blocked.
 - Rollouts with a compliance deadline where help desk load matters.
 
-# **Conclusion and next steps**
+## **Conclusion and next steps**
 
 Platform SSO is powerful, but power without adoption is just potential energy.
 
@@ -125,7 +125,7 @@ My fork exists for one reason: to help bring smart card-friendly enforcement int
 
 If you’re planning to tighten Conditional Access policies tied to device compliance, this is the kind of tool that can make the difference between a smooth rollout and a month of help desk pain.
 
-# **Mac Tip of the Day**
+## **Mac Tip of the Day**
 
 Before you ever roll out **pseudo**, you can get ahead of the scoping problem by deploying Kevin’s Jamf Pro Extension Attribute sidekick, [**Jamf-Pro-EA-PSSO-Users.sh**](https://github.com/Macjutsu/pseudo/blob/main/Pseudo-Sidekicks/Jamf-Pro-EA-PSSO-Users.sh), which is designed to report the Platform SSO registered users back into Jamf inventory.
 
