@@ -18,11 +18,8 @@ Dan is a senior macOS and mobile systems engineer with more than three decades o
 
 In this interview, we talk about Dan’s journey from open-source beneficiary to maintainer, the responsibility that comes with building tools people depend on, and why feedback during beta and release candidate cycles matters more than most admins realize.
 
-<aside>
-
-“The biggest gap in most open source projects isn’t code. It’s feedback.”
-
-</aside>
+> “The biggest gap in most open source projects isn’t code. It’s feedback.”
+{: .prompt-tip }
 
 ---
 
@@ -60,11 +57,8 @@ The biggest gap in most open source projects isn’t code, it’s feedback. Spec
 
 **Dan:** Mostly the second. Someone who’s been running Setup Your Mac in their environment for a year and occasionally looks at the GitHub issues page — they’re already an Explorer. They just don’t know it yet. The quiz was meant to make that click, so the next step feels like a natural progression rather than a leap.
 
-<aside>
-
-“They’re already an Explorer. They just don’t know it yet.”
-
-</aside>
+> “They’re already an Explorer. They just don’t know it yet.”
+{: .prompt-tip }
 
 ---
 
@@ -148,11 +142,8 @@ Beta and RC releases are when the project is close enough to "done" that feedbac
 
 If you use a tool, you are already in the best possible position to help make it better. You don’t need to learn a new skill. You just need to opt-in to the feedback loop.
 
-<aside>
-
-Beta and RC releases are when the project is close enough to ‘done’ that feedback is actionable, but early enough that it can still change the outcome.
-
-</aside>
+> Beta and RC releases are when the project is close enough to ‘done’ that feedback is actionable, but early enough that it can still change the outcome.
+{: .prompt-tip }
 
 ---
 
@@ -216,11 +207,8 @@ Beyond code and tooling, Dan spends a significant amount of time engaging direct
 
 It took me some time to realize, but there’s a number of Mac Admins — including *myself* in some cases — who are hesitant about publicly posting. I wish I had metrics on how many individuals **read** those public threads without posting themselves. (I try to remember that when I see a question that has already been answered multiple times.)
 
-<aside>
-
-I wish I had metrics on how many individuals read those public threads without posting themselves.
-
-</aside>
+> I wish I had metrics on how many individuals read those public threads without posting themselves.
+{: .prompt-tip }
 
 ---
 
@@ -372,11 +360,8 @@ On the high end of the spectrum, it’s submitting a feature-complete Pull Reque
 
 Every contribution counts and helps strengthen our community.
 
-<aside>
-
-**I. Can. Contribute**
-
-</aside>
+> **I. Can. Contribute**
+{: .prompt-tip }
 
 ---
 
