@@ -6,9 +6,9 @@ description: "An interview with Dan K. Snelson on open source contribution, beta
 categories: [Mac Management, Interviews]
 tags: [macOS, Jamf, Jamf Pro, Open Source, MacAdmins, DDM, Interview, Setup Your Mac, Mac Health Check, DDM OS Reminder, swiftDialog, DDM, software updates, GitHub, Open Source, JNUC, Slack, Feedback, Community, Pull Requests]
 image:
-path: /assets/img/postimages/dialogwithDanSnelson.png
-lqip: /assets/img/postimages/dialogwithDanSnelson.png
-alt: From Beneficiary to Maintainer Banner. Background Photo by Néstor Morales on Unsplash.
+  path: /assets/img/postimages/dialogwithDanSnelson.png
+  lqip: /assets/img/postimages/dialogwithDanSnelson.png
+  alt: From Beneficiary to Maintainer Banner. Background Photo by Néstor Morales on Unsplash.
 
 ---
 
