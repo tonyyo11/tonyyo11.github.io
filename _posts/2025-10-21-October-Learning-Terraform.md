@@ -26,7 +26,7 @@ Historically, I used **UTM** to run macOS VMs, but after upgrading to macOS *Tah
 
 A few resources on using Tart to build and manage testable VMs can be found here: 
 
-- [**The Cookbook: Baking Up Your Perfect Jamf Pro Test VM**](https://www.notion.so/Making-Your-Business-Case-for-Jamf-When-Your-Boss-Is-Asking-You-to-Explore-Other-Options-28a8d34e2344805b8f9dee120cdb7d52?pvs=21)
+- [**The Cookbook: Baking Up Your Perfect Jamf Pro Test VM**](https://motionbug.com/the-cookbook-baking-up-your-perfect-jamf-pro-test-vm/)
 - **Silicon sandbox: Mastering Mac virtualization for Jamf workflows - Rob Potvin:** 
 {% include embed/youtube.html id='7DqS9bG3bkg' %}
 
