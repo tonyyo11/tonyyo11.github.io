@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teams Mockup</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; background: #f5f5f5; display: flex; height: 100vh; overflow: hidden; }
+
+  /* ── Sidebar ── */
+  .sidebar {
+    width: 68px; background: #4b1c89; display: flex; flex-direction: column;
+    align-items: center; padding: 8px 0; gap: 4px; flex-shrink: 0;
+  }
+  .sidebar-top { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 100%; }
+  .sidebar-icon {
+    width: 52px; height: 52px; border-radius: 6px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; cursor: pointer; color: rgba(255,255,255,0.7);
+    font-size: 10px; gap: 3px; transition: background .15s;
+  }
+  .sidebar-icon:hover { background: rgba(255,255,255,0.12); }
+  .sidebar-icon.active { background: rgba(255,255,255,0.2); color: #fff; }
+  .sidebar-icon svg { width: 22px; height: 22px; }
+  .sidebar-icon span { font-size: 9px; }
+  .sidebar-avatar {
+    width: 32px; height: 32px; border-radius: 50%; background: #a45cd4;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 13px; font-weight: 600; margin-top: auto; margin-bottom: 10px;
+  }
+
+  /* ── Teams Nav ── */
+  .teams-nav {
+    width: 240px; background: #f3eefb; border-right: 1px solid #e0d5ef;
+    display: flex; flex-direction: column; flex-shrink: 0;
+  }
+  .teams-nav-header {
+    padding: 14px 14px 8px; font-size: 16px; font-weight: 600;
+    color: #1e0a3c; display: flex; align-items: center; gap: 8px;
+  }
+  .teams-nav-header svg { width: 18px; height: 18px; color: #6264a7; }
+  .team-item {
+    padding: 6px 14px; cursor: pointer; display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: #1e0a3c; border-radius: 4px; margin: 1px 4px;
+  }
+  .team-item:hover { background: rgba(98,100,167,0.1); }
+  .team-item.active { background: rgba(98,100,167,0.18); font-weight: 600; }
+  .team-item-icon { width: 24px; height: 24px; border-radius: 4px; background: #6264a7; display: flex; align-items: center; justify-content: center; color: white; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+  .channel-item {
+    padding: 4px 14px 4px 46px; cursor: pointer; font-size: 12.5px;
+    color: #444; display: flex; align-items: center; gap: 6px;
+    border-radius: 4px; margin: 1px 4px;
+  }
+  .channel-item:hover { background: rgba(98,100,167,0.08); }
+  .channel-item.active { background: rgba(98,100,167,0.15); font-weight: 600; color: #1e0a3c; }
+  .channel-hash { color: #888; font-size: 13px; margin-right: 2px; }
+
+  /* ── Main chat area ── */
+  .chat-main { flex: 1; display: flex; flex-direction: column; background: #fff; min-width: 0; }
+
+  /* Channel header */
+  .chat-header {
+    height: 52px; border-bottom: 1px solid #e5e5e5; display: flex; align-items: center;
+    padding: 0 20px; gap: 12px; flex-shrink: 0;
+  }
+  .chat-header-hash { font-size: 20px; color: #888; line-height: 1; }
+  .chat-header-name { font-size: 15px; font-weight: 600; color: #1e0a3c; }
+  .chat-header-members { font-size: 12px; color: #888; display: flex; align-items: center; gap: 4px; margin-left: 8px; }
+  .chat-header-actions { margin-left: auto; display: flex; gap: 8px; }
+  .header-btn {
+    width: 32px; height: 32px; border-radius: 4px; display: flex; align-items: center;
+    justify-content: center; cursor: pointer; color: #888;
+  }
+  .header-btn:hover { background: #f0f0f0; }
+
+  /* Messages */
+  .chat-messages { flex: 1; overflow-y: auto; padding: 16px 20px; display: flex; flex-direction: column; gap: 0; }
+
+  .msg-group { display: flex; gap: 12px; margin-bottom: 4px; }
+  .msg-group + .msg-group { margin-top: 12px; }
+  .msg-avatar {
+    width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0; margin-top: 2px;
+    display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; color: white;
+  }
+  .bot-avatar { background: linear-gradient(135deg, #4b1c89, #6264a7); font-size: 12px; }
+  .msg-body { flex: 1; min-width: 0; }
+  .msg-meta { display: flex; align-items: baseline; gap: 8px; margin-bottom: 3px; }
+  .msg-sender { font-size: 13.5px; font-weight: 600; color: #1e0a3c; }
+  .msg-sender.bot { color: #4b1c89; }
+  .msg-app-badge {
+    font-size: 9.5px; padding: 1px 5px; background: #e8e3f5; color: #6264a7;
+    border-radius: 3px; font-weight: 500; letter-spacing: .3px;
+  }
+  .msg-time { font-size: 11px; color: #aaa; }
+  .msg-text { font-size: 13.5px; color: #242424; line-height: 1.5; }
+
+  /* ── Adaptive Card ── */
+  .adaptive-card {
+    background: #fff; border: 1px solid #e1e1e1; border-radius: 4px;
+    max-width: 640px; overflow: hidden; margin-top: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  }
+  .card-body { padding: 16px 16px 12px; }
+
+  .card-title {
+    font-size: 16px; font-weight: 700; color: #1e0a3c; line-height: 1.3;
+    margin-bottom: 4px;
+  }
+  .card-divider { height: 1px; background: #e5e5e5; margin: 10px 0 8px; }
+
+  .card-section-header {
+    font-size: 13px; font-weight: 700; color: #1e0a3c; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .card-item { margin-bottom: 10px; }
+  .card-item-title { font-size: 13px; font-weight: 600; color: #242424; line-height: 1.4; }
+  .card-item-title a { color: #6264a7; text-decoration: none; }
+  .card-item-title a:hover { text-decoration: underline; }
+  .card-item-source { font-size: 11.5px; color: #888; margin-bottom: 2px; }
+  .card-item-body { font-size: 12.5px; color: #444; line-height: 1.5; }
+  .card-item-body strong { color: #1e0a3c; }
+  .card-item-link { font-size: 12px; color: #6264a7; text-decoration: none; display: inline-block; margin-top: 2px; }
+  .card-item-link:hover { text-decoration: underline; }
+
+  .card-footer {
+    font-size: 11px; color: #aaa; margin-top: 12px; padding-top: 8px;
+    border-top: 1px solid #f0f0f0; font-style: italic; line-height: 1.4;
+  }
+
+  /* message bar */
+  .chat-input-bar {
+    border-top: 1px solid #e5e5e5; padding: 10px 16px; flex-shrink: 0;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .chat-input {
+    flex: 1; border: 1px solid #d1d1d1; border-radius: 4px; padding: 8px 12px;
+    font-size: 13.5px; color: #444; outline: none; background: #fafafa;
+  }
+  .chat-input::placeholder { color: #bbb; }
+
+  .date-divider {
+    display: flex; align-items: center; gap: 10px; margin: 16px 0 12px;
+    font-size: 11.5px; color: #aaa; font-weight: 500;
+  }
+  .date-divider::before, .date-divider::after {
+    content: ''; flex: 1; height: 1px; background: #e8e8e8;
+  }
+</style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+  <div class="sidebar-top">
+    <!-- Activity -->
+    <div class="sidebar-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <span>Activity</span>
+    </div>
+    <!-- Chat -->
+    <div class="sidebar-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+      <span>Chat</span>
+    </div>
+    <!-- Teams (active) -->
+    <div class="sidebar-icon active">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      <span>Teams</span>
+    </div>
+    <!-- Calendar -->
+    <div class="sidebar-icon">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
+      <span>Calendar</span>
+    </div>
+  </div>
+  <div class="sidebar-avatar">TY</div>
+</div>
+
+<!-- Teams nav panel -->
+<div class="teams-nav">
+  <div class="teams-nav-header">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+    Teams
+  </div>
+  <div class="team-item">
+    <div class="team-item-icon">MC</div>
+    Mac Engineering
+  </div>
+  <div class="channel-item"><span class="channel-hash">#</span> General</div>
+  <div class="channel-item active"><span class="channel-hash">#</span> platform-intel</div>
+  <div class="channel-item"><span class="channel-hash">#</span> jamf-ops</div>
+  <div class="channel-item"><span class="channel-hash">#</span> incidents</div>
+  <div class="channel-item"><span class="channel-hash">#</span> compliance</div>
+  <div style="height:12px"></div>
+  <div class="team-item">
+    <div class="team-item-icon" style="background:#0078d4;">IT</div>
+    IT Ops
+  </div>
+</div>
+
+<!-- Main chat -->
+<div class="chat-main">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <span class="chat-header-hash">#</span>
+    <span class="chat-header-name">platform-intel</span>
+    <span class="chat-header-members">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="#888"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+      12
+    </span>
+    <div class="chat-header-actions">
+      <div class="header-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+      </div>
+      <div class="header-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Messages -->
+  <div class="chat-messages">
+
+    <div class="date-divider">Monday, March 16, 2026</div>
+
+    <!-- Card 1 -->
+    <div class="msg-group">
+      <div class="msg-avatar bot-avatar">MPI</div>
+      <div class="msg-body">
+        <div class="msg-meta">
+          <span class="msg-sender bot">Mac Platform Intelligence</span>
+          <span class="msg-app-badge">APP</span>
+          <span class="msg-time">7:02 AM</span>
+        </div>
+
+        <div class="adaptive-card">
+          <div class="card-body">
+
+            <div class="card-title">🖥️ Mac Platform Intelligence — Week of March 9, 2026</div>
+
+            <div class="card-divider"></div>
+
+            <!-- Security Advisories -->
+            <div class="card-section-header">🔐 Security Advisories</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Microsoft March 2026 Patch Tuesday — 83 CVEs</strong> &mdash; Tenable</div>
+              <div class="card-item-body">8 Critical / 75 Important. Patches Azure Entra ID, Microsoft Office for Mac, and Microsoft Authenticator. <strong>Action: Update Office for Mac to 16.107 immediately.</strong></div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Adobe Acrobat Reader for macOS &lt; 25.001.21288 — APSB26-26</strong> &mdash; Adobe</div>
+              <div class="card-item-body">CVE-2026-27220 &amp; CVE-2026-27278 (Use After Free → code execution); CVE-2026-27221 (signature bypass → privilege escalation). <strong>Action: Update via Jamf to 25.001.21288+.</strong></div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>ZDI-26-173: Apple macOS Audio APAC RCE (CVE-2026-20611, CVSS 7.8)</strong> &mdash; Zero Day Initiative</div>
+              <div class="card-item-body">Out-of-bounds write in macOS audio frame decoding allows RCE via malicious file or page. No known active exploit. Patch expected in upcoming Apple security update.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Critical ExifTool Flaw — macOS Code Execution via Tampered Image</strong> &mdash; Kaspersky GReAT</div>
+              <div class="card-item-body">Code execution via malformed image through ExifTool. CVE not yet confirmed. <strong>Action: Verify against Kaspersky advisory; relevant to AutoPkg and image-processing workflows.</strong></div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <!-- Apple & Jamf -->
+            <div class="card-section-header">🍎 Apple &amp; Jamf</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>macOS 26.3.2 (25D2140) Released — March 10</strong> &mdash; Apple</div>
+              <div class="card-item-body">Point release for macOS 26.3.x. Review Apple's HT article for CVE list and deploy via Jamf as applicable.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>macOS 26.4 Beta 4 (25E5233c)</strong> &mdash; Apple Developer</div>
+              <div class="card-item-body">Fourth developer beta released March 9. No production fleet impact; available for seed-test machines.</div>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <!-- Microsoft & Enterprise -->
+            <div class="card-section-header">🏢 Microsoft &amp; Enterprise</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Microsoft Entra Passkeys for Phishing-Resistant Windows Sign-In</strong> &mdash; BleepingComputer</div>
+              <div class="card-item-body">Entra passkey rollout via Windows Hello. Underlying identity changes affect cross-platform auth posture — monitor for macOS Platform SSO implications.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Microsoft 365 Apps Cloud Update: Three Management Enhancements</strong> &mdash; Microsoft 365 Roadmap</div>
+              <div class="card-item-body">New: Descriptive Error reporting, Simplified Channel Management via Entra ID groups, Enhanced Rollout Waves for staged M365 deployments.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Microsoft Investigates Classic Outlook Sync and Connection Failures</strong> &mdash; BleepingComputer</div>
+              <div class="card-item-body">Active investigation into sync failures in classic Outlook desktop. Monitor for impact on macOS Outlook users.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <!-- Threat Intelligence -->
+            <div class="card-section-header">🛡️ Threat Intelligence</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Evil Evolution: ClickFix and macOS Infostealers</strong> &mdash; Sophos X-Ops</div>
+              <div class="card-item-body">Three active campaigns using ClickFix specifically targeting macOS with evolving infostealer payloads (MacSync variant). User awareness and browser controls are primary mitigations.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Contagious Interview: Developer Backdoors via Fake Recruiter Interviews</strong> &mdash; Microsoft Security Blog</div>
+              <div class="card-item-body">OtterCookie and FlexibleFerret backdoors delivered via fake coding assessments targeting developers. Steals API tokens, cloud credentials, source code. Advise developer staff to treat unsolicited recruiter contact with elevated scrutiny.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Malicious npm @openclaw-ai Deploys RAT, Steals macOS Credentials</strong> &mdash; Malware News</div>
+              <div class="card-item-body">Trojanized npm package deployed a RAT on macOS and harvested credentials. Review and audit npm environments on developer Macs.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>The Claude Code Trap: Malvertising Hijacks Developer Terminals</strong> &mdash; Bitdefender</div>
+              <div class="card-item-body">Fake Google Ads for "Claude Code" deliver terminal-hijacking malware via ClickFix. Advise caution with Google Ads results when searching for developer tooling.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <!-- Browser & Tools -->
+            <div class="card-section-header">🌐 Browser, Runtime &amp; Tool Updates</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Google Chrome for Desktop — Three Security Releases (Mar 10, 12, 13)</strong> &mdash; Google</div>
+              <div class="card-item-body">Brings Chrome to 146.0.7680.80+. CVEs: CVE-2026-3909 (Skia OOB write), CVE-2026-3910 (V8 sandbox), CVE-2026-3919 (UAF Extensions), CVE-2026-3921 (UAF TextEncoding). <strong>Action: Update fleet Chrome to 146.0.7680.80+.</strong></div>
+              <a class="card-item-link" href="#">↗ Mar 12</a> &nbsp;·&nbsp; <a class="card-item-link" href="#">↗ Mar 13</a>
+            </div>
+
+            <div class="card-footer">
+              This digest is generated from an aggregated feed of publicly available articles and information. Content reflects automated relevance classification and should be verified before action.
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="msg-group">
+      <div class="msg-avatar bot-avatar">MPI</div>
+      <div class="msg-body">
+        <div class="msg-meta">
+          <span class="msg-sender bot">Mac Platform Intelligence</span>
+          <span class="msg-app-badge">APP</span>
+          <span class="msg-time">7:02 AM</span>
+        </div>
+
+        <div class="adaptive-card">
+          <div class="card-body">
+
+            <div class="card-title">🖥️ Mac Platform Intelligence — Radar &amp; Reading</div>
+
+            <div class="card-divider"></div>
+
+            <!-- Worth Watching -->
+            <div class="card-section-header">👀 Worth Watching</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Microsoft's Entra Passkey Push — macOS Implications on the Horizon</strong></div>
+              <div class="card-item-body">The Windows-first passkey rollout is phase one of a broader identity direction. This fleet already runs Platform SSO with Entra CBA — watch for Microsoft roadmap items extending passkeys to macOS and any resulting Jamf configuration requirements.</div>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>ClickFix Converging on macOS Developer Environments as a Primary Attack Surface</strong></div>
+              <div class="card-item-body">Three separate campaigns this week (Sophos ClickFix infostealers, OpenClaw npm RAT, Claude Code malvertising) signal a shift toward macOS developer environments as a high-value social engineering target. Evaluate whether developer install workflows need additional endpoint controls.</div>
+            </div>
+
+            <div class="card-divider"></div>
+
+            <!-- Prof Dev -->
+            <div class="card-section-header">📚 Professional Development</div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>GlobalProtect Patch Management with Jamf Pro and Title Editor</strong> &mdash; u0105821 / Univ. of Utah</div>
+              <div class="card-item-body">Practical how-to for automating GlobalProtect version management using Jamf Pro and Title Editor. Directly applicable to this fleet. KB candidate.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+            <div class="card-item">
+              <div class="card-item-title"><strong>Troubleshooting Broken Jamf Pro Device Records</strong> &mdash; Chris Schasse / RocketMan.tech</div>
+              <div class="card-item-body">Deep-dive operational guide for diagnosing and recovering orphaned or corrupted device records in Jamf Pro. Practical reference for the Mac Engineering team. KB candidate.</div>
+              <a class="card-item-link" href="#">↗ Read more</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /chat-messages -->
+
+  <!-- Input bar -->
+  <div class="chat-input-bar">
+    <input class="chat-input" type="text" placeholder="Reply to #platform-intel">
+  </div>
+
+</div><!-- /chat-main -->
+
+</body>
+</html>
