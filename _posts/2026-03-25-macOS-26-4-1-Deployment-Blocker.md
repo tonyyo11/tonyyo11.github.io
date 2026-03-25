@@ -2,7 +2,7 @@
 
 title: "macOS 26.4 Presents Deployment Blockers Across Organizations"
 date: 2026-03-25 2:15:00 -0400
-description: "macOS 26.4 appears to reintroduce a login keychain prompt issue affecting smart card and third-party authentication workflows, and some organizations are now delaying rollout while Apple investigates.""
+description: "macOS 26.4 appears to reintroduce a login keychain prompt issue affecting smart card and third-party authentication workflows, and some organizations are now delaying rollout while Apple investigates."
 categories: [Mac Management]
 tags: [macOS, MacAdmins, Apple IT, Apple administration, Deployment Blocker, AppleCare, macOS 26.4]
 image:
