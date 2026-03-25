@@ -6,13 +6,13 @@ description: "macOS 26.4 appears to reintroduce a login keychain prompt issue af
 categories: [Mac Management]
 tags: [macOS, MacAdmins, Apple IT, Apple administration, Deployment Blocker, AppleCare, macOS 26.4]
 image:
-  path: /assets/img/postimages/macos_26.4_Blocker.png
-  lqip: /assets/img/postimages/macos_26.4_Blocker.png
-  alt: A Macbook with a desert wallpaper. Photo by Dima Solomin on Unsplash.
+  path: /assets/img/postimages/macos-26-4-Blocker.png
+  lqip: /assets/img/postimages/macos-26-4-Blocker.png
+  alt: A MacBook with a desert wallpaper. Photo by Dima Solomin on Unsplash.
 
 ---
 
-On March 26, 2026 Apple released security updates across its operating system platforms. As organizations began updating to macOS 26.4, it became clear that an issue tracked in early 26.4 beta cycle had resurfaced. 
+On March 26, 2026, Apple released security updates across its operating system platforms. As organizations began updating to macOS 26.4, it became clear that an issue tracked in early 26.4 beta cycle had resurfaced. 
 
 In some of the earlier betas, 26.4 held two known issues:
 
@@ -43,7 +43,7 @@ Logging in once with username & password at the Login Window resolves the repeat
 
 From the Mac Admins Community, another workaround appears as follows:
 
-1. Login to macOS; supply the login keychain password when prompted.
+1. Log in to macOS; supply the login keychain password when prompted.
 2. Once at the desktop, launch Terminal.app and run the following commands:
     1. `security lock-keychain`
     2. `security unlock-keychain`
