@@ -44,7 +44,7 @@ Logging in once with username & password at the Login Window resolves the repeat
 From the Mac Admins Community, another workaround appears as follows:
 
 1. Login to macOS; supply the login keychain password when prompted.
-2. Once at the desktop, launch [Terminal.app](http://Terminal.app) and run the following commands:
+2. Once at the desktop, launch Terminal.app and run the following commands:
     1. `security lock-keychain`
     2. `security unlock-keychain`
 3. Reboot
