@@ -71,7 +71,7 @@ If you have never filed an issue or opened a discussion on a project you use, he
 - **Explain the organizational impact.** This is the part most people skip. Is this blocking a rollout? Causing compliance gaps? Creating extra manual work? Say so. That context is what moves something from "nice to know" to "worth fixing."
 - **Be specific about what you are asking for.** Not every request needs to be a fully scoped feature. Sometimes it is just: "Is this the intended behavior? Because in our environment it causes X."
 
-> **Tip:** If you are unsure whether something is a bug or expected behavior, open a discussion first rather than an issue. It keeps the signal cleaner for the maintainer.
+> **Tip:** If you are unsure whether something is a bug or expected behavior, open a discussion first rather than an issue. It keeps things cleaner for the maintainer.
 {: .prompt-tip }
 
 ---
