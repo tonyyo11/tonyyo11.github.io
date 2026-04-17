@@ -86,4 +86,4 @@ If there is a tool your team depends on, and something about it could be better,
 
 Open source needs maintainers. It also needs users who are willing to show up and be honest about what they are experiencing. If you are using the software, you already have something worth contributing.
 
-If you haven't taken Dan's self-assessment yet, check it out at [snelson.us](http://snelson.us). My guess is that most people reading this are already Explorers or Emerging Contributors and just do not know it. You do not need a GitHub handle full of commits to matter to an open source project. You just need to show up and say something useful.
+If you haven't taken Dan's self-assessment yet, check it out at [snelson.us](https://snelson.us). My guess is that most people reading this are already Explorers or Emerging Contributors and just do not know it. You do not need a GitHub handle full of commits to matter to an open source project. You just need to show up and say something useful.
