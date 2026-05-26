@@ -251,7 +251,7 @@ Start with the getting-started docs and go from there:
 
 [https://pages.nist.gov/macos_security/welcome/getting-started/](https://pages.nist.gov/macos_security/welcome/getting-started/)
 
-## Resources
+## Resources.
 
 Primary documentation: [https://pages.nist.gov/macos_security/welcome/getting-started/](https://pages.nist.gov/macos_security/welcome/getting-started/)
 
