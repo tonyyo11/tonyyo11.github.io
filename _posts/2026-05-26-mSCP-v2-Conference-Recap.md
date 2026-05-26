@@ -158,7 +158,7 @@ Most admins will probably live in the CLI and standard outputs. But the API is w
 
 ## Community Tools Being Built on mSCP 2.0
 
-![scary-movie-shawn-wayans.gif](/assets/img/postimages//scary-movie-shawn-wayans.gif){.right}
+![scary-movie-shawn-wayans.gif](/assets/img/postimages/scary-movie-shawn-wayans.gif){: width="300" .right}
 This was one of the more interesting parts of the day. Several teams have already built tools on top of mSCP, and the demos gave a good picture of where the ecosystem is going. It was pretty fun to see someone watching the CLI demo and stating they would need a GUI, and the response was: *“Just hang on the call for a bit more. wink wink”.*
 
 The important point is not just that new tools exist. It is that mSCP 2.0 gives those tools a more stable foundation to build from.
